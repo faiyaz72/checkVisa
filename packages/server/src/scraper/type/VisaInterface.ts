@@ -1,3 +1,21 @@
+import {
+  ConditionType,
+  EntryType,
+  VisaRequirementType,
+} from "../enum/visa-requirement.enum";
+
+export interface LlmRequest {
+  destinationCountryCd: string;
+  originCountryCd: string;
+  visaType: VisaRequirementType;
+  rawRequirement: string;
+  durationDays: number | null;
+  allowedStay?: string;
+  notes?: string;
+  lastVerified: string;
+  sourceUrl: string;
+}
+
 export interface VisaInterface {
   country: string;
   visaRequirement: string;
@@ -12,8 +30,9 @@ export interface ScrapedData {
   rawTableCount: number;
 }
 
-export interface ParsedVisaRequirement {
-  destinationCountry: string;
+export interface VisaRequirement {
+  destinationCountryCd: string;
+  originCountryCd: string;
   primaryRequirement: VisaRequirementType;
   duration?: DurationInfo;
   conditions?: VisaCondition[];
@@ -23,24 +42,6 @@ export interface ParsedVisaRequirement {
   sourceUrl?: string;
   lastVerified?: string;
   confidence?: "high" | "medium" | "low";
-}
-
-export enum VisaRequirementType {
-  VISA_FREE = "VISA_FREE",
-  VISA_ON_ARRIVAL = "VISA_ON_ARRIVAL",
-  ETA = "ETA",
-  EVISA = "EVISA",
-  VISA_REQUIRED = "VISA_REQUIRED",
-  CONDITIONAL_WAIVER = "CONDITIONAL_WAIVER",
-  ADMISSION_REFUSED = "ADMISSION_REFUSED",
-  SPECIAL_TERRITORY = "SPECIAL_TERRITORY",
-}
-
-export enum EntryType {
-  SINGLE = "SINGLE",
-  MULTIPLE = "MULTIPLE",
-  TRANSIT_ONLY = "TRANSIT_ONLY",
-  UNSPECIFIED = "UNSPECIFIED",
 }
 
 export interface DurationInfo {
@@ -54,18 +55,6 @@ export interface DurationInfo {
   perVisit?: boolean;
   perPeriod?: string;
   cumulative?: boolean;
-}
-
-export enum ConditionType {
-  REQUIRES_VISA = "REQUIRES_VISA",
-  REQUIRES_DOCUMENT = "REQUIRES_DOCUMENT",
-  REQUIRES_RESIDENCY = "REQUIRES_RESIDENCY",
-  REQUIRES_PURPOSE = "REQUIRES_PURPOSE",
-  REQUIRES_ARRIVAL_METHOD = "REQUIRES_ARRIVAL_METHOD",
-  REQUIRES_DEPARTURE = "REQUIRES_DEPARTURE",
-  AGE_RESTRICTION = "AGE_RESTRICTION",
-  INCOME_REQUIREMENT = "INCOME_REQUIREMENT",
-  OTHER = "OTHER",
 }
 
 export interface VisaCondition {

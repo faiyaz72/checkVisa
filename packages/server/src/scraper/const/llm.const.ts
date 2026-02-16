@@ -3,7 +3,8 @@ export const VISA_PARSING_SYSTEM_PROMPT = `You are a visa requirement parser. Yo
 You will receive a JSON object with basic visa information that needs to be enriched and properly structured. The input format is:
 
 {
-  "country": "string - destination country name",
+  "destinationCountryCd": "string - ISO 3166-1 alpha-2 code for destination country (e.g. AL, MX)",
+  "originCountryCd": "string - ISO 3166-1 alpha-2 code for origin/passport country (e.g. US, BD)",
   "visaType": "string - preliminary visa type classification",
   "rawRequirement": "string - brief requirement description",
   "durationDays": "number | null - preliminary duration if available",
@@ -15,7 +16,8 @@ You will receive a JSON object with basic visa information that needs to be enri
 Parse this into the following detailed JSON schema:
 
 {
-  "destinationCountry": "string - name of destination (from input 'country')",
+  "destinationCountryCd": "string - ISO 3166-1 alpha-2 code for destination country (from input)",
+  "originCountryCd": "string - ISO 3166-1 alpha-2 code for origin/passport country (from input)",
   "primaryRequirement": "VISA_FREE | VISA_ON_ARRIVAL | ETA | EVISA | VISA_REQUIRED | CONDITIONAL_WAIVER | ADMISSION_REFUSED | SPECIAL_TERRITORY",
   "duration": {
     "maxStayDays": "number - maximum stay in days",
@@ -98,13 +100,14 @@ IMPORTANT RULES FOR PARSING:
 9. OUTPUT FORMAT:
    - Return ONLY valid JSON, no markdown formatting
    - Omit fields that have no data (except required fields)
-   - Keep sourceUrl and lastVerified from input unchanged
+   - Keep sourceUrl, lastVerified, destinationCountryCd, and originCountryCd from input unchanged
 
 EXAMPLE TRANSFORMATIONS:
 
 Input:
 {
-  "country": "Albania",
+  "destinationCountryCd": "AL",
+  "originCountryCd": "US",
   "visaType": "EVISA",
   "rawRequirement": "eVisa",
   "notes": "e-Visa available for holders of a valid Schengen visa; Visa not required who have valid visa or residence permit from any USA, UK or Schengen countries."
@@ -112,7 +115,8 @@ Input:
 
 Output:
 {
-  "destinationCountry": "Albania",
+  "destinationCountryCd": "AL",
+  "originCountryCd": "US",
   "primaryRequirement": "CONDITIONAL_WAIVER",
   "conditions": [
     {
@@ -138,7 +142,8 @@ Output:
 
 Input:
 {
-  "country": "Mexico",
+  "destinationCountryCd": "MX",
+  "originCountryCd": "CA",
   "visaType": "VISA_REQUIRED",
   "rawRequirement": "Visa required",
   "durationDays": 180,
@@ -147,7 +152,8 @@ Input:
 
 Output:
 {
-  "destinationCountry": "Mexico",
+  "destinationCountryCd": "MX",
+  "originCountryCd": "CA",
   "primaryRequirement": "CONDITIONAL_WAIVER",
   "duration": {
     "maxStayDays": 180,
@@ -188,9 +194,15 @@ export const VISA_REQUIREMENT_RESPONSE_FORMAT = {
   schema: {
     type: "object",
     properties: {
-      destinationCountry: {
+      destinationCountryCd: {
         type: "string",
-        description: "Name of the destination country",
+        description:
+          "ISO 3166-1 alpha-2 code for the destination country (e.g. AL, MX)",
+      },
+      originCountryCd: {
+        type: "string",
+        description:
+          "ISO 3166-1 alpha-2 code for the origin/passport country (e.g. US, BD)",
       },
       primaryRequirement: {
         type: "string",
@@ -351,7 +363,8 @@ export const VISA_REQUIREMENT_RESPONSE_FORMAT = {
       },
     },
     required: [
-      "destinationCountry",
+      "destinationCountryCd",
+      "originCountryCd",
       "primaryRequirement",
       "duration",
       "conditions",

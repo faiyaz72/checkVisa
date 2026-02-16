@@ -2,9 +2,10 @@ import { Injectable } from "@nestjs/common";
 import { LoggerService } from "../logger/logger.service";
 import * as cheerio from "cheerio";
 import { VisaType } from "./enum/VisaType.enum";
-import { ScrapedData, VisaInterface } from "./type/VisaInterface";
+import { LlmRequest, ScrapedData, VisaInterface } from "./type/VisaInterface";
 import countries from "world-countries";
 import { LlmService } from "./llm.service";
+import { VisaRequirementType } from "./enum/visa-requirement.enum";
 
 @Injectable()
 export class ScraperService {
@@ -22,52 +23,68 @@ export class ScraperService {
     const scrapedData = await this.scrapeWikipediaVisaRequirements(
       countryData.demonyms["eng"]?.m,
     );
-    const convertedData = this.convertToDbFormat(scrapedData);
-    const parsedData = await this.llmService.parseVisaRequirement(
-      convertedData[111],
-    );
+    const llmRequests = this.convertToLlmRequest(scrapedData, countryCd);
+    const parsedData = await this.llmService.parseVisaRequirement(llmRequests);
     return parsedData;
   }
 
-  private convertToDbFormat(scrapedData: ScrapedData): any[] {
+  private convertToLlmRequest(
+    scrapedData: ScrapedData,
+    originCountryCd: string,
+  ): LlmRequest[] {
     return scrapedData.entries.map((entry) => ({
-      country: entry.country,
+      destinationCountryCd: this.getCountryCodeByName(entry.country),
+      originCountryCd,
       visaType: this.categorizeVisaRequirement(entry.visaRequirement),
       rawRequirement: entry.visaRequirement,
       durationDays: this.extractDuration(
-        entry.allowedStay || entry.notes || "",
+        entry.allowedStay ?? entry.notes ?? "",
       ),
       allowedStay: entry.allowedStay,
       notes: entry.notes,
-      lastVerified: scrapedData.lastUpdated,
+      lastVerified:
+        typeof scrapedData.lastUpdated === "string"
+          ? scrapedData.lastUpdated
+          : scrapedData.lastUpdated.toISOString(),
       sourceUrl: `https://en.wikipedia.org/wiki/Visa_requirements_for_${scrapedData.passportCountry}_citizens`,
     }));
   }
 
-  private categorizeVisaRequirement(requirement: string): VisaType {
+  private getCountryCodeByName(countryName: string): string {
+    const normalized = countryName.trim().toLowerCase();
+    const match = countries.find(
+      (c) =>
+        c.name.common.toLowerCase() === normalized ||
+        c.name.official?.toLowerCase() === normalized ||
+        c.altSpellings?.some((s) => s.toLowerCase() === normalized),
+    );
+    return match?.cca2 ?? "XX";
+  }
+
+  private categorizeVisaRequirement(requirement: string): VisaRequirementType {
     const req = requirement.toLowerCase();
 
     if (req.includes("visa not required") || req.includes("visa free")) {
-      return VisaType.VISA_FREE;
+      return VisaRequirementType.VISA_FREE;
     }
     if (req.includes("visa on arrival") || req.includes("voa")) {
-      return VisaType.VISA_ON_ARRIVAL;
+      return VisaRequirementType.VISA_ON_ARRIVAL;
     }
     if (
       req.includes("evisa") ||
       req.includes("e-visa") ||
       req.includes("electronic")
     ) {
-      return VisaType.EVISA;
+      return VisaRequirementType.EVISA;
     }
     if (req.includes("eta") || req.includes("electronic travel")) {
-      return VisaType.ETA;
+      return VisaRequirementType.ETA;
     }
     if (req.includes("visa required")) {
-      return VisaType.VISA_REQUIRED;
+      return VisaRequirementType.VISA_REQUIRED;
     }
     if (req.includes("admission refused") || req.includes("travel ban")) {
-      return VisaType.ADMISSION_REFUSED;
+      return VisaRequirementType.ADMISSION_REFUSED;
     }
 
     // Check for conditional visa waiver
@@ -76,10 +93,10 @@ export class ScraperService {
       req.includes("with visa") ||
       req.includes("holding")
     ) {
-      return VisaType.VISA_WAIVER;
+      return VisaRequirementType.CONDITIONAL_WAIVER;
     }
 
-    return VisaType.UNKNOWN;
+    return VisaRequirementType.UNKNOWN;
   }
 
   private extractDuration(text: string): number | null {
