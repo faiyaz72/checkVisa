@@ -8,10 +8,9 @@ import { ScrapedData, VisaInterface } from "./type/VisaInterface";
 export class ScraperService {
   private readonly logger = new LoggerService(ScraperService.name);
 
-  async scrape() {
+  async scrape(country: string) {
     this.logger.log("Scraping data");
-    const scrapedData =
-      await this.scrapeWikipediaVisaRequirements("Bangladeshi");
+    const scrapedData = await this.scrapeWikipediaVisaRequirements(country);
     const convertedData = this.convertToDbFormat(scrapedData);
     return convertedData;
   }
