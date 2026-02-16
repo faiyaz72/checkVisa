@@ -5,15 +5,21 @@
   "private": true,
   "scripts": {
     "dev": "bun run index.ts",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "prepare": "husky"
   },
   "devDependencies": {
     "@types/bun": "latest",
     "concurrently": "^9.2.1",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.4.3",
     "prettier": "^3.4.2"
   },
   "peerDependencies": {
     "typescript": "^5"
   },
-  "workspaces": ["packages/*"]
+  "workspaces": ["packages/*"],
+  "lint-staged": {
+    "*.{ts,tsx,vue,js,jsx,json,css,md}": "prettier --write"
+  }
 }
