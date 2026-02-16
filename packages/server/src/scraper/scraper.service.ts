@@ -3,14 +3,22 @@ import { LoggerService } from "../logger/logger.service";
 import * as cheerio from "cheerio";
 import { VisaType } from "./enum/VisaType.enum";
 import { ScrapedData, VisaInterface } from "./type/VisaInterface";
+import countries from "world-countries";
 
 @Injectable()
 export class ScraperService {
   private readonly logger = new LoggerService(ScraperService.name);
 
-  async scrape(country: string) {
-    this.logger.log("Scraping data");
-    const scrapedData = await this.scrapeWikipediaVisaRequirements(country);
+  async scrape(countryCd: string) {
+    const countryData = countries.find((c) => c.cca2 === countryCd);
+    if (!countryData) {
+      this.logger.error(`Country not found: ${countryCd}`);
+      return [];
+    }
+    this.logger.log(`Scraping data for ${countryData.name.common}`);
+    const scrapedData = await this.scrapeWikipediaVisaRequirements(
+      countryData.demonyms["eng"]?.m,
+    );
     const convertedData = this.convertToDbFormat(scrapedData);
     return convertedData;
   }

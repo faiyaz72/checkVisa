@@ -6,7 +6,7 @@ export class ScraperController {
   constructor(private readonly scraperService: ScraperService) {}
 
   @Get()
-  scrape(@Query("country") country: string) {
-    return this.scraperService.scrape(country);
+  scrape(@Query("countryCd") countryCd: string) {
+    return this.scraperService.scrape(countryCd);
   }
 }
