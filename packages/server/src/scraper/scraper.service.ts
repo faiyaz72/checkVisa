@@ -1,8 +1,12 @@
 import { Injectable } from "@nestjs/common";
 import { LoggerService } from "../logger/logger.service";
 import * as cheerio from "cheerio";
-import { VisaType } from "./enum/VisaType.enum";
-import { LlmRequest, ScrapedData, VisaInterface } from "./type/VisaInterface";
+import {
+  DurationInfo,
+  LlmRequest,
+  ScrapedData,
+  VisaInterface,
+} from "./type/VisaInterface";
 import countries from "world-countries";
 import { LlmService } from "./llm.service";
 import { VisaRequirementType } from "./enum/visa-requirement.enum";
@@ -99,28 +103,28 @@ export class ScraperService {
     return VisaRequirementType.UNKNOWN;
   }
 
-  private extractDuration(text: string): number | null {
-    if (!text) return null;
+  private extractDuration(text: string): DurationInfo | undefined {
+    if (!text) return undefined;
 
     const lowerText = text.toLowerCase();
 
     // Match patterns like "90 days", "3 months", "1 year"
     const daysMatch = lowerText.match(/(\d+)\s*days?/);
     if (daysMatch) {
-      return parseInt(daysMatch[1]);
+      return { maxStayDays: parseInt(daysMatch[1]) };
     }
 
     const monthsMatch = lowerText.match(/(\d+)\s*months?/);
     if (monthsMatch) {
-      return parseInt(monthsMatch[1]) * 30;
+      return { maxStayMonths: parseInt(monthsMatch[1]) };
     }
 
     const yearsMatch = lowerText.match(/(\d+)\s*years?/);
     if (yearsMatch) {
-      return parseInt(yearsMatch[1]) * 365;
+      return { maxStayYears: parseInt(yearsMatch[1]) };
     }
 
-    return null;
+    return undefined;
   }
 
   private async scrapeWikipediaVisaRequirements(

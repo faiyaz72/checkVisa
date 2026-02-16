@@ -9,7 +9,7 @@ export interface LlmRequest {
   originCountryCd: string;
   visaType: VisaRequirementType;
   rawRequirement: string;
-  durationDays: number | null;
+  duration?: DurationInfo;
   allowedStay?: string;
   notes?: string;
   lastVerified: string;

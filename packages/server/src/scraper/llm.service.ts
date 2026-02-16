@@ -23,11 +23,21 @@ export class LlmService {
     const visaRequirements: VisaRequirement[] = [];
     this.logger.log(`Parsing ${request.length} visa requirements`);
 
+    const maxAiRequests = 2;
+    let aiRequests = 0;
+
     for (const req of request) {
       if (req.notes) {
-        // const visaRequirement = await this.sendAiRequest(req);
-        // visaRequirements.push(visaRequirement);
         this.logger.debug(`Notes found for ${req.destinationCountryCd}`);
+        if (aiRequests >= maxAiRequests) {
+          this.logger.debug(
+            `Max AI requests reached, skipping ${req.destinationCountryCd}`,
+          );
+          continue;
+        }
+        const visaRequirement = await this.sendAiRequest(req);
+        visaRequirements.push(visaRequirement);
+        aiRequests++;
       } else {
         visaRequirements.push(this.convertToVisaRequirement(req));
       }
@@ -55,6 +65,7 @@ export class LlmService {
       destinationCountryCd: request.destinationCountryCd,
       originCountryCd: request.originCountryCd,
       primaryRequirement: request.visaType,
+      duration: request.duration,
       lastVerified: request.lastVerified,
       sourceUrl: request.sourceUrl,
       confidence: "high",
