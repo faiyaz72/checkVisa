@@ -298,6 +298,77 @@ Create **`packages/server/tsconfig.json`** (NestJS needs decorator support):
 }
 ```
 
+### 2.5 Debugging (backend)
+
+Bun uses the **WebKit Inspector Protocol**, not Node’s debugger. Use the **Bun for Visual Studio Code** extension so breakpoints work (do **not** use `"type": "node"` in launch configs).
+
+**Install the extension**
+
+- In VS Code/Cursor: Extensions → search **Bun** → install **Bun for Visual Studio Code** (by Oven).
+
+**Launch configuration**
+
+Create **`.vscode/launch.json`**:
+
+```json
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug Server",
+      "type": "bun",
+      "request": "launch",
+      "program": "${workspaceFolder}/packages/server/src/main.ts",
+      "cwd": "${workspaceFolder}/packages/server",
+      "env": {
+        "PORT": "3000"
+      }
+    },
+    {
+      "name": "Debug Server (attach)",
+      "type": "bun",
+      "request": "attach",
+      "url": "ws://127.0.0.1:6499/",
+      "stopOnEntry": false
+    }
+  ]
+}
+```
+
+Optional: create **`.vscode/extensions.json`** so the Bun extension is recommended:
+
+```json
+{
+  "recommendations": ["oven.bun-vscode"]
+}
+```
+
+**Server scripts for debugging**
+
+Add to **`packages/server/package.json`** `scripts`:
+
+```json
+"dev:inspect": "bun --inspect=6499 run src/main.ts",
+"dev:inspect-wait": "bun --inspect-wait=6499 run src/main.ts"
+```
+
+**How to use**
+
+1. **Launch (recommended)**  
+   Set breakpoints in `packages/server/src` (e.g. in a controller or service). In the Run and Debug view, choose **Debug Server** and press F5. Execution will pause at your breakpoints (e.g. when you hit the API).
+
+2. **Attach**  
+   Start the server with `bun run dev:inspect` from `packages/server`, then in Run and Debug choose **Debug Server (attach)** and start it. If the printed URL has a path (e.g. `ws://localhost:6499/abc123`), use that full URL in the attach config’s `url` if the default does not connect.
+
+3. **Web Debugger (fallback)**  
+   If the VS Code debugger is flaky, run from `packages/server`:
+
+   ```bash
+   bun run dev:inspect
+   ```
+
+   Open the URL Bun prints (e.g. `https://debug.bun.sh/#localhost:6499/...`) in your browser and set breakpoints in the Sources tab.
+
 ---
 
 ## 3. Frontend (Vue 3 + Vite + Tailwind)
@@ -439,9 +510,11 @@ bun add -d prisma @types/bun typescript
 mkdir -p src prisma generated
 # Create src/main.ts, src/app.module.ts, src/app.controller.ts, src/app.service.ts, src/prisma.service.ts
 # Create prisma.config.ts, .env.example; edit prisma/schema.prisma (generator output, datasource)
+# Add dev:inspect and dev:inspect-wait scripts to server package.json
 bunx prisma init
 bunx prisma generate
 cd ../..
+# Create .vscode/launch.json (Debug Server, Debug Server attach) and .vscode/extensions.json (Bun recommendation)
 
 # Frontend (from repo root)
 cd packages && bunx create-vite client --template vue-ts && cd ..
@@ -467,9 +540,12 @@ bun run dev
 <project>/
 ├── package.json          # workspaces, dev script
 ├── index.ts              # concurrently(server, client)
+├── .vscode/
+│   ├── launch.json       # Debug Server, Debug Server (attach)
+│   └── extensions.json   # recommends oven.bun-vscode
 ├── packages/
 │   ├── server/
-│   │   ├── package.json
+│   │   ├── package.json  # includes dev:inspect, dev:inspect-wait
 │   │   ├── tsconfig.json
 │   │   ├── prisma.config.ts
 │   │   ├── src/

@@ -7,7 +7,7 @@ const apiError = ref<string | null>(null);
 
 onMounted(async () => {
   try {
-    const { data } = await axios.get<{ message: string }>('/api/hello');
+    const { data } = await axios.get<{ message: string }>('/api/v1/hello');
     apiMessage.value = data.message;
     apiError.value = null;
   } catch (err) {

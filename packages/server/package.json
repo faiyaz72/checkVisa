@@ -6,7 +6,8 @@
     "start": "bun run src/main.ts",
     "dev": "bun --watch run src/main.ts",
     "dev:inspect": "bun --inspect=6499 run src/main.ts",
-    "dev:inspect-wait": "bun --inspect-wait=6499 run src/main.ts"
+    "dev:inspect-wait": "bun --inspect-wait=6499 run src/main.ts",
+    "dev:inspect-watch": "bun --watch --inspect=6499 run src/main.ts"
   },
   "devDependencies": {
     "@types/bun": "latest"
