@@ -1,8 +1,4 @@
-// This is your Prisma schema file,
-// learn more about it in the docs: https://pris.ly/d/prisma-schema
-
-// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
-// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+// prisma/schema.prisma
 
 generator client {
   provider = "prisma-client"
@@ -13,3 +9,140 @@ datasource db {
   provider = "postgresql"
 }
 
+// ============================================
+// ENUMS
+// ============================================
+
+enum VisaRequirementType {
+  VISA_FREE
+  VISA_ON_ARRIVAL
+  ETA
+  EVISA
+  VISA_REQUIRED
+  CONDITIONAL_WAIVER
+  ADMISSION_REFUSED
+  SPECIAL_TERRITORY
+  UNKNOWN
+}
+
+enum EntryType {
+  SINGLE
+  MULTIPLE
+  TRANSIT_ONLY
+  UNSPECIFIED
+}
+
+enum ConditionType {
+  REQUIRES_VISA
+  REQUIRES_DOCUMENT
+  REQUIRES_RESIDENCY
+  REQUIRES_PURPOSE
+  REQUIRES_ARRIVAL_METHOD
+  REQUIRES_DEPARTURE
+  AGE_RESTRICTION
+  INCOME_REQUIREMENT
+  OTHER
+}
+
+enum ConditionLogic {
+  AND
+  OR
+}
+
+enum Confidence {
+  HIGH
+  MEDIUM
+  LOW
+}
+
+// ============================================
+// MAIN TABLES
+// ============================================
+
+model VisaRequirement {
+  id String @id @default(cuid())
+
+  // Just store country codes directly (no FK constraint)
+  originCountryCode      String
+  destinationCountryCode String
+
+  // Core visa information
+  primaryRequirement VisaRequirementType
+  entryType          EntryType           @default(UNSPECIFIED)
+
+  // Duration stored as JSONB (flexible structure)
+  duration Json? // DurationInfo object
+
+  // Additional info
+  processingTime String?
+  restrictions   String[] @default([])
+
+  // Metadata
+  sourceUrl    String?
+  lastVerified DateTime?
+  confidence   Confidence @default(MEDIUM)
+
+  // Relations
+  conditions VisaCondition[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  // Ensure unique combination
+  @@unique([originCountryCode, destinationCountryCode])
+  @@index([originCountryCode])
+  @@index([destinationCountryCode])
+  @@index([primaryRequirement])
+}
+
+model VisaCondition {
+  id String @id @default(cuid())
+
+  // Relation
+  visaRequirementId String
+  visaRequirement   VisaRequirement @relation(fields: [visaRequirementId], references: [id], onDelete: Cascade)
+
+  // Condition details
+  type        ConditionType
+  description String
+  logic       ConditionLogic @default(OR)
+
+  // Documents required (if applicable)
+  requiredDocuments String[] @default([])
+
+  // Duration if this condition is met (stored as JSONB)
+  durationIfMet Json? // DurationInfo object
+
+  // Relations
+  requiredVisas RequiredVisa[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([visaRequirementId])
+  @@index([type])
+}
+
+model RequiredVisa {
+  id String @id @default(cuid())
+
+  // Relation
+  visaConditionId String
+  visaCondition   VisaCondition @relation(fields: [visaConditionId], references: [id], onDelete: Cascade)
+
+  // Required visa details
+  issuingCountry     String
+  issuingCountryCode String? // US, GB, SCHENGEN, etc.
+
+  // Visa requirements
+  visaTypes       String[] @default([]) // ["tourist", "business", "any"]
+  mustBeValid     Boolean  @default(true)
+  mustBeUsed      Boolean  @default(false)
+  minValidityDays Int?
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([visaConditionId])
+  @@index([issuingCountryCode])
+}
