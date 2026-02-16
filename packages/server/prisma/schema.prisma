@@ -82,6 +82,9 @@ model VisaRequirement {
   lastVerified DateTime?
   confidence   Confidence @default(MEDIUM)
 
+  // Cache hash for detecting changes
+  notesHash String?
+
   // Relations
   conditions VisaCondition[]
 
