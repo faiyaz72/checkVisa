@@ -4,10 +4,13 @@ import * as cheerio from "cheerio";
 import { VisaType } from "./enum/VisaType.enum";
 import { ScrapedData, VisaInterface } from "./type/VisaInterface";
 import countries from "world-countries";
+import { LlmService } from "./llm.service";
 
 @Injectable()
 export class ScraperService {
   private readonly logger = new LoggerService(ScraperService.name);
+
+  constructor(private readonly llmService: LlmService) {}
 
   async scrape(countryCd: string) {
     const countryData = countries.find((c) => c.cca2 === countryCd);
@@ -20,7 +23,10 @@ export class ScraperService {
       countryData.demonyms["eng"]?.m,
     );
     const convertedData = this.convertToDbFormat(scrapedData);
-    return convertedData;
+    const parsedData = await this.llmService.parseVisaRequirement(
+      convertedData[111],
+    );
+    return parsedData;
   }
 
   private convertToDbFormat(scrapedData: ScrapedData): any[] {
