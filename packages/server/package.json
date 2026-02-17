@@ -26,6 +26,7 @@
     "cheerio": "^1.2.0",
     "dotenv": "^17.2.3",
     "openai": "^6.22.0",
+    "p-limit": "^7.3.0",
     "pg": "^8.18.0",
     "prisma": "^7.4.0",
     "reflect-metadata": "^0.2.2",

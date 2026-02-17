@@ -1,0 +1,3685 @@
+[
+  {
+    "destinationCountryCd": "AF",
+    "originCountryCd": "BD",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-16T23:53:55.313Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "AL",
+    "originCountryCd": "BD",
+    "primaryRequirement": "CONDITIONAL_WAIVER",
+    "duration": {
+      "maxStayDays": 90,
+      "description": "Maximum stay of 90 days"
+    },
+    "conditions": [
+      {
+        "type": "REQUIRES_VISA",
+        "description": "Visa not required with valid visa from USA, UK, or Schengen countries",
+        "logic": "OR",
+        "requiredVisas": [
+          {
+            "issuingCountry": "United States",
+            "issuingCountryCode": "US",
+            "mustBeValid": true,
+            "mustBeUsed": false
+          },
+          {
+            "issuingCountry": "United Kingdom",
+            "issuingCountryCode": "GB",
+            "mustBeValid": true,
+            "mustBeUsed": false
+          },
+          {
+            "issuingCountry": "Schengen Area",
+            "issuingCountryCode": "SCHENGEN",
+            "mustBeValid": true,
+            "mustBeUsed": false
+          }
+        ],
+        "requiredDocuments": [
+          "valid visa or residence permit from USA, UK, or Schengen countries"
+        ],
+        "durationIfMet": {
+          "maxStayDays": 90,
+          "description": "Maximum stay of 90 days"
+        }
+      }
+    ],
+    "entryType": "UNSPECIFIED",
+    "processingTime": "not specified",
+    "restrictions": [],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "lastVerified": "2026-02-16",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "DZ",
+    "originCountryCd": "BD",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-16T23:53:55.313Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "AD",
+    "originCountryCd": "BD",
+    "primaryRequirement": "CONDITIONAL_WAIVER",
+    "duration": {
+      "maxStayDays": 90,
+      "description": "Up to 90 days"
+    },
+    "conditions": [
+      {
+        "type": "REQUIRES_RESIDENCY",
+        "description": "Visa not required for Schengen residence card holders",
+        "logic": "OR",
+        "requiredVisas": [],
+        "requiredDocuments": [],
+        "durationIfMet": {
+          "maxStayDays": 90,
+          "description": "Up to 90 days"
+        }
+      }
+    ],
+    "entryType": "SINGLE",
+    "processingTime": "not specified",
+    "restrictions": [],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "lastVerified": "2026-02-16",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "AO",
+    "originCountryCd": "BD",
+    "primaryRequirement": "EVISA",
+    "lastVerified": "2026-02-16T23:53:55.313Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "AG",
+    "originCountryCd": "BD",
+    "primaryRequirement": "VISA_FREE",
+    "duration": {
+      "maxStayDays": 30,
+      "description": "Up to 30 days"
+    },
+    "conditions": [
+      {
+        "type": "OTHER",
+        "description": "Visa waiver fee of 100 USD applies",
+        "logic": "AND",
+        "requiredVisas": [],
+        "requiredDocuments": [],
+        "durationIfMet": {
+          "maxStayDays": 30,
+          "description": "Maximum stay of 30 days"
+        }
+      }
+    ],
+    "entryType": "UNSPECIFIED",
+    "processingTime": "",
+    "restrictions": ["Visa waiver fee of 100 USD applies"],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "lastVerified": "2026-02-16",
+    "confidence": "medium"
+  },
+  {
+    "destinationCountryCd": "AR",
+    "originCountryCd": "BD",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-16T23:53:55.313Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "AM",
+    "originCountryCd": "BD",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-16T23:53:55.313Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "AU",
+    "originCountryCd": "BD",
+    "primaryRequirement": "VISA_REQUIRED",
+    "duration": {
+      "maxStayDays": 0,
+      "description": "No maximum stay specified"
+    },
+    "conditions": [
+      {
+        "type": "REQUIRES_VISA",
+        "description": "Online Visitor e600 visa required",
+        "logic": "AND",
+        "requiredVisas": [],
+        "requiredDocuments": ["Online Visitor e600 visa"],
+        "durationIfMet": {
+          "maxStayDays": 0,
+          "description": "No specific duration specified"
+        }
+      }
+    ],
+    "entryType": "UNSPECIFIED",
+    "processingTime": "Not specified",
+    "restrictions": [],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "lastVerified": "2026-02-16",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "AT",
+    "originCountryCd": "BD",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-16T23:53:55.313Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "AZ",
+    "originCountryCd": "BD",
+    "primaryRequirement": "VISA_ON_ARRIVAL",
+    "duration": {
+      "maxStayDays": 90,
+      "description": "Up to 90 days"
+    },
+    "conditions": [
+      {
+        "type": "REQUIRES_VISA",
+        "description": "Visa on arrival for valid residence permit holders of GCC countries",
+        "logic": "OR",
+        "requiredVisas": [
+          {
+            "issuingCountry": "Bahrain",
+            "issuingCountryCode": "BH",
+            "mustBeValid": true,
+            "mustBeUsed": false
+          },
+          {
+            "issuingCountry": "Kuwait",
+            "issuingCountryCode": "KW",
+            "mustBeValid": true,
+            "mustBeUsed": false
+          },
+          {
+            "issuingCountry": "Oman",
+            "issuingCountryCode": "OM",
+            "mustBeValid": true,
+            "mustBeUsed": false
+          },
+          {
+            "issuingCountry": "Qatar",
+            "issuingCountryCode": "QA",
+            "mustBeValid": true,
+            "mustBeUsed": false
+          },
+          {
+            "issuingCountry": "Saudi Arabia",
+            "issuingCountryCode": "SA",
+            "mustBeValid": true,
+            "mustBeUsed": false
+          },
+          {
+            "issuingCountry": "United Arab Emirates",
+            "issuingCountryCode": "AE",
+            "mustBeValid": true,
+            "mustBeUsed": false
+          }
+        ],
+        "requiredDocuments": [],
+        "durationIfMet": {
+          "maxStayDays": 90,
+          "description": "Up to 90 days"
+        }
+      },
+      {
+        "type": "REQUIRES_RESIDENCY",
+        "description": "OR valid residence permit from any GCC country",
+        "logic": "OR",
+        "requiredVisas": [],
+        "requiredDocuments": [],
+        "durationIfMet": {
+          "maxStayDays": 90,
+          "description": "Up to 90 days"
+        }
+      }
+    ],
+    "entryType": "UNSPECIFIED",
+    "processingTime": "not specified",
+    "restrictions": [],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "lastVerified": "2026-02-16",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "XX",
+    "originCountryCd": "BD",
+    "primaryRequirement": "VISA_FREE",
+    "lastVerified": "2026-02-16T23:53:55.313Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "BH",
+    "originCountryCd": "BD",
+    "primaryRequirement": "VISA_ON_ARRIVAL",
+    "lastVerified": "2026-02-16T23:53:55.313Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "BB",
+    "originCountryCd": "BD",
+    "primaryRequirement": "VISA_FREE",
+    "lastVerified": "2026-02-16T23:53:55.313Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "BY",
+    "originCountryCd": "BD",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-16T23:53:55.313Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "BE",
+    "originCountryCd": "BD",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-16T23:53:55.313Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "BZ",
+    "originCountryCd": "BD",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-16T23:53:55.313Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "BJ",
+    "originCountryCd": "BD",
+    "primaryRequirement": "VISA_REQUIRED",
+    "duration": {
+      "maxStayDays": 30,
+      "description": "Up to 30 days"
+    },
+    "conditions": [
+      {
+        "type": "REQUIRES_DOCUMENT",
+        "description": "Must have an international vaccination certificate",
+        "logic": "AND",
+        "requiredVisas": [],
+        "requiredDocuments": ["International vaccination certificate"],
+        "durationIfMet": {
+          "maxStayDays": 30,
+          "description": "Stay up to 30 days"
+        }
+      }
+    ],
+    "entryType": "UNSPECIFIED",
+    "processingTime": "",
+    "restrictions": [],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "lastVerified": "2026-02-16",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "BT",
+    "originCountryCd": "BD",
+    "primaryRequirement": "VISA_ON_ARRIVAL",
+    "lastVerified": "2026-02-16T23:53:55.313Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "BO",
+    "originCountryCd": "BD",
+    "primaryRequirement": "UNKNOWN",
+    "lastVerified": "2026-02-16T23:53:55.313Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "BA",
+    "originCountryCd": "BD",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-16T23:53:55.313Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "BW",
+    "originCountryCd": "BD",
+    "primaryRequirement": "EVISA",
+    "lastVerified": "2026-02-16T23:53:55.313Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "BR",
+    "originCountryCd": "BD",
+    "primaryRequirement": "VISA_REQUIRED",
+    "duration": {
+      "maxStayDays": 0,
+      "description": "Visa required"
+    },
+    "conditions": [
+      {
+        "type": "REQUIRES_DOCUMENT",
+        "description": "No visa required for Diplomatic and Official Passport holders",
+        "logic": "OR",
+        "requiredVisas": [],
+        "requiredDocuments": ["Diplomatic Passport", "Official Passport"],
+        "durationIfMet": {
+          "maxStayDays": 0,
+          "description": "No visa required for diplomatic and official passport holders"
+        }
+      }
+    ],
+    "entryType": "UNSPECIFIED",
+    "processingTime": "",
+    "restrictions": [],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "lastVerified": "2026-02-16",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "BN",
+    "originCountryCd": "BD",
+    "primaryRequirement": "VISA_REQUIRED",
+    "duration": {
+      "maxStayDays": 0,
+      "description": "Visa required"
+    },
+    "conditions": [
+      {
+        "type": "REQUIRES_DOCUMENT",
+        "description": "No visa required for Diplomatic and Official Passport holders",
+        "logic": "OR",
+        "requiredVisas": [],
+        "requiredDocuments": ["Diplomatic Passport", "Official Passport"],
+        "durationIfMet": {
+          "maxStayDays": 0,
+          "description": "No visa required for diplomatic and official passport holders"
+        }
+      }
+    ],
+    "entryType": "UNSPECIFIED",
+    "processingTime": "",
+    "restrictions": [],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "lastVerified": "2026-02-16",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "BG",
+    "originCountryCd": "BD",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-16T23:53:55.313Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "BF",
+    "originCountryCd": "BD",
+    "primaryRequirement": "EVISA",
+    "lastVerified": "2026-02-16T23:53:55.313Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "BI",
+    "originCountryCd": "BD",
+    "primaryRequirement": "VISA_ON_ARRIVAL",
+    "duration": {
+      "maxStayDays": 30,
+      "description": "Up to 1 month"
+    },
+    "conditions": [],
+    "entryType": "UNSPECIFIED",
+    "processingTime": "N/A",
+    "restrictions": [
+      "Visa on arrival available for all countries at Bujumbura International Airport and land borders"
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "lastVerified": "2026-02-16",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "KH",
+    "originCountryCd": "BD",
+    "primaryRequirement": "VISA_ON_ARRIVAL",
+    "lastVerified": "2026-02-16T23:53:55.313Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "CM",
+    "originCountryCd": "BD",
+    "primaryRequirement": "EVISA",
+    "lastVerified": "2026-02-16T23:53:55.313Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "CA",
+    "originCountryCd": "BD",
+    "primaryRequirement": "CONDITIONAL_WAIVER",
+    "duration": {
+      "maxStayDays": 180,
+      "description": "Up to 180 days"
+    },
+    "conditions": [
+      {
+        "type": "REQUIRES_RESIDENCY",
+        "description": "Visa not required if holding a permanent residency card from the United States",
+        "logic": "OR",
+        "requiredVisas": [
+          {
+            "issuingCountry": "United States",
+            "issuingCountryCode": "US",
+            "mustBeValid": true,
+            "mustBeUsed": false
+          }
+        ],
+        "requiredDocuments": ["Permanent Residency Card"],
+        "durationIfMet": {
+          "maxStayDays": 180,
+          "description": "Up to 180 days"
+        }
+      }
+    ],
+    "entryType": "UNSPECIFIED",
+    "processingTime": "",
+    "restrictions": [],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "lastVerified": "2026-02-16",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "CV",
+    "originCountryCd": "BD",
+    "primaryRequirement": "VISA_ON_ARRIVAL",
+    "lastVerified": "2026-02-16T23:53:55.313Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "CF",
+    "originCountryCd": "BD",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-16T23:53:55.313Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "TD",
+    "originCountryCd": "BD",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-16T23:53:55.313Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "CL",
+    "originCountryCd": "BD",
+    "primaryRequirement": "VISA_REQUIRED",
+    "duration": {
+      "maxStayDays": 0,
+      "description": "Visa required"
+    },
+    "conditions": [
+      {
+        "type": "REQUIRES_DOCUMENT",
+        "description": "No visa required for Diplomatic and Official Passport holders",
+        "logic": "OR",
+        "requiredVisas": [],
+        "requiredDocuments": ["Diplomatic Passport", "Official Passport"],
+        "durationIfMet": {
+          "maxStayDays": 0,
+          "description": "No visa required for diplomatic and official passport holders"
+        }
+      }
+    ],
+    "entryType": "UNSPECIFIED",
+    "processingTime": "",
+    "restrictions": [],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "lastVerified": "2026-02-16",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "CN",
+    "originCountryCd": "BD",
+    "primaryRequirement": "VISA_REQUIRED",
+    "duration": {
+      "maxStayDays": 0,
+      "description": "Visa required for general entry; specific port visas and transit options available"
+    },
+    "conditions": [
+      {
+        "type": "REQUIRES_DEPARTURE",
+        "description": "Port visa (visa on arrival) available for certain zones and purposes",
+        "logic": "OR",
+        "requiredVisas": [],
+        "requiredDocuments": [
+          "Invitation letter (for urgent or special zone entry)"
+        ],
+        "durationIfMet": {
+          "maxStayDays": 5,
+          "description": "Up to 5 days for Shenzhen port visa"
+        }
+      },
+      {
+        "type": "REQUIRES_DEPARTURE",
+        "description": "3-day port visa for Zhuhai, Xiamen, or Shenzhen (if arriving at specified ports)",
+        "logic": "OR",
+        "requiredVisas": [],
+        "requiredDocuments": ["Relevant port entry documents"],
+        "durationIfMet": {
+          "maxStayDays": 3,
+          "description": "3 days for Zhuhai, Xiamen, or Shenzhen port visas"
+        }
+      },
+      {
+        "type": "REQUIRES_DEPARTURE",
+        "description": "Visa-free transit for up to 24 hours",
+        "logic": "OR",
+        "requiredVisas": [],
+        "requiredDocuments": [],
+        "durationIfMet": {
+          "maxStayDays": 1,
+          "description": "Up to 24 hours transit"
+        }
+      },
+      {
+        "type": "REQUIRES_VISA",
+        "description": "General visa required for other purposes",
+        "logic": "OR",
+        "requiredVisas": [],
+        "requiredDocuments": [],
+        "durationIfMet": {
+          "maxStayDays": 0,
+          "description": "Standard visa required for general entry"
+        }
+      }
+    ],
+    "entryType": "UNSPECIFIED",
+    "processingTime": "Not specified",
+    "restrictions": [
+      "No visa required for diplomatic and official passport holders",
+      "Port visas intended for specific purposes and urgent needs only",
+      "Duration of stay starts from the next day of arrival"
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "lastVerified": "2026-02-16",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "CO",
+    "originCountryCd": "BD",
+    "primaryRequirement": "UNKNOWN",
+    "lastVerified": "2026-02-16T23:53:55.313Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "KM",
+    "originCountryCd": "BD",
+    "primaryRequirement": "VISA_ON_ARRIVAL",
+    "lastVerified": "2026-02-16T23:53:55.313Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "CG",
+    "originCountryCd": "BD",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-16T23:53:55.313Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "CD",
+    "originCountryCd": "BD",
+    "primaryRequirement": "EVISA",
+    "lastVerified": "2026-02-16T23:53:55.313Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "CR",
+    "originCountryCd": "BD",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-16T23:53:55.313Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "CI",
+    "originCountryCd": "BD",
+    "primaryRequirement": "VISA_REQUIRED",
+    "duration": {
+      "maxStayDays": 90,
+      "description": "Up to 3 months"
+    },
+    "conditions": [
+      {
+        "type": "REQUIRES_ARRIVAL_METHOD",
+        "description": "Must arrive via Port Bouet Airport",
+        "logic": "AND",
+        "requiredVisas": [],
+        "requiredDocuments": [],
+        "durationIfMet": {
+          "maxStayDays": 90,
+          "description": "Up to 3 months"
+        }
+      }
+    ],
+    "entryType": "UNSPECIFIED",
+    "processingTime": "",
+    "restrictions": ["eVisa holders must arrive via Port Bouet Airport"],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "lastVerified": "2026-02-16",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "HR",
+    "originCountryCd": "BD",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-16T23:53:55.313Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "CU",
+    "originCountryCd": "BD",
+    "primaryRequirement": "VISA_REQUIRED",
+    "duration": {
+      "maxStayDays": 0,
+      "description": "Visa required; duration depends on the visa issued"
+    },
+    "conditions": [
+      {
+        "type": "REQUIRES_VISA",
+        "description": "Visa must be obtained in advance in lieu of a tourist card",
+        "logic": "AND",
+        "requiredVisas": [],
+        "requiredDocuments": [
+          "Visa application",
+          "Supporting documents as required by Cuban consulate"
+        ],
+        "durationIfMet": {
+          "maxStayDays": 0,
+          "description": "Dependent on visa issued"
+        }
+      }
+    ],
+    "entryType": "UNSPECIFIED",
+    "processingTime": "Varies, typically several days to weeks",
+    "restrictions": ["Visa must be obtained prior to arrival"],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "lastVerified": "2026-02-16",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "CY",
+    "originCountryCd": "BD",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-16T23:53:55.313Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "CZ",
+    "originCountryCd": "BD",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-16T23:53:55.313Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "DK",
+    "originCountryCd": "BD",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-16T23:53:55.313Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "DJ",
+    "originCountryCd": "BD",
+    "primaryRequirement": "EVISA",
+    "lastVerified": "2026-02-16T23:53:55.313Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "DM",
+    "originCountryCd": "BD",
+    "primaryRequirement": "VISA_FREE",
+    "lastVerified": "2026-02-16T23:53:55.313Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "DO",
+    "originCountryCd": "BD",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-16T23:53:55.313Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "EC",
+    "originCountryCd": "BD",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-16T23:53:55.313Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "EG",
+    "originCountryCd": "BD",
+    "primaryRequirement": "CONDITIONAL_WAIVER",
+    "duration": {
+      "maxStayDays": 0,
+      "description": "No specific maximum stay mentioned"
+    },
+    "conditions": [
+      {
+        "type": "REQUIRES_VISA",
+        "description": "Valid used visas from Japan, Canada, Australia, New Zealand, the United States, the United Kingdom, or European Schengen countries",
+        "logic": "OR",
+        "requiredVisas": [
+          {
+            "issuingCountry": "Japan",
+            "issuingCountryCode": "JP",
+            "mustBeValid": true,
+            "mustBeUsed": true
+          },
+          {
+            "issuingCountry": "Canada",
+            "issuingCountryCode": "CA",
+            "mustBeValid": true,
+            "mustBeUsed": true
+          },
+          {
+            "issuingCountry": "Australia",
+            "issuingCountryCode": "AU",
+            "mustBeValid": true,
+            "mustBeUsed": true
+          },
+          {
+            "issuingCountry": "New Zealand",
+            "issuingCountryCode": "NZ",
+            "mustBeValid": true,
+            "mustBeUsed": true
+          },
+          {
+            "issuingCountry": "United States",
+            "issuingCountryCode": "US",
+            "mustBeValid": true,
+            "mustBeUsed": true
+          },
+          {
+            "issuingCountry": "United Kingdom",
+            "issuingCountryCode": "GB",
+            "mustBeValid": true,
+            "mustBeUsed": true
+          },
+          {
+            "issuingCountry": "Schengen Area",
+            "issuingCountryCode": "SCHENGEN",
+            "mustBeValid": true,
+            "mustBeUsed": true
+          }
+        ],
+        "requiredDocuments": [],
+        "durationIfMet": {
+          "maxStayDays": 0,
+          "description": "No specific maximum stay mentioned"
+        }
+      }
+    ],
+    "entryType": "UNSPECIFIED",
+    "processingTime": "",
+    "restrictions": [],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "lastVerified": "2026-02-16",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "SV",
+    "originCountryCd": "BD",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-16T23:53:55.313Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "GQ",
+    "originCountryCd": "BD",
+    "primaryRequirement": "EVISA",
+    "lastVerified": "2026-02-16T23:53:55.313Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "ER",
+    "originCountryCd": "BD",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-16T23:53:55.313Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "EE",
+    "originCountryCd": "BD",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-16T23:53:55.313Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "SZ",
+    "originCountryCd": "BD",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-16T23:53:55.313Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "ET",
+    "originCountryCd": "BD",
+    "primaryRequirement": "VISA_ON_ARRIVAL",
+    "duration": {
+      "maxStayDays": 90,
+      "description": "Up to 90 days"
+    },
+    "conditions": [
+      {
+        "type": "REQUIRES_DOCUMENT",
+        "description": "eVisa required for most travelers",
+        "logic": "AND",
+        "requiredVisas": [],
+        "requiredDocuments": ["eVisa"],
+        "durationIfMet": {
+          "maxStayDays": 90,
+          "description": "Up to 90 days"
+        }
+      },
+      {
+        "type": "REQUIRES_DEPARTURE",
+        "description": "Arrive via Addis Ababa Bole International Airport",
+        "logic": "AND",
+        "requiredVisas": [],
+        "requiredDocuments": [
+          "Arrival at Addis Ababa Bole International Airport"
+        ],
+        "durationIfMet": {
+          "maxStayDays": 90,
+          "description": "Up to 90 days"
+        }
+      },
+      {
+        "type": "OTHER",
+        "description": "No visa required for Diplomatic and Official Passport holders",
+        "logic": "OR",
+        "requiredVisas": [],
+        "requiredDocuments": ["Diplomatic Passport", "Official Passport"],
+        "durationIfMet": {
+          "maxStayDays": 90,
+          "description": "Up to 90 days"
+        }
+      }
+    ],
+    "entryType": "UNSPECIFIED",
+    "processingTime": "Not specified",
+    "restrictions": [
+      "Arrivals must arrive via Addis Ababa Bole International Airport"
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "lastVerified": "2026-02-16",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "FJ",
+    "originCountryCd": "BD",
+    "primaryRequirement": "VISA_FREE",
+    "lastVerified": "2026-02-16T23:53:55.313Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "FI",
+    "originCountryCd": "BD",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-16T23:53:55.313Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "FR",
+    "originCountryCd": "BD",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-16T23:53:55.313Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "GA",
+    "originCountryCd": "BD",
+    "primaryRequirement": "VISA_REQUIRED",
+    "duration": {
+      "maxStayDays": 0,
+      "description": "No specific duration provided"
+    },
+    "conditions": [
+      {
+        "type": "REQUIRES_VISA",
+        "description": "eVisa required for entry",
+        "logic": "AND",
+        "requiredVisas": [
+          {
+            "issuingCountry": "Bangladesh",
+            "issuingCountryCode": "BD",
+            "mustBeValid": true,
+            "mustBeUsed": false
+          }
+        ],
+        "requiredDocuments": ["eVisa"],
+        "durationIfMet": {
+          "maxStayDays": 0,
+          "description": "No specific duration provided"
+        }
+      }
+    ],
+    "entryType": "UNSPECIFIED",
+    "processingTime": "Not specified",
+    "restrictions": ["Must arrive via Libreville International Airport"],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "lastVerified": "2026-02-16",
+    "confidence": "medium"
+  },
+  {
+    "destinationCountryCd": "XX",
+    "originCountryCd": "BD",
+    "primaryRequirement": "VISA_FREE",
+    "lastVerified": "2026-02-16T23:53:55.313Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "XX",
+    "originCountryCd": "BD",
+    "primaryRequirement": "CONDITIONAL_WAIVER",
+    "duration": {
+      "maxStayDays": 15,
+      "description": "Up to 15 days"
+    },
+    "conditions": [
+      {
+        "type": "REQUIRES_VISA",
+        "description": "e-Visa available for holders of a valid Schengen visa, visa from OECD countries, or residence permit of Schengen, OECD, or UAE",
+        "logic": "OR",
+        "requiredVisas": [
+          {
+            "issuingCountry": "Schengen Area",
+            "issuingCountryCode": "SCHENGEN",
+            "mustBeValid": true,
+            "mustBeUsed": false
+          },
+          {
+            "issuingCountry": "Any OECD member country",
+            "issuingCountryCode": "OECD",
+            "mustBeValid": true,
+            "mustBeUsed": false
+          },
+          {
+            "issuingCountry": "United Arab Emirates",
+            "issuingCountryCode": "AE",
+            "mustBeValid": true,
+            "mustBeUsed": false
+          }
+        ],
+        "requiredDocuments": [
+          "Valid Schengen visa",
+          "Valid OECD visa",
+          "Valid residence permit of Schengen/OECD/UAE"
+        ],
+        "durationIfMet": {
+          "maxStayDays": 15,
+          "description": "Up to 15 days"
+        }
+      },
+      {
+        "type": "REQUIRES_RESIDENCY",
+        "description": "Visa on arrival for valid residence permit holders of GCC countries (Bahrain, Kuwait, Oman, Qatar, Saudi Arabia, UAE)",
+        "logic": "OR",
+        "requiredVisas": [
+          {
+            "issuingCountry": "Bahrain",
+            "issuingCountryCode": "BH",
+            "mustBeValid": true,
+            "mustBeUsed": false
+          },
+          {
+            "issuingCountry": "Kuwait",
+            "issuingCountryCode": "KW",
+            "mustBeValid": true,
+            "mustBeUsed": false
+          },
+          {
+            "issuingCountry": "Oman",
+            "issuingCountryCode": "OM",
+            "mustBeValid": true,
+            "mustBeUsed": false
+          },
+          {
+            "issuingCountry": "Qatar",
+            "issuingCountryCode": "QA",
+            "mustBeValid": true,
+            "mustBeUsed": false
+          },
+          {
+            "issuingCountry": "Saudi Arabia",
+            "issuingCountryCode": "SA",
+            "mustBeValid": true,
+            "mustBeUsed": false
+          },
+          {
+            "issuingCountry": "United Arab Emirates",
+            "issuingCountryCode": "AE",
+            "mustBeValid": true,
+            "mustBeUsed": false
+          }
+        ],
+        "requiredDocuments": ["Valid residence permit of GCC countries"],
+        "durationIfMet": {
+          "maxStayDays": 15,
+          "description": "Up to 15 days"
+        }
+      }
+    ],
+    "entryType": "UNSPECIFIED",
+    "processingTime": "Not specified",
+    "restrictions": [],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "lastVerified": "2026-02-16",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "DE",
+    "originCountryCd": "BD",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-16T23:53:55.313Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "GH",
+    "originCountryCd": "BD",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-16T23:53:55.313Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "GR",
+    "originCountryCd": "BD",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-16T23:53:55.313Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "GD",
+    "originCountryCd": "BD",
+    "primaryRequirement": "VISA_FREE",
+    "lastVerified": "2026-02-16T23:53:55.313Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "GT",
+    "originCountryCd": "BD",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-16T23:53:55.313Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "GN",
+    "originCountryCd": "BD",
+    "primaryRequirement": "EVISA",
+    "lastVerified": "2026-02-16T23:53:55.313Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "GW",
+    "originCountryCd": "BD",
+    "primaryRequirement": "VISA_ON_ARRIVAL",
+    "lastVerified": "2026-02-16T23:53:55.313Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "GY",
+    "originCountryCd": "BD",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-16T23:53:55.313Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "HT",
+    "originCountryCd": "BD",
+    "primaryRequirement": "VISA_FREE",
+    "lastVerified": "2026-02-16T23:53:55.313Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "HN",
+    "originCountryCd": "BD",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-16T23:53:55.313Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "HU",
+    "originCountryCd": "BD",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-16T23:53:55.313Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "IS",
+    "originCountryCd": "BD",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-16T23:53:55.313Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "IN",
+    "originCountryCd": "BD",
+    "primaryRequirement": "VISA_REQUIRED",
+    "duration": {
+      "maxStayDays": 180,
+      "description": "Up to 180 days"
+    },
+    "conditions": [
+      {
+        "type": "REQUIRES_VISA",
+        "description": "No visa required for Diplomatic and Official Passport holders",
+        "logic": "OR",
+        "requiredVisas": [
+          {
+            "issuingCountry": "Bangladesh",
+            "issuingCountryCode": "BD",
+            "mustBeValid": true,
+            "mustBeUsed": false
+          }
+        ],
+        "requiredDocuments": ["Regular or Ordinary Passport"],
+        "durationIfMet": {
+          "maxStayDays": 180,
+          "description": "Up to 180 days"
+        }
+      }
+    ],
+    "entryType": "UNSPECIFIED",
+    "processingTime": "",
+    "restrictions": [
+      "Visa fee waived for regular or ordinary passport holders"
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "lastVerified": "2026-02-16",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "ID",
+    "originCountryCd": "BD",
+    "primaryRequirement": "CONDITIONAL_WAIVER",
+    "duration": {
+      "maxStayDays": 30,
+      "description": "Up to 30 days"
+    },
+    "conditions": [
+      {
+        "type": "REQUIRES_DOCUMENT",
+        "description": "No visa required for diplomatic and official passport holders",
+        "logic": "OR",
+        "requiredVisas": [],
+        "requiredDocuments": ["diplomatic passport", "official passport"],
+        "durationIfMet": {
+          "maxStayDays": 30,
+          "description": "Maximum stay of 30 days"
+        }
+      }
+    ],
+    "entryType": "SINGLE",
+    "processingTime": "not specified",
+    "restrictions": [
+      "No visa required for diplomatic and official passport holders"
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "lastVerified": "2026-02-16",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "IR",
+    "originCountryCd": "BD",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-16T23:53:55.313Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "IQ",
+    "originCountryCd": "BD",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-16T23:53:55.313Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "IE",
+    "originCountryCd": "BD",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-16T23:53:55.313Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "IL",
+    "originCountryCd": "BD",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-16T23:53:55.313Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "IT",
+    "originCountryCd": "BD",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-16T23:53:55.313Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "JM",
+    "originCountryCd": "BD",
+    "primaryRequirement": "VISA_FREE",
+    "lastVerified": "2026-02-16T23:53:55.313Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "JP",
+    "originCountryCd": "BD",
+    "primaryRequirement": "VISA_REQUIRED",
+    "duration": {
+      "maxStayDays": 0,
+      "description": "No specific maximum stay mentioned"
+    },
+    "conditions": [
+      {
+        "type": "REQUIRES_VISA",
+        "description": "Visa required for most travelers",
+        "logic": "OR",
+        "requiredVisas": [],
+        "requiredDocuments": [],
+        "durationIfMet": {
+          "maxStayDays": 0,
+          "description": "No specific duration if visa is required"
+        }
+      },
+      {
+        "type": "REQUIRES_VISA",
+        "description": "No visa required for Diplomatic Passport holders",
+        "logic": "OR",
+        "requiredVisas": [
+          {
+            "issuingCountry": "Bangladesh",
+            "issuingCountryCode": "BD",
+            "mustBeValid": true,
+            "mustBeUsed": false
+          }
+        ],
+        "requiredDocuments": ["Diplomatic Passport"],
+        "durationIfMet": {
+          "maxStayDays": 0,
+          "description": "Duration depends on diplomatic status"
+        }
+      }
+    ],
+    "entryType": "UNSPECIFIED",
+    "processingTime": "",
+    "restrictions": [],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "lastVerified": "2026-02-16",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "JO",
+    "originCountryCd": "BD",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-16T23:53:55.313Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "KZ",
+    "originCountryCd": "BD",
+    "primaryRequirement": "CONDITIONAL_WAIVER",
+    "duration": {
+      "maxStayDays": 30,
+      "description": "Up to 30 days"
+    },
+    "conditions": [
+      {
+        "type": "REQUIRES_DOCUMENT",
+        "description": "No visa required for diplomatic and official passport holders",
+        "logic": "OR",
+        "requiredVisas": [],
+        "requiredDocuments": ["diplomatic passport", "official passport"],
+        "durationIfMet": {
+          "maxStayDays": 30,
+          "description": "Up to 30 days"
+        }
+      }
+    ],
+    "entryType": "UNSPECIFIED",
+    "processingTime": "",
+    "restrictions": [
+      "No visa required for diplomatic and official passport holders"
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "lastVerified": "2026-02-16",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "KE",
+    "originCountryCd": "BD",
+    "primaryRequirement": "EVISA",
+    "duration": {
+      "maxStayDays": 90,
+      "description": "Up to 90 days"
+    },
+    "conditions": [
+      {
+        "type": "REQUIRES_DOCUMENT",
+        "description": "Proof of hotel reservation or invitation letter if staying with friends",
+        "logic": "AND",
+        "requiredVisas": [],
+        "requiredDocuments": [
+          "Proof of hotel reservation",
+          "Invitation letter (if staying with friends)"
+        ],
+        "durationIfMet": {
+          "maxStayDays": 90,
+          "description": "Stay up to 90 days"
+        }
+      },
+      {
+        "type": "REQUIRES_DEPARTURE",
+        "description": "Application must be submitted at least 3 days in advance and up to 90 days prior to travel",
+        "logic": "AND",
+        "requiredVisas": [],
+        "requiredDocuments": [],
+        "durationIfMet": {
+          "maxStayDays": 90,
+          "description": "Application submitted within allowed timeframe"
+        }
+      },
+      {
+        "type": "REQUIRES_DOCUMENT",
+        "description": "Yellow fever vaccination certificate if coming from endemic countries",
+        "logic": "AND",
+        "requiredVisas": [],
+        "requiredDocuments": ["Yellow fever vaccination certificate"],
+        "durationIfMet": {
+          "maxStayDays": 90,
+          "description": "Stay up to 90 days"
+        }
+      }
+    ],
+    "entryType": "UNSPECIFIED",
+    "processingTime": "Not specified",
+    "restrictions": [
+      "Application must be submitted at least 3 days prior to travel",
+      "Application can be submitted up to 90 days prior"
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "lastVerified": "2026-02-16",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "KI",
+    "originCountryCd": "BD",
+    "primaryRequirement": "CONDITIONAL_WAIVER",
+    "duration": {
+      "maxStayDays": 90,
+      "description": "Up to 90 days"
+    },
+    "conditions": [
+      {
+        "type": "AGE_RESTRICTION",
+        "description": "May not exceed 90 days within any 12 month period",
+        "logic": "AND",
+        "requiredVisas": [],
+        "requiredDocuments": [],
+        "durationIfMet": {
+          "maxStayDays": 90,
+          "description": "Maximum stay of 90 days within any 12 month period"
+        }
+      }
+    ],
+    "entryType": "UNSPECIFIED",
+    "processingTime": "",
+    "restrictions": ["Maximum stay of 90 days within any 12 month period"],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "lastVerified": "2026-02-16",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "KP",
+    "originCountryCd": "BD",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-16T23:53:55.313Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "KR",
+    "originCountryCd": "BD",
+    "primaryRequirement": "CONDITIONAL_WAIVER",
+    "duration": {
+      "maxStayDays": 30,
+      "description": "Up to 30 days"
+    },
+    "conditions": [
+      {
+        "type": "REQUIRES_VISA",
+        "description": "Bangladeshi national holding a visa, re-entry permit, or permanent residency in the United States, Canada, Japan, Australia, or New Zealand can enter South Korea without a visa for up to 30 days if purpose of visit is transit",
+        "logic": "OR",
+        "requiredVisas": [
+          {
+            "issuingCountry": "United States",
+            "issuingCountryCode": "US",
+            "mustBeValid": true,
+            "mustBeUsed": false
+          },
+          {
+            "issuingCountry": "Canada",
+            "issuingCountryCode": "CA",
+            "mustBeValid": true,
+            "mustBeUsed": false
+          },
+          {
+            "issuingCountry": "Japan",
+            "issuingCountryCode": "JP",
+            "mustBeValid": true,
+            "mustBeUsed": false
+          },
+          {
+            "issuingCountry": "Australia",
+            "issuingCountryCode": "AU",
+            "mustBeValid": true,
+            "mustBeUsed": false
+          },
+          {
+            "issuingCountry": "New Zealand",
+            "issuingCountryCode": "NZ",
+            "mustBeValid": true,
+            "mustBeUsed": false
+          }
+        ],
+        "requiredDocuments": ["visa", "re-entry permit", "permanent residency"],
+        "durationIfMet": {
+          "maxStayDays": 30,
+          "description": "Up to 30 days for transit purpose"
+        }
+      },
+      {
+        "type": "REQUIRES_DOCUMENT",
+        "description": "No visa required for diplomatic and official passport holders",
+        "logic": "OR",
+        "requiredVisas": [],
+        "requiredDocuments": ["diplomatic passport", "official passport"],
+        "durationIfMet": {
+          "maxStayDays": 30,
+          "description": "Up to 30 days for diplomatic and official passport holders"
+        }
+      },
+      {
+        "type": "REQUIRES_PURPOSE",
+        "description": "Purpose of visit must be transit for the visa waiver condition",
+        "logic": "AND",
+        "requiredVisas": [],
+        "requiredDocuments": [],
+        "durationIfMet": {
+          "maxStayDays": 30,
+          "description": "Up to 30 days for transit purpose"
+        }
+      }
+    ],
+    "entryType": "SINGLE",
+    "processingTime": "not specified",
+    "restrictions": ["Purpose of visit must be transit"],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "lastVerified": "2026-02-16",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "XK",
+    "originCountryCd": "BD",
+    "primaryRequirement": "VISA_REQUIRED",
+    "duration": {
+      "maxStayDays": 0,
+      "description": "No general visa exemption; visa required"
+    },
+    "conditions": [
+      {
+        "type": "REQUIRES_DOCUMENT",
+        "description": "No visa required for diplomatic and official passport holders",
+        "logic": "OR",
+        "requiredVisas": [],
+        "requiredDocuments": ["diplomatic passport", "official passport"],
+        "durationIfMet": {
+          "maxStayDays": 0,
+          "description": "No stay allowed without visa unless diplomatic or official passport"
+        }
+      }
+    ],
+    "entryType": "UNSPECIFIED",
+    "processingTime": "",
+    "restrictions": ["No visa exemption for regular passport holders"],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "lastVerified": "2026-02-16",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "KW",
+    "originCountryCd": "BD",
+    "primaryRequirement": "VISA_REQUIRED",
+    "duration": {
+      "maxStayDays": 0,
+      "description": "No specific maximum stay mentioned"
+    },
+    "conditions": [
+      {
+        "type": "REQUIRES_VISA",
+        "description": "Visa required for general passport holders",
+        "logic": "AND",
+        "requiredVisas": [],
+        "requiredDocuments": [],
+        "durationIfMet": {
+          "maxStayDays": 0,
+          "description": "No specific duration if visa is required"
+        }
+      },
+      {
+        "type": "REQUIRES_VISA",
+        "description": "No visa required for diplomatic and official passport holders",
+        "logic": "OR",
+        "requiredVisas": [
+          {
+            "issuingCountry": "Bangladesh",
+            "issuingCountryCode": "BD",
+            "mustBeValid": true,
+            "mustBeUsed": false
+          }
+        ],
+        "requiredDocuments": [],
+        "durationIfMet": {
+          "maxStayDays": 0,
+          "description": "No specific duration for diplomatic and official passport holders"
+        }
+      }
+    ],
+    "entryType": "UNSPECIFIED",
+    "processingTime": "",
+    "restrictions": [],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "lastVerified": "2026-02-16",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "KG",
+    "originCountryCd": "BD",
+    "primaryRequirement": "VISA_ON_ARRIVAL",
+    "duration": {
+      "maxStayDays": 60,
+      "description": "Up to 60 days"
+    },
+    "conditions": [
+      {
+        "type": "REQUIRES_ARRIVAL_METHOD",
+        "description": "Arrival via Manas International Airport, Osh Airport, or land crossings with China, Kazakhstan, Tajikistan, or Uzbekistan",
+        "logic": "OR",
+        "requiredVisas": [],
+        "requiredDocuments": [],
+        "durationIfMet": {
+          "maxStayDays": 60,
+          "description": "Stay up to 60 days"
+        }
+      }
+    ],
+    "entryType": "UNSPECIFIED",
+    "processingTime": "unknown",
+    "restrictions": [],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "lastVerified": "2026-02-16",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "LA",
+    "originCountryCd": "BD",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-16T23:53:55.313Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "LV",
+    "originCountryCd": "BD",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-16T23:53:55.313Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "LB",
+    "originCountryCd": "BD",
+    "primaryRequirement": "VISA_REQUIRED",
+    "duration": {
+      "maxStayDays": 0,
+      "description": "No specific maximum stay mentioned"
+    },
+    "conditions": [
+      {
+        "type": "REQUIRES_VISA",
+        "description": "Visa required for entry",
+        "logic": "AND",
+        "requiredVisas": [],
+        "requiredDocuments": ["Visa"],
+        "durationIfMet": {
+          "maxStayDays": 0,
+          "description": "No specific duration specified"
+        }
+      },
+      {
+        "type": "REQUIRES_DOCUMENT",
+        "description": "Approval from the Immigration department of the General Directorate of General Security (La Surete Generale)",
+        "logic": "AND",
+        "requiredVisas": [],
+        "requiredDocuments": [
+          "Approval from Immigration department of the General Directorate of General Security"
+        ],
+        "durationIfMet": {
+          "maxStayDays": 0,
+          "description": "No specific duration specified"
+        }
+      }
+    ],
+    "entryType": "UNSPECIFIED",
+    "processingTime": "Not specified",
+    "restrictions": [],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "lastVerified": "2026-02-16",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "LS",
+    "originCountryCd": "BD",
+    "primaryRequirement": "VISA_FREE",
+    "lastVerified": "2026-02-16T23:53:55.313Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "LR",
+    "originCountryCd": "BD",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-16T23:53:55.313Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "LY",
+    "originCountryCd": "BD",
+    "primaryRequirement": "ADMISSION_REFUSED",
+    "duration": {
+      "maxStayDays": 0,
+      "description": "No entry allowed"
+    },
+    "conditions": [
+      {
+        "type": "OTHER",
+        "description": "Admission refused since May 2015",
+        "logic": "AND",
+        "requiredVisas": [],
+        "requiredDocuments": [],
+        "durationIfMet": {
+          "maxStayDays": 0,
+          "description": "No entry allowed"
+        }
+      }
+    ],
+    "entryType": "UNSPECIFIED",
+    "processingTime": "",
+    "restrictions": ["No entry allowed"],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "lastVerified": "2026-02-16",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "LI",
+    "originCountryCd": "BD",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-16T23:53:55.313Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "LT",
+    "originCountryCd": "BD",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-16T23:53:55.313Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "LU",
+    "originCountryCd": "BD",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-16T23:53:55.313Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "MG",
+    "originCountryCd": "BD",
+    "primaryRequirement": "VISA_ON_ARRIVAL",
+    "lastVerified": "2026-02-16T23:53:55.313Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "MW",
+    "originCountryCd": "BD",
+    "primaryRequirement": "EVISA",
+    "lastVerified": "2026-02-16T23:53:55.313Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "MY",
+    "originCountryCd": "BD",
+    "primaryRequirement": "CONDITIONAL_WAIVER",
+    "duration": {
+      "maxStayDays": 30,
+      "description": "Up to 30 days"
+    },
+    "conditions": [
+      {
+        "type": "REQUIRES_VISA",
+        "description": "No visa required for Diplomatic and Official Passport holders up to 30 days",
+        "logic": "OR",
+        "requiredVisas": [
+          {
+            "issuingCountry": "Bangladesh",
+            "issuingCountryCode": "BD",
+            "mustBeValid": true,
+            "mustBeUsed": false
+          }
+        ],
+        "requiredDocuments": ["Diplomatic Passport", "Official Passport"],
+        "durationIfMet": {
+          "maxStayDays": 30,
+          "description": "Maximum stay of 30 days"
+        }
+      }
+    ],
+    "entryType": "SINGLE",
+    "processingTime": "",
+    "restrictions": [],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "lastVerified": "2026-02-16",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "MV",
+    "originCountryCd": "BD",
+    "primaryRequirement": "VISA_ON_ARRIVAL",
+    "lastVerified": "2026-02-16T23:53:55.313Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "ML",
+    "originCountryCd": "BD",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-16T23:53:55.313Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "MT",
+    "originCountryCd": "BD",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-16T23:53:55.313Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "MH",
+    "originCountryCd": "BD",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-16T23:53:55.313Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "MR",
+    "originCountryCd": "BD",
+    "primaryRequirement": "VISA_ON_ARRIVAL",
+    "duration": {
+      "maxStayDays": 90,
+      "description": "Up to 90 days"
+    },
+    "conditions": [],
+    "entryType": "SINGLE",
+    "processingTime": "not specified",
+    "restrictions": [],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "lastVerified": "2026-02-16",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "MU",
+    "originCountryCd": "BD",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-16T23:53:55.313Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "MX",
+    "originCountryCd": "BD",
+    "primaryRequirement": "CONDITIONAL_WAIVER",
+    "duration": {
+      "maxStayDays": 180,
+      "description": "Up to 180 days"
+    },
+    "conditions": [
+      {
+        "type": "REQUIRES_RESIDENCY",
+        "description": "Visa not required if holding a permanent residency card from Canada, Chile, Colombia, Japan, United Kingdom, Peru, United States, or Schengen countries",
+        "logic": "OR",
+        "requiredVisas": [
+          {
+            "issuingCountry": "Canada",
+            "issuingCountryCode": "CA",
+            "mustBeValid": true,
+            "mustBeUsed": false
+          },
+          {
+            "issuingCountry": "Chile",
+            "issuingCountryCode": "CL",
+            "mustBeValid": true,
+            "mustBeUsed": false
+          },
+          {
+            "issuingCountry": "Colombia",
+            "issuingCountryCode": "CO",
+            "mustBeValid": true,
+            "mustBeUsed": false
+          },
+          {
+            "issuingCountry": "Japan",
+            "issuingCountryCode": "JP",
+            "mustBeValid": true,
+            "mustBeUsed": false
+          },
+          {
+            "issuingCountry": "United Kingdom",
+            "issuingCountryCode": "GB",
+            "mustBeValid": true,
+            "mustBeUsed": false
+          },
+          {
+            "issuingCountry": "Peru",
+            "issuingCountryCode": "PE",
+            "mustBeValid": true,
+            "mustBeUsed": false
+          },
+          {
+            "issuingCountry": "United States",
+            "issuingCountryCode": "US",
+            "mustBeValid": true,
+            "mustBeUsed": false
+          },
+          {
+            "issuingCountry": "Schengen Area",
+            "issuingCountryCode": "SCHENGEN",
+            "mustBeValid": true,
+            "mustBeUsed": false
+          }
+        ],
+        "requiredDocuments": [],
+        "durationIfMet": {
+          "maxStayDays": 180,
+          "description": "Maximum stay of 180 days"
+        }
+      }
+    ],
+    "entryType": "UNSPECIFIED",
+    "processingTime": "",
+    "restrictions": [],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "lastVerified": "2026-02-16",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "FM",
+    "originCountryCd": "BD",
+    "primaryRequirement": "VISA_FREE",
+    "lastVerified": "2026-02-16T23:53:55.313Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "MD",
+    "originCountryCd": "BD",
+    "primaryRequirement": "VISA_REQUIRED",
+    "duration": {
+      "maxStayDays": 0,
+      "description": "No specific maximum stay mentioned"
+    },
+    "conditions": [
+      {
+        "type": "REQUIRES_VISA",
+        "description": "Citizens holding a residence permit or valid visa issued by EU member states or Schengen Agreement parties can apply for an electronic visa",
+        "logic": "OR",
+        "requiredVisas": [
+          {
+            "issuingCountry": "European Union",
+            "issuingCountryCode": "EU",
+            "mustBeValid": true,
+            "mustBeUsed": false
+          },
+          {
+            "issuingCountry": "Schengen Area",
+            "issuingCountryCode": "SCHENGEN",
+            "mustBeValid": true,
+            "mustBeUsed": false
+          }
+        ],
+        "requiredDocuments": [
+          "Residence permit or valid visa from EU or Schengen countries"
+        ],
+        "durationIfMet": {
+          "maxStayDays": 0,
+          "description": "No specific maximum stay mentioned"
+        }
+      }
+    ],
+    "entryType": "UNSPECIFIED",
+    "processingTime": "",
+    "restrictions": [],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "lastVerified": "2026-02-16",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "MC",
+    "originCountryCd": "BD",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-16T23:53:55.313Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "MN",
+    "originCountryCd": "BD",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-16T23:53:55.313Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "ME",
+    "originCountryCd": "BD",
+    "primaryRequirement": "CONDITIONAL_WAIVER",
+    "duration": {
+      "maxStayDays": 30,
+      "description": "Up to 30 days"
+    },
+    "conditions": [
+      {
+        "type": "REQUIRES_VISA",
+        "description": "Holder of a valid travel document with a valid residence permit or multiple entry visa in Schengen, USA, Australia, Japan, Canada, New Zealand, Ireland, or the UK",
+        "logic": "OR",
+        "requiredVisas": [
+          {
+            "issuingCountry": "Schengen Area",
+            "issuingCountryCode": "SCHENGEN",
+            "mustBeValid": true,
+            "mustBeUsed": false
+          },
+          {
+            "issuingCountry": "United States",
+            "issuingCountryCode": "US",
+            "mustBeValid": true,
+            "mustBeUsed": false
+          },
+          {
+            "issuingCountry": "Australia",
+            "issuingCountryCode": "AU",
+            "mustBeValid": true,
+            "mustBeUsed": false
+          },
+          {
+            "issuingCountry": "Japan",
+            "issuingCountryCode": "JP",
+            "mustBeValid": true,
+            "mustBeUsed": false
+          },
+          {
+            "issuingCountry": "Canada",
+            "issuingCountryCode": "CA",
+            "mustBeValid": true,
+            "mustBeUsed": false
+          },
+          {
+            "issuingCountry": "New Zealand",
+            "issuingCountryCode": "NZ",
+            "mustBeValid": true,
+            "mustBeUsed": false
+          },
+          {
+            "issuingCountry": "Ireland",
+            "issuingCountryCode": "IE",
+            "mustBeValid": true,
+            "mustBeUsed": false
+          },
+          {
+            "issuingCountry": "United Kingdom",
+            "issuingCountryCode": "GB",
+            "mustBeValid": true,
+            "mustBeUsed": false
+          }
+        ],
+        "requiredDocuments": [
+          "Travel document with residence permit or multiple entry visa"
+        ],
+        "durationIfMet": {
+          "maxStayDays": 30,
+          "description": "Stay up to 30 days or until visa expiry if less than 30 days"
+        }
+      },
+      {
+        "type": "REQUIRES_RESIDENCY",
+        "description": "Holder of a valid UAE 10-year residence permit may enter without visa for seven days",
+        "logic": "OR",
+        "requiredVisas": [
+          {
+            "issuingCountry": "United Arab Emirates",
+            "issuingCountryCode": "AE",
+            "mustBeValid": true,
+            "mustBeUsed": false
+          }
+        ],
+        "requiredDocuments": ["Valid UAE residence permit"],
+        "durationIfMet": {
+          "maxStayDays": 7,
+          "description": "Up to 7 days"
+        }
+      }
+    ],
+    "entryType": "UNSPECIFIED",
+    "processingTime": "Not specified",
+    "restrictions": [],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "lastVerified": "2026-02-16",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "MA",
+    "originCountryCd": "BD",
+    "primaryRequirement": "CONDITIONAL_WAIVER",
+    "duration": {
+      "maxStayDays": 90,
+      "description": "Up to 90 days"
+    },
+    "conditions": [
+      {
+        "type": "REQUIRES_VISA",
+        "description": "e-Visa available for holders of valid Schengen, USA, or UK visas or Permanent Resident Cards",
+        "logic": "OR",
+        "requiredVisas": [
+          {
+            "issuingCountry": "Schengen Area",
+            "issuingCountryCode": "SCHENGEN",
+            "mustBeValid": true,
+            "mustBeUsed": false
+          },
+          {
+            "issuingCountry": "United States",
+            "issuingCountryCode": "US",
+            "mustBeValid": true,
+            "mustBeUsed": false
+          },
+          {
+            "issuingCountry": "United Kingdom",
+            "issuingCountryCode": "GB",
+            "mustBeValid": true,
+            "mustBeUsed": false
+          }
+        ],
+        "requiredDocuments": ["Permanent Resident Card"],
+        "durationIfMet": {
+          "maxStayDays": 90,
+          "description": "Up to 90 days"
+        }
+      }
+    ],
+    "entryType": "UNSPECIFIED",
+    "processingTime": "Not specified",
+    "restrictions": [],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "lastVerified": "2026-02-16",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "MZ",
+    "originCountryCd": "BD",
+    "primaryRequirement": "VISA_ON_ARRIVAL",
+    "duration": {
+      "maxStayDays": 30,
+      "description": "Up to 30 days"
+    },
+    "conditions": [
+      {
+        "type": "REQUIRES_ARRIVAL_METHOD",
+        "description": "Visa issued upon arrival after payment at the point of entry",
+        "logic": "AND",
+        "requiredVisas": [],
+        "requiredDocuments": [],
+        "durationIfMet": {
+          "maxStayDays": 30,
+          "description": "Maximum stay of 30 days"
+        }
+      }
+    ],
+    "entryType": "SINGLE",
+    "processingTime": "Visa issued upon arrival after payment",
+    "restrictions": [],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "lastVerified": "2026-02-16",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "MM",
+    "originCountryCd": "BD",
+    "primaryRequirement": "VISA_ON_ARRIVAL",
+    "duration": {
+      "maxStayDays": 28,
+      "description": "Up to 28 days"
+    },
+    "conditions": [
+      {
+        "type": "REQUIRES_VISA",
+        "description": "e-Visa available for tourism only, must arrive via specified airports or land border crossings",
+        "logic": "AND",
+        "requiredVisas": [
+          {
+            "issuingCountry": "Myanmar",
+            "issuingCountryCode": "MM",
+            "mustBeValid": true,
+            "mustBeUsed": true
+          }
+        ],
+        "requiredDocuments": ["eVisa"],
+        "durationIfMet": {
+          "maxStayDays": 28,
+          "description": "28 days"
+        }
+      },
+      {
+        "type": "OTHER",
+        "description": "No visa required for Diplomatic and Official Passport holders up to 90 days",
+        "logic": "OR",
+        "requiredVisas": [
+          {
+            "issuingCountry": "Bangladesh",
+            "issuingCountryCode": "BD",
+            "mustBeValid": true,
+            "mustBeUsed": false
+          }
+        ],
+        "requiredDocuments": ["Diplomatic or Official Passport"],
+        "durationIfMet": {
+          "maxStayDays": 90,
+          "description": "Up to 90 days for diplomatic and official passport holders"
+        }
+      }
+    ],
+    "entryType": "UNSPECIFIED",
+    "processingTime": "Not specified",
+    "restrictions": [
+      "Arrivals via Yangon, Nay Pyi Taw, Mandalay airports or land border crossings with Thailand or India",
+      "Tourism only"
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "lastVerified": "2026-02-16",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "NA",
+    "originCountryCd": "BD",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-16T23:53:55.313Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "NR",
+    "originCountryCd": "BD",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-16T23:53:55.313Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "NP",
+    "originCountryCd": "BD",
+    "primaryRequirement": "VISA_ON_ARRIVAL",
+    "lastVerified": "2026-02-16T23:53:55.313Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "NL",
+    "originCountryCd": "BD",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-16T23:53:55.313Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "NZ",
+    "originCountryCd": "BD",
+    "primaryRequirement": "VISA_REQUIRED",
+    "duration": {
+      "maxStayDays": 0,
+      "description": "No maximum stay specified; indefinite stay possible for certain visa holders"
+    },
+    "conditions": [
+      {
+        "type": "REQUIRES_VISA",
+        "description": "Online Visitor visa required, but holders of Australian Permanent Resident Visa or Resident Return Visa may be granted a Resident Visa on arrival",
+        "logic": "OR",
+        "requiredVisas": [
+          {
+            "issuingCountry": "Australia",
+            "issuingCountryCode": "AU",
+            "mustBeValid": true,
+            "mustBeUsed": false
+          }
+        ],
+        "requiredDocuments": ["Online Visitor visa application"],
+        "durationIfMet": {
+          "maxStayDays": 0,
+          "description": "Indefinite stay permitted for eligible visa holders"
+        }
+      },
+      {
+        "type": "REQUIRES_ARRIVAL_METHOD",
+        "description": "On arrival for eligible Australian visa holders under Trans-Tasman Travel Arrangement",
+        "logic": "OR",
+        "requiredVisas": [
+          {
+            "issuingCountry": "Australia",
+            "issuingCountryCode": "AU",
+            "mustBeValid": true,
+            "mustBeUsed": false
+          }
+        ],
+        "requiredDocuments": [
+          "Character requirements met",
+          "Electronic Travel Authority (ETA)"
+        ],
+        "durationIfMet": {
+          "maxStayDays": 0,
+          "description": "Indefinite stay for eligible visa holders"
+        }
+      }
+    ],
+    "entryType": "UNSPECIFIED",
+    "processingTime": "Not specified",
+    "restrictions": [
+      "Must meet character requirements",
+      "Obtain ETA prior to departure"
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "lastVerified": "2026-02-16",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "NI",
+    "originCountryCd": "BD",
+    "primaryRequirement": "VISA_ON_ARRIVAL",
+    "duration": {
+      "maxStayDays": 30,
+      "description": "Up to 30 days"
+    },
+    "conditions": [
+      {
+        "type": "REQUIRES_VISA",
+        "description": "Visa on arrival if holding a valid visa issued by United States, Canada, or Schengen Member State",
+        "logic": "OR",
+        "requiredVisas": [
+          {
+            "issuingCountry": "United States",
+            "issuingCountryCode": "US",
+            "mustBeValid": true,
+            "mustBeUsed": false
+          },
+          {
+            "issuingCountry": "Canada",
+            "issuingCountryCode": "CA",
+            "mustBeValid": true,
+            "mustBeUsed": false
+          },
+          {
+            "issuingCountry": "Schengen Area",
+            "issuingCountryCode": "SCHENGEN",
+            "mustBeValid": true,
+            "mustBeUsed": false
+          }
+        ],
+        "requiredDocuments": [],
+        "durationIfMet": {
+          "maxStayDays": 30,
+          "description": "Up to 30 days"
+        }
+      }
+    ],
+    "entryType": "UNSPECIFIED",
+    "processingTime": "Not specified",
+    "restrictions": [],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "lastVerified": "2026-02-16",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "NE",
+    "originCountryCd": "BD",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-16T23:53:55.313Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "NG",
+    "originCountryCd": "BD",
+    "primaryRequirement": "EVISA",
+    "lastVerified": "2026-02-16T23:53:55.313Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "MK",
+    "originCountryCd": "BD",
+    "primaryRequirement": "VISA_REQUIRED",
+    "duration": {
+      "maxStayDays": 15,
+      "description": "Up to 15 days"
+    },
+    "conditions": [
+      {
+        "type": "REQUIRES_VISA",
+        "description": "Valid multiple-entry British, American, or Canadian visa inserted in passport",
+        "logic": "OR",
+        "requiredVisas": [
+          {
+            "issuingCountry": "United Kingdom",
+            "issuingCountryCode": "GB",
+            "mustBeValid": true,
+            "mustBeUsed": false
+          },
+          {
+            "issuingCountry": "United States",
+            "issuingCountryCode": "US",
+            "mustBeValid": true,
+            "mustBeUsed": false
+          },
+          {
+            "issuingCountry": "Canada",
+            "issuingCountryCode": "CA",
+            "mustBeValid": true,
+            "mustBeUsed": false
+          }
+        ],
+        "requiredDocuments": [
+          "Valid multiple-entry British visa",
+          "Valid multiple-entry American visa",
+          "Valid multiple-entry Canadian visa"
+        ],
+        "durationIfMet": {
+          "maxStayDays": 15,
+          "description": "Stay up to 15 days with valid visa"
+        }
+      },
+      {
+        "type": "REQUIRES_DOCUMENT",
+        "description": "Approval from the Ministry of Interior",
+        "logic": "AND",
+        "requiredVisas": [],
+        "requiredDocuments": ["Approval from the Ministry of Interior"],
+        "durationIfMet": {
+          "maxStayDays": 15,
+          "description": "Stay up to 15 days with approval"
+        }
+      }
+    ],
+    "entryType": "UNSPECIFIED",
+    "processingTime": "Not specified",
+    "restrictions": [],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "lastVerified": "2026-02-16",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "NO",
+    "originCountryCd": "BD",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-16T23:53:55.313Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "OM",
+    "originCountryCd": "BD",
+    "primaryRequirement": "VISA_ON_ARRIVAL",
+    "duration": {
+      "maxStayDays": 30,
+      "description": "Up to 30 days"
+    },
+    "conditions": [
+      {
+        "type": "REQUIRES_VISA",
+        "description": "Bangladeshi holding a GCC visa of certain categories (managers, sales executives, etc.) are granted a visit visa on arrival if they are coming directly from a GCC country",
+        "logic": "AND",
+        "requiredVisas": [
+          {
+            "issuingCountry": "Gulf Cooperation Council (GCC) countries",
+            "issuingCountryCode": "GCC",
+            "mustBeValid": true,
+            "mustBeUsed": true
+          }
+        ],
+        "requiredDocuments": [],
+        "durationIfMet": {
+          "maxStayDays": 30,
+          "description": "Up to 30 days"
+        }
+      }
+    ],
+    "entryType": "SINGLE",
+    "processingTime": "Not specified",
+    "restrictions": ["Must be coming directly from a GCC country"],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "lastVerified": "2026-02-16",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "PK",
+    "originCountryCd": "BD",
+    "primaryRequirement": "VISA_FREE",
+    "duration": {
+      "maxStayDays": 90,
+      "description": "Up to 90 days"
+    },
+    "conditions": [],
+    "entryType": "UNSPECIFIED",
+    "processingTime": "N/A",
+    "restrictions": ["Issued free of charge"],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "lastVerified": "2026-02-16",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "PW",
+    "originCountryCd": "BD",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-16T23:53:55.313Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "PA",
+    "originCountryCd": "BD",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-16T23:53:55.313Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "PG",
+    "originCountryCd": "BD",
+    "primaryRequirement": "EVISA",
+    "duration": {
+      "maxStayDays": 60,
+      "description": "Up to 60 days"
+    },
+    "conditions": [],
+    "entryType": "UNSPECIFIED",
+    "processingTime": "Not specified",
+    "restrictions": [],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "lastVerified": "2026-02-16",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "PY",
+    "originCountryCd": "BD",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-16T23:53:55.313Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "PE",
+    "originCountryCd": "BD",
+    "primaryRequirement": "VISA_REQUIRED",
+    "duration": {
+      "maxStayDays": 0,
+      "description": "No specific maximum stay information provided"
+    },
+    "conditions": [
+      {
+        "type": "REQUIRES_DOCUMENT",
+        "description": "No visa required for Diplomatic and Official Passport holders",
+        "logic": "OR",
+        "requiredVisas": [],
+        "requiredDocuments": ["Diplomatic Passport", "Official Passport"],
+        "durationIfMet": {
+          "maxStayDays": 0,
+          "description": "No visa required for diplomatic and official passport holders"
+        }
+      }
+    ],
+    "entryType": "UNSPECIFIED",
+    "processingTime": "",
+    "restrictions": [],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "lastVerified": "2026-02-16",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "PH",
+    "originCountryCd": "BD",
+    "primaryRequirement": "CONDITIONAL_WAIVER",
+    "duration": {
+      "maxStayDays": 30,
+      "description": "Up to 30 days"
+    },
+    "conditions": [
+      {
+        "type": "REQUIRES_VISA",
+        "description": "No visa required for Diplomatic and Official Passport holders for up to 30 days",
+        "logic": "OR",
+        "requiredVisas": [
+          {
+            "issuingCountry": "Bangladesh",
+            "issuingCountryCode": "BD",
+            "mustBeValid": false,
+            "mustBeUsed": false
+          }
+        ],
+        "requiredDocuments": ["Diplomatic Passport", "Official Passport"],
+        "durationIfMet": {
+          "maxStayDays": 30,
+          "description": "Up to 30 days"
+        }
+      },
+      {
+        "type": "REQUIRES_VISA",
+        "description": "Residents of the United Arab Emirates may obtain an eVisa",
+        "logic": "OR",
+        "requiredVisas": [
+          {
+            "issuingCountry": "United Arab Emirates",
+            "issuingCountryCode": "AE",
+            "mustBeValid": true,
+            "mustBeUsed": false
+          }
+        ],
+        "requiredDocuments": ["Valid Emirati residence visa"],
+        "durationIfMet": {
+          "maxStayDays": 30,
+          "description": "Up to 30 days"
+        }
+      }
+    ],
+    "entryType": "UNSPECIFIED",
+    "processingTime": "Not specified",
+    "restrictions": [
+      "Diplomatic and Official Passport holders only for the visa exemption"
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "lastVerified": "2026-02-16",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "PL",
+    "originCountryCd": "BD",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-16T23:53:55.313Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "PT",
+    "originCountryCd": "BD",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-16T23:53:55.313Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "QA",
+    "originCountryCd": "BD",
+    "primaryRequirement": "VISA_ON_ARRIVAL",
+    "duration": {
+      "maxStayDays": 30,
+      "description": "Up to 30 days"
+    },
+    "conditions": [],
+    "entryType": "UNSPECIFIED",
+    "processingTime": "N/A",
+    "restrictions": [],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "lastVerified": "2026-02-16",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "RO",
+    "originCountryCd": "BD",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-16T23:53:55.313Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "RU",
+    "originCountryCd": "BD",
+    "primaryRequirement": "VISA_REQUIRED",
+    "duration": {
+      "maxStayDays": 0,
+      "description": "No specific maximum stay mentioned"
+    },
+    "conditions": [
+      {
+        "type": "REQUIRES_VISA",
+        "description": "Visa required for general passport holders",
+        "logic": "AND",
+        "requiredVisas": [],
+        "requiredDocuments": [],
+        "durationIfMet": {
+          "maxStayDays": 0,
+          "description": "No specific duration"
+        }
+      },
+      {
+        "type": "REQUIRES_VISA",
+        "description": "No visa required for Official and Diplomatic passport holders",
+        "logic": "OR",
+        "requiredVisas": [
+          {
+            "issuingCountry": "Bangladesh",
+            "issuingCountryCode": "BD",
+            "mustBeValid": true,
+            "mustBeUsed": false
+          }
+        ],
+        "requiredDocuments": [],
+        "durationIfMet": {
+          "maxStayDays": 0,
+          "description": "No specific duration"
+        }
+      }
+    ],
+    "entryType": "UNSPECIFIED",
+    "processingTime": "",
+    "restrictions": [],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "lastVerified": "2026-02-16",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "RW",
+    "originCountryCd": "BD",
+    "primaryRequirement": "VISA_FREE",
+    "lastVerified": "2026-02-16T23:53:55.313Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "KN",
+    "originCountryCd": "BD",
+    "primaryRequirement": "VISA_FREE",
+    "lastVerified": "2026-02-16T23:53:55.313Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "LC",
+    "originCountryCd": "BD",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-16T23:53:55.313Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "VC",
+    "originCountryCd": "BD",
+    "primaryRequirement": "VISA_FREE",
+    "lastVerified": "2026-02-16T23:53:55.313Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "WS",
+    "originCountryCd": "BD",
+    "primaryRequirement": "VISA_FREE",
+    "lastVerified": "2026-02-16T23:53:55.313Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "SM",
+    "originCountryCd": "BD",
+    "primaryRequirement": "CONDITIONAL_WAIVER",
+    "duration": {
+      "maxStayDays": 90,
+      "description": "Up to 90 days"
+    },
+    "conditions": [
+      {
+        "type": "REQUIRES_VISA",
+        "description": "Visa not required if holding a valid Schengen Visa",
+        "logic": "OR",
+        "requiredVisas": [
+          {
+            "issuingCountry": "Schengen Area",
+            "issuingCountryCode": "SCHENGEN",
+            "mustBeValid": true,
+            "mustBeUsed": false
+          }
+        ],
+        "requiredDocuments": [],
+        "durationIfMet": {
+          "maxStayDays": 90,
+          "description": "Up to 90 days"
+        }
+      }
+    ],
+    "entryType": "UNSPECIFIED",
+    "processingTime": "",
+    "restrictions": [],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "lastVerified": "2026-02-16",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "ST",
+    "originCountryCd": "BD",
+    "primaryRequirement": "EVISA",
+    "lastVerified": "2026-02-16T23:53:55.313Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "SA",
+    "originCountryCd": "BD",
+    "primaryRequirement": "CONDITIONAL_WAIVER",
+    "duration": {
+      "maxStayDays": 30,
+      "description": "Up to 30 days"
+    },
+    "conditions": [
+      {
+        "type": "REQUIRES_VISA",
+        "description": "Visa on Arrival or eVisa available for holders of a valid tourist visa from Schengen countries, USA, UK, or GCC residence visa holders",
+        "logic": "OR",
+        "requiredVisas": [
+          {
+            "issuingCountry": "Schengen Area",
+            "issuingCountryCode": "SCHENGEN",
+            "mustBeValid": true,
+            "mustBeUsed": true
+          },
+          {
+            "issuingCountry": "United States",
+            "issuingCountryCode": "US",
+            "mustBeValid": true,
+            "mustBeUsed": true
+          },
+          {
+            "issuingCountry": "United Kingdom",
+            "issuingCountryCode": "GB",
+            "mustBeValid": true,
+            "mustBeUsed": true
+          },
+          {
+            "issuingCountry": "GCC countries",
+            "issuingCountryCode": "GCC",
+            "mustBeValid": true,
+            "mustBeUsed": true
+          }
+        ],
+        "requiredDocuments": [
+          "Valid tourist visa from Schengen, USA, UK, or GCC residence visa"
+        ],
+        "durationIfMet": {
+          "maxStayDays": 30,
+          "description": "Up to 30 days"
+        }
+      },
+      {
+        "type": "REQUIRES_RESIDENCY",
+        "description": "OR GCC residence permit holders",
+        "logic": "OR",
+        "requiredVisas": [
+          {
+            "issuingCountry": "GCC countries",
+            "issuingCountryCode": "GCC",
+            "mustBeValid": true,
+            "mustBeUsed": true
+          }
+        ],
+        "requiredDocuments": ["GCC residence permit"],
+        "durationIfMet": {
+          "maxStayDays": 30,
+          "description": "Up to 30 days"
+        }
+      }
+    ],
+    "entryType": "UNSPECIFIED",
+    "processingTime": "Not specified",
+    "restrictions": [],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "lastVerified": "2026-02-16",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "SN",
+    "originCountryCd": "BD",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-16T23:53:55.313Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "RS",
+    "originCountryCd": "BD",
+    "primaryRequirement": "CONDITIONAL_WAIVER",
+    "duration": {
+      "maxStayDays": 90,
+      "description": "Up to 90 days"
+    },
+    "conditions": [
+      {
+        "type": "REQUIRES_VISA",
+        "description": "Visa free for valid visa holders or residents of EU member states and the United States",
+        "logic": "OR",
+        "requiredVisas": [
+          {
+            "issuingCountry": "European Union",
+            "issuingCountryCode": "EU",
+            "mustBeValid": true,
+            "mustBeUsed": false
+          },
+          {
+            "issuingCountry": "United States",
+            "issuingCountryCode": "US",
+            "mustBeValid": true,
+            "mustBeUsed": false
+          }
+        ],
+        "requiredDocuments": [],
+        "durationIfMet": {
+          "maxStayDays": 90,
+          "description": "Maximum stay of 90 days"
+        }
+      }
+    ],
+    "entryType": "UNSPECIFIED",
+    "processingTime": "",
+    "restrictions": [],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "lastVerified": "2026-02-16",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "SC",
+    "originCountryCd": "BD",
+    "primaryRequirement": "EVISA",
+    "duration": {
+      "maxStayDays": 90,
+      "description": "Up to 3 months"
+    },
+    "conditions": [
+      {
+        "type": "REQUIRES_DOCUMENT",
+        "description": "Reservation confirmation for stay in Seychelles",
+        "logic": "AND",
+        "requiredVisas": [],
+        "requiredDocuments": [
+          "Reservation confirmation(s) for stay in Seychelles"
+        ],
+        "durationIfMet": {
+          "maxStayDays": 90,
+          "description": "Up to 3 months"
+        }
+      },
+      {
+        "type": "REQUIRES_VISA",
+        "description": "Yellow fever vaccination certificate if coming from endemic countries",
+        "logic": "AND",
+        "requiredVisas": [],
+        "requiredDocuments": ["Yellow fever vaccination certificate"],
+        "durationIfMet": {
+          "maxStayDays": 90,
+          "description": "Up to 3 months"
+        }
+      }
+    ],
+    "entryType": "SINGLE",
+    "processingTime": "Application can be submitted up to 30 days before travel",
+    "restrictions": [
+      "Valid for one journey only, expires once exit the country"
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "lastVerified": "2026-02-16",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "SL",
+    "originCountryCd": "BD",
+    "primaryRequirement": "VISA_ON_ARRIVAL",
+    "lastVerified": "2026-02-16T23:53:55.313Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "SG",
+    "originCountryCd": "BD",
+    "primaryRequirement": "VISA_REQUIRED",
+    "duration": {
+      "maxStayDays": 0,
+      "description": "Visa required"
+    },
+    "conditions": [
+      {
+        "type": "REQUIRES_VISA",
+        "description": "No visa required for diplomatic and official passport holders",
+        "logic": "OR",
+        "requiredVisas": [
+          {
+            "issuingCountry": "Bangladesh",
+            "issuingCountryCode": "BD",
+            "mustBeValid": true,
+            "mustBeUsed": false
+          }
+        ],
+        "requiredDocuments": ["Visa application"],
+        "durationIfMet": {
+          "maxStayDays": 0,
+          "description": "Visa required"
+        }
+      }
+    ],
+    "entryType": "UNSPECIFIED",
+    "processingTime": "Not specified",
+    "restrictions": [
+      "No visa required for diplomatic and official passport holders"
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "lastVerified": "2026-02-16",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "SK",
+    "originCountryCd": "BD",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-16T23:53:55.313Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "SI",
+    "originCountryCd": "BD",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-16T23:53:55.313Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "SB",
+    "originCountryCd": "BD",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-16T23:53:55.313Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "SO",
+    "originCountryCd": "BD",
+    "primaryRequirement": "VISA_ON_ARRIVAL",
+    "duration": {
+      "maxStayDays": 30,
+      "description": "Up to 30 days"
+    },
+    "conditions": [],
+    "entryType": "UNSPECIFIED",
+    "processingTime": "N/A",
+    "restrictions": [],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "lastVerified": "2026-02-16",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "ZA",
+    "originCountryCd": "BD",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-16T23:53:55.313Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "SS",
+    "originCountryCd": "BD",
+    "primaryRequirement": "VISA_REQUIRED",
+    "duration": {
+      "maxStayDays": 30,
+      "description": "Up to 30 days"
+    },
+    "conditions": [
+      {
+        "type": "REQUIRES_DOCUMENT",
+        "description": "Printed visa authorization must be presented at the time of travel",
+        "logic": "AND",
+        "requiredVisas": [],
+        "requiredDocuments": ["Printed visa authorization"],
+        "durationIfMet": {
+          "maxStayDays": 30,
+          "description": "Up to 30 days"
+        }
+      }
+    ],
+    "entryType": "SINGLE",
+    "processingTime": "Not specified",
+    "restrictions": [],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "lastVerified": "2026-02-16",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "ES",
+    "originCountryCd": "BD",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-16T23:53:55.313Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "LK",
+    "originCountryCd": "BD",
+    "primaryRequirement": "VISA_ON_ARRIVAL",
+    "duration": {
+      "maxStayDays": 60,
+      "description": "Up to 60 days"
+    },
+    "conditions": [
+      {
+        "type": "REQUIRES_DOCUMENT",
+        "description": "eVisa or Visa on arrival",
+        "logic": "OR",
+        "requiredVisas": [],
+        "requiredDocuments": ["eVisa", "Visa on arrival"],
+        "durationIfMet": {
+          "maxStayDays": 60,
+          "description": "Maximum stay of 60 days within any 6-month period"
+        }
+      },
+      {
+        "type": "REQUIRES_ARRIVAL_METHOD",
+        "description": "Exemption for transiting from Sri Lankan airports with a 2-day transit period",
+        "logic": "OR",
+        "requiredVisas": [],
+        "requiredDocuments": [],
+        "durationIfMet": {
+          "maxStayDays": 2,
+          "description": "Transit period of 2 days"
+        }
+      }
+    ],
+    "entryType": "UNSPECIFIED",
+    "processingTime": "Not specified",
+    "restrictions": [
+      "Visa fees apply: USD 35 for SAARC countries, USD 75 for non-SAARC; additional USD 18.50 service fee for e-Visa",
+      "Exemption for transit from Sri Lankan airports with a 2-day period"
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "lastVerified": "2026-02-16",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "SD",
+    "originCountryCd": "BD",
+    "primaryRequirement": "ADMISSION_REFUSED",
+    "duration": {
+      "maxStayDays": 0,
+      "description": "Entry and transit are refused for ordinary passport holders unless for specific purposes"
+    },
+    "conditions": [
+      {
+        "type": "REQUIRES_PURPOSE",
+        "description": "Entry permitted only for commercial delegations or students studying at a Sudanese higher education institution with a residence permit",
+        "logic": "OR",
+        "requiredVisas": [],
+        "requiredDocuments": ["Residence permit"],
+        "durationIfMet": {
+          "maxStayDays": 0,
+          "description": "No restriction unless conditions are met"
+        }
+      }
+    ],
+    "entryType": "UNSPECIFIED",
+    "processingTime": "",
+    "restrictions": [
+      "Entry and transit refused for ordinary passport holders unless for specified purposes"
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "lastVerified": "2026-02-16",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "SR",
+    "originCountryCd": "BD",
+    "primaryRequirement": "EVISA",
+    "lastVerified": "2026-02-16T23:53:55.313Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "SE",
+    "originCountryCd": "BD",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-16T23:53:55.313Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "CH",
+    "originCountryCd": "BD",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-16T23:53:55.313Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "SY",
+    "originCountryCd": "BD",
+    "primaryRequirement": "EVISA",
+    "lastVerified": "2026-02-16T23:53:55.313Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "TJ",
+    "originCountryCd": "BD",
+    "primaryRequirement": "EVISA",
+    "lastVerified": "2026-02-16T23:53:55.313Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "TZ",
+    "originCountryCd": "BD",
+    "primaryRequirement": "VISA_ON_ARRIVAL",
+    "duration": {
+      "maxStayDays": 30,
+      "description": "Up to 30 days"
+    },
+    "conditions": [
+      {
+        "type": "REQUIRES_VISA",
+        "description": "Visa on arrival if holding a referral visa",
+        "logic": "AND",
+        "requiredVisas": [
+          {
+            "issuingCountry": "Referral Visa",
+            "issuingCountryCode": "REFERRAL",
+            "mustBeValid": true,
+            "mustBeUsed": false
+          }
+        ],
+        "requiredDocuments": [],
+        "durationIfMet": {
+          "maxStayDays": 30,
+          "description": "Up to 30 days"
+        }
+      }
+    ],
+    "entryType": "UNSPECIFIED",
+    "processingTime": "Not specified",
+    "restrictions": [],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "lastVerified": "2026-02-16",
+    "confidence": "medium"
+  },
+  {
+    "destinationCountryCd": "TH",
+    "originCountryCd": "BD",
+    "primaryRequirement": "CONDITIONAL_WAIVER",
+    "duration": {
+      "maxStayDays": 30,
+      "description": "Up to 30 days"
+    },
+    "conditions": [
+      {
+        "type": "REQUIRES_DOCUMENT",
+        "description": "No visa required for Diplomatic and Official Passport holders",
+        "logic": "OR",
+        "requiredVisas": [],
+        "requiredDocuments": ["Diplomatic Passport", "Official Passport"],
+        "durationIfMet": {
+          "maxStayDays": 30,
+          "description": "Maximum stay of 30 days"
+        }
+      }
+    ],
+    "entryType": "SINGLE",
+    "processingTime": "Not specified",
+    "restrictions": ["Diplomatic and Official Passport holders only"],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "lastVerified": "2026-02-16",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "TL",
+    "originCountryCd": "BD",
+    "primaryRequirement": "VISA_ON_ARRIVAL",
+    "lastVerified": "2026-02-16T23:53:55.313Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "TG",
+    "originCountryCd": "BD",
+    "primaryRequirement": "EVISA",
+    "lastVerified": "2026-02-16T23:53:55.313Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "TO",
+    "originCountryCd": "BD",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-16T23:53:55.313Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "TT",
+    "originCountryCd": "BD",
+    "primaryRequirement": "VISA_FREE",
+    "lastVerified": "2026-02-16T23:53:55.313Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "TN",
+    "originCountryCd": "BD",
+    "primaryRequirement": "VISA_ON_ARRIVAL",
+    "duration": {
+      "maxStayDays": 15,
+      "description": "Up to 15 days"
+    },
+    "conditions": [
+      {
+        "type": "REQUIRES_VISA",
+        "description": "Visa on arrival for valid residence permit holders of GCC countries",
+        "logic": "OR",
+        "requiredVisas": [
+          {
+            "issuingCountry": "Bahrain",
+            "issuingCountryCode": "BH",
+            "mustBeValid": true,
+            "mustBeUsed": false
+          },
+          {
+            "issuingCountry": "Kuwait",
+            "issuingCountryCode": "KW",
+            "mustBeValid": true,
+            "mustBeUsed": false
+          },
+          {
+            "issuingCountry": "Oman",
+            "issuingCountryCode": "OM",
+            "mustBeValid": true,
+            "mustBeUsed": false
+          },
+          {
+            "issuingCountry": "Qatar",
+            "issuingCountryCode": "QA",
+            "mustBeValid": true,
+            "mustBeUsed": false
+          },
+          {
+            "issuingCountry": "Saudi Arabia",
+            "issuingCountryCode": "SA",
+            "mustBeValid": true,
+            "mustBeUsed": false
+          },
+          {
+            "issuingCountry": "United Arab Emirates",
+            "issuingCountryCode": "AE",
+            "mustBeValid": true,
+            "mustBeUsed": false
+          }
+        ],
+        "requiredDocuments": [],
+        "durationIfMet": {
+          "maxStayDays": 15,
+          "description": "Up to 15 days"
+        }
+      },
+      {
+        "type": "REQUIRES_RESIDENCY",
+        "description": "OR valid residence permit from any GCC country",
+        "logic": "OR",
+        "requiredVisas": [],
+        "requiredDocuments": [],
+        "durationIfMet": {
+          "maxStayDays": 15,
+          "description": "Up to 15 days"
+        }
+      }
+    ],
+    "entryType": "UNSPECIFIED",
+    "processingTime": "Not specified",
+    "restrictions": [],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "lastVerified": "2026-02-16",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "XX",
+    "originCountryCd": "BD",
+    "primaryRequirement": "CONDITIONAL_WAIVER",
+    "duration": {
+      "maxStayDays": 180,
+      "description": "Up to 180 days"
+    },
+    "conditions": [
+      {
+        "type": "REQUIRES_VISA",
+        "description": "No visa required for Diplomatic and Official passport holders",
+        "logic": "OR",
+        "requiredVisas": [
+          {
+            "issuingCountry": "Schengen Area",
+            "issuingCountryCode": "SCHENGEN",
+            "mustBeValid": true,
+            "mustBeUsed": true
+          }
+        ],
+        "requiredDocuments": ["valid Schengen visa"],
+        "durationIfMet": {
+          "maxStayDays": 180,
+          "description": "Maximum stay of 180 days"
+        }
+      },
+      {
+        "type": "REQUIRES_VISA",
+        "description": "Valid visa from any OECD member country (e.g., USA, Canada, etc.)",
+        "logic": "OR",
+        "requiredVisas": [
+          {
+            "issuingCountry": "United States",
+            "issuingCountryCode": "US",
+            "mustBeValid": true,
+            "mustBeUsed": true
+          },
+          {
+            "issuingCountry": "Canada",
+            "issuingCountryCode": "CA",
+            "mustBeValid": true,
+            "mustBeUsed": true
+          }
+        ],
+        "requiredDocuments": ["valid visa from OECD country"],
+        "durationIfMet": {
+          "maxStayDays": 180,
+          "description": "Maximum stay of 180 days"
+        }
+      }
+    ],
+    "entryType": "UNSPECIFIED",
+    "processingTime": "N/A",
+    "restrictions": [],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "lastVerified": "2026-02-16",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "TM",
+    "originCountryCd": "BD",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-16T23:53:55.313Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "TV",
+    "originCountryCd": "BD",
+    "primaryRequirement": "VISA_ON_ARRIVAL",
+    "lastVerified": "2026-02-16T23:53:55.313Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "UG",
+    "originCountryCd": "BD",
+    "primaryRequirement": "EVISA",
+    "lastVerified": "2026-02-16T23:53:55.313Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "UA",
+    "originCountryCd": "BD",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-16T23:53:55.313Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "AE",
+    "originCountryCd": "BD",
+    "primaryRequirement": "VISA_REQUIRED",
+    "duration": {
+      "maxStayDays": 0,
+      "description": "No specific maximum stay information provided"
+    },
+    "conditions": [],
+    "entryType": "UNSPECIFIED",
+    "processingTime": "Not specified",
+    "restrictions": [],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "lastVerified": "2026-02-16",
+    "confidence": "medium"
+  },
+  {
+    "destinationCountryCd": "GB",
+    "originCountryCd": "BD",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-16T23:53:55.313Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "US",
+    "originCountryCd": "BD",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-16T23:53:55.313Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "UY",
+    "originCountryCd": "BD",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-16T23:53:55.313Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "UZ",
+    "originCountryCd": "BD",
+    "primaryRequirement": "EVISA",
+    "lastVerified": "2026-02-16T23:53:55.313Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "VU",
+    "originCountryCd": "BD",
+    "primaryRequirement": "VISA_FREE",
+    "lastVerified": "2026-02-16T23:53:55.313Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "VA",
+    "originCountryCd": "BD",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-16T23:53:55.313Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "VE",
+    "originCountryCd": "BD",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-16T23:53:55.313Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "VN",
+    "originCountryCd": "BD",
+    "primaryRequirement": "EVISA",
+    "duration": {
+      "maxStayDays": 90,
+      "description": "Up to 90 days"
+    },
+    "conditions": [
+      {
+        "type": "REQUIRES_VISA",
+        "description": "e-Visa valid for 90 days and multiple entries",
+        "logic": "OR",
+        "requiredVisas": [
+          {
+            "issuingCountry": "Bangladesh",
+            "issuingCountryCode": "BD",
+            "mustBeValid": true,
+            "mustBeUsed": false
+          }
+        ],
+        "requiredDocuments": ["eVisa"],
+        "durationIfMet": {
+          "maxStayDays": 90,
+          "description": "Up to 90 days"
+        }
+      },
+      {
+        "type": "REQUIRES_DEPARTURE",
+        "description": "Traveling directly to Phu Quoc Island allows stay up to 30 days without a visa",
+        "logic": "OR",
+        "requiredVisas": [],
+        "requiredDocuments": [],
+        "durationIfMet": {
+          "maxStayDays": 30,
+          "description": "Up to 30 days on Phu Quoc Island without visa"
+        }
+      },
+      {
+        "type": "OTHER",
+        "description": "No visa required for Diplomatic and Official Passport holders up to 90 days",
+        "logic": "OR",
+        "requiredVisas": [],
+        "requiredDocuments": [],
+        "durationIfMet": {
+          "maxStayDays": 90,
+          "description": "Up to 90 days for Diplomatic and Official Passport holders"
+        }
+      }
+    ],
+    "entryType": "UNSPECIFIED",
+    "processingTime": "not specified",
+    "restrictions": [
+      "Travel directly to Phu Quoc Island for up to 30 days without visa"
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "lastVerified": "2026-02-16",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "YE",
+    "originCountryCd": "BD",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-16T23:53:55.313Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "ZM",
+    "originCountryCd": "BD",
+    "primaryRequirement": "EVISA",
+    "lastVerified": "2026-02-16T23:53:55.313Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "confidence": "high"
+  },
+  {
+    "destinationCountryCd": "ZW",
+    "originCountryCd": "BD",
+    "primaryRequirement": "EVISA",
+    "lastVerified": "2026-02-16T23:53:55.313Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "confidence": "high"
+  }
+]

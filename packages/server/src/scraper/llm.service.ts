@@ -7,6 +7,7 @@ import {
   VISA_REQUIREMENT_RESPONSE_FORMAT,
 } from "./const/llm.const";
 import { LlmRequest, VisaRequirement } from "./type/VisaInterface";
+import pLimit from "p-limit";
 
 @Injectable()
 export class LlmService {
@@ -20,44 +21,61 @@ export class LlmService {
   }
 
   async parseVisaRequirement(request: LlmRequest[]) {
-    const visaRequirements: VisaRequirement[] = [];
     this.logger.log(`Parsing ${request.length} visa requirements`);
+    const limit = pLimit(20);
 
-    const maxAiRequests = 2;
-    let aiRequests = 0;
-
-    for (const req of request) {
-      if (req.notes) {
-        this.logger.debug(`Notes found for ${req.destinationCountryCd}`);
-        if (aiRequests >= maxAiRequests) {
-          this.logger.debug(
-            `Max AI requests reached, skipping ${req.destinationCountryCd}`,
-          );
-          continue;
+    const promises = request.map((req) =>
+      limit(async () => {
+        if (req.notes) {
+          this.logger.debug(`Notes found for ${req.destinationCountryCd}`);
+          return await this.sendAiRequest(req);
+        } else {
+          return this.convertToVisaRequirement(req);
         }
-        const visaRequirement = await this.sendAiRequest(req);
-        visaRequirements.push(visaRequirement);
-        aiRequests++;
-      } else {
-        visaRequirements.push(this.convertToVisaRequirement(req));
-      }
-    }
+      }),
+    );
+
+    const visaRequirements = await Promise.all(promises);
+    this.logger.log(`Processed ${visaRequirements.length} requirements`);
+
     return visaRequirements;
   }
 
-  private async sendAiRequest(rawText: LlmRequest) {
-    const response = await this.openai.responses.create({
-      model: "gpt-4o-mini",
-      temperature: 0.1,
-      input: [
-        { role: "system", content: VISA_PARSING_SYSTEM_PROMPT },
-        { role: "user", content: JSON.stringify(rawText) },
-      ],
-      text: {
-        format: VISA_REQUIREMENT_RESPONSE_FORMAT,
-      },
-    });
-    return JSON.parse(response.output_text) as VisaRequirement;
+  private async sendAiRequest(rawText: LlmRequest): Promise<VisaRequirement> {
+    const maxAttempts = 2;
+    for (let attempt = 1; attempt <= maxAttempts; attempt++) {
+      this.logger.debug(
+        `Sending AI request for ${rawText.destinationCountryCd} (attempt ${attempt}/${maxAttempts})`,
+      );
+      const response = await this.openai.responses.create({
+        model: "gpt-4.1-nano",
+        temperature: 0.1,
+        input: [
+          { role: "system", content: VISA_PARSING_SYSTEM_PROMPT },
+          { role: "user", content: JSON.stringify(rawText) },
+        ],
+        text: {
+          format: VISA_REQUIREMENT_RESPONSE_FORMAT,
+        },
+      });
+      this.logger.debug(
+        `AI response received for ${rawText.destinationCountryCd}`,
+      );
+      try {
+        return JSON.parse(response.output_text) as VisaRequirement;
+      } catch (error) {
+        this.logger.warn(
+          `Error parsing AI response for ${rawText.destinationCountryCd} (attempt ${attempt}/${maxAttempts}): ${error}`,
+        );
+        if (attempt === maxAttempts) {
+          this.logger.error(
+            `All ${maxAttempts} attempts failed for ${rawText.destinationCountryCd}, falling back to convertToVisaRequirement`,
+          );
+          return this.convertToVisaRequirement(rawText);
+        }
+      }
+    }
+    return this.convertToVisaRequirement(rawText);
   }
 
   private convertToVisaRequirement(request: LlmRequest): VisaRequirement {
