@@ -54,6 +54,7 @@ export class LlmService {
           { role: "system", content: VISA_PARSING_SYSTEM_PROMPT },
           { role: "user", content: JSON.stringify(rawText) },
         ],
+        max_output_tokens: 800,
         text: {
           format: VISA_REQUIREMENT_RESPONSE_FORMAT,
         },
@@ -65,7 +66,7 @@ export class LlmService {
         return JSON.parse(response.output_text) as VisaRequirement;
       } catch (error) {
         this.logger.warn(
-          `Error parsing AI response for ${rawText.destinationCountryCd} (attempt ${attempt}/${maxAttempts}): ${error}`,
+          `Error parsing AI response for ${rawText.destinationCountryCd} (attempt ${attempt}/${maxAttempts}): ${error} Response ID: ${response.id}`,
         );
         if (attempt === maxAttempts) {
           this.logger.error(

@@ -185,7 +185,18 @@ Output:
   "confidence": "high"
 }
 
-CRITICAL: Focus heavily on parsing the 'notes' field - this is where all the conditional requirements, visa waivers, and important details are hidden. The preliminary 'visaType' may be incorrect if conditions exist.`;
+CRITICAL: Focus heavily on parsing the 'notes' field - this is where all the conditional requirements, visa waivers, and important details are hidden. The preliminary 'visaType' may be incorrect if conditions exist.
+IMPORTANT - JSON COMPLETENESS:
+- ALWAYS close all JSON objects and arrays properly
+- If you don't have information for a field, OMIT it entirely (don't include empty arrays/objects)
+- Only include fields where you have actual data to provide
+- Ensure the JSON is valid and complete before finishing your response
+- Examples:
+  * If no conditions exist → omit the "conditions" field entirely
+  * If requiredVisas is empty → omit "requiredVisas" from the condition
+  * If no restrictions → omit "restrictions" field
+- NEVER leave arrays or objects unclosed
+- Double-check your closing brackets before ending response`;
 
 export const VISA_REQUIREMENT_RESPONSE_FORMAT = {
   type: "json_schema",
@@ -319,14 +330,17 @@ export const VISA_REQUIREMENT_RESPONSE_FORMAT = {
               description: "Duration allowed if this condition is satisfied",
             },
           },
-          required: [
-            "type",
-            "description",
-            "logic",
-            "requiredVisas",
-            "requiredDocuments",
-            "durationIfMet",
-          ],
+          // ❌ REMOVE THIS - Don't require all nested fields
+          // required: [
+          //   "type",
+          //   "description",
+          //   "logic",
+          //   "requiredVisas",
+          //   "requiredDocuments",
+          //   "durationIfMet",
+          // ],
+          // ✅ REPLACE WITH THIS - Only require essential fields
+          required: ["type", "description"],
           additionalProperties: false,
         },
         description: "Array of special conditions that apply",
@@ -366,13 +380,6 @@ export const VISA_REQUIREMENT_RESPONSE_FORMAT = {
       "destinationCountryCd",
       "originCountryCd",
       "primaryRequirement",
-      "duration",
-      "conditions",
-      "entryType",
-      "processingTime",
-      "restrictions",
-      "sourceUrl",
-      "lastVerified",
       "confidence",
     ],
     additionalProperties: false,
