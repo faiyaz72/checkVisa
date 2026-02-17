@@ -201,7 +201,7 @@ IMPORTANT - JSON COMPLETENESS:
 export const VISA_REQUIREMENT_RESPONSE_FORMAT = {
   type: "json_schema",
   name: "visa_requirement",
-  strict: true,
+  strict: false,
   schema: {
     type: "object",
     properties: {
