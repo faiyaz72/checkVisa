@@ -10,6 +10,7 @@ import {
 import countries from "world-countries";
 import { LlmService } from "./llm.service";
 import { VisaRequirementType } from "./enum/visa-requirement.enum";
+import { manualCountryCodeMapping } from "./const/manualCountryData";
 
 @Injectable()
 export class ScraperService {
@@ -56,13 +57,24 @@ export class ScraperService {
 
   private getCountryCodeByName(countryName: string): string {
     const normalized = countryName.trim().toLowerCase();
+    const manualMatch =
+      manualCountryCodeMapping[
+        normalized as keyof typeof manualCountryCodeMapping
+      ];
+    if (manualMatch) {
+      return manualMatch;
+    }
     const match = countries.find(
       (c) =>
         c.name.common.toLowerCase() === normalized ||
         c.name.official?.toLowerCase() === normalized ||
         c.altSpellings?.some((s) => s.toLowerCase() === normalized),
     );
-    return match?.cca2 ?? "XX";
+    if (!match) {
+      this.logger.error(`Country not found: ${countryName}`);
+      return "XX";
+    }
+    return match.cca2;
   }
 
   private categorizeVisaRequirement(requirement: string): VisaRequirementType {
