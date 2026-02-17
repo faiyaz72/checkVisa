@@ -9,7 +9,7 @@ import {
 } from "./type/VisaInterface";
 import countries from "world-countries";
 import { LlmService } from "./llm.service";
-import { VisaRequirementType } from "./enum/visa-requirement.enum";
+import { VisaRequirementType } from "./enum/VisaRequirement.enum";
 import { manualCountryCodeMapping } from "./const/manualCountryData";
 
 @Injectable()

@@ -2,7 +2,7 @@ import {
   ConditionType,
   EntryType,
   VisaRequirementType,
-} from "../enum/visa-requirement.enum";
+} from "../enum/VisaRequirement.enum";
 
 export interface LlmRequest {
   destinationCountryCd: string;
