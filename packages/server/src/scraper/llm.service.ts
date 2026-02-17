@@ -26,12 +26,15 @@ export class LlmService {
 
     const promises = request.map((req) =>
       limit(async () => {
+        let visaRequirement: VisaRequirement;
         if (req.notes) {
           this.logger.debug(`Notes found for ${req.destinationCountryCd}`);
-          return await this.sendAiRequest(req);
+          visaRequirement = await this.sendAiRequest(req);
         } else {
-          return this.convertToVisaRequirement(req);
+          visaRequirement = this.convertToVisaRequirement(req);
         }
+        visaRequirement.notesHash = req.notesHash;
+        return visaRequirement;
       }),
     );
 

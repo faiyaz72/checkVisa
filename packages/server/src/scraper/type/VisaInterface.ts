@@ -12,6 +12,7 @@ export interface LlmRequest {
   duration?: DurationInfo;
   allowedStay?: string;
   notes?: string;
+  notesHash?: string;
   lastVerified: string;
   sourceUrl: string;
 }
@@ -39,6 +40,7 @@ export interface VisaRequirement {
   entryType?: EntryType;
   processingTime?: string;
   restrictions?: string[];
+  notesHash?: string;
   sourceUrl?: string;
   lastVerified?: string;
   confidence?: "high" | "medium" | "low";

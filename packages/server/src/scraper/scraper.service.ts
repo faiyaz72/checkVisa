@@ -10,7 +10,8 @@ import {
 import countries from "world-countries";
 import { LlmService } from "./llm.service";
 import { VisaRequirementType } from "./enum/VisaRequirement.enum";
-import { manualCountryCodeMapping } from "./const/manualCountryData";
+import { manualCountryCodeMapping } from "./const/ManualCountryData";
+import * as crypto from "crypto";
 
 @Injectable()
 export class ScraperService {
@@ -47,6 +48,10 @@ export class ScraperService {
       ),
       allowedStay: entry.allowedStay,
       notes: entry.notes,
+      notesHash: crypto
+        .createHash("md5")
+        .update(entry.notes?.trim() ?? "")
+        .digest("hex"),
       lastVerified:
         typeof scrapedData.lastUpdated === "string"
           ? scrapedData.lastUpdated
