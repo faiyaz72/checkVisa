@@ -1,0 +1,2 @@
+-- AlterEnum
+ALTER TYPE "ConditionType" ADD VALUE 'CONDITIONAL_WAIVER';

@@ -10,52 +10,6 @@ datasource db {
 }
 
 // ============================================
-// ENUMS
-// ============================================
-
-enum VisaRequirementType {
-  VISA_FREE
-  VISA_ON_ARRIVAL
-  ETA
-  EVISA
-  VISA_REQUIRED
-  CONDITIONAL_WAIVER
-  ADMISSION_REFUSED
-  SPECIAL_TERRITORY
-  UNKNOWN
-}
-
-enum EntryType {
-  SINGLE
-  MULTIPLE
-  TRANSIT_ONLY
-  UNSPECIFIED
-}
-
-enum ConditionType {
-  REQUIRES_VISA
-  REQUIRES_DOCUMENT
-  REQUIRES_RESIDENCY
-  REQUIRES_PURPOSE
-  REQUIRES_ARRIVAL_METHOD
-  REQUIRES_DEPARTURE
-  AGE_RESTRICTION
-  INCOME_REQUIREMENT
-  OTHER
-}
-
-enum ConditionLogic {
-  AND
-  OR
-}
-
-enum Confidence {
-  HIGH
-  MEDIUM
-  LOW
-}
-
-// ============================================
 // MAIN TABLES
 // ============================================
 
@@ -66,9 +20,9 @@ model VisaRequirement {
   originCountryCode      String
   destinationCountryCode String
 
-  // Core visa information
-  primaryRequirement VisaRequirementType
-  entryType          EntryType           @default(UNSPECIFIED)
+  // Core visa information (stored as string, e.g. VISA_REQUIRED, UNSPECIFIED)
+  primaryRequirement String
+  entryType          String @default("UNSPECIFIED")
 
   // Duration stored as JSONB (flexible structure)
   duration Json? // DurationInfo object
@@ -80,7 +34,7 @@ model VisaRequirement {
   // Metadata
   sourceUrl    String?
   lastVerified DateTime?
-  confidence   Confidence @default(MEDIUM)
+  confidence   String @default("MEDIUM")
 
   // Cache hash for detecting changes
   notesHash String?
@@ -105,10 +59,10 @@ model VisaCondition {
   visaRequirementId String
   visaRequirement   VisaRequirement @relation(fields: [visaRequirementId], references: [id], onDelete: Cascade)
 
-  // Condition details
-  type        ConditionType
+  // Condition details (stored as string, e.g. REQUIRES_VISA, OR)
+  type        String
   description String
-  logic       ConditionLogic @default(OR)
+  logic       String @default("OR")
 
   // Documents required (if applicable)
   requiredDocuments String[] @default([])

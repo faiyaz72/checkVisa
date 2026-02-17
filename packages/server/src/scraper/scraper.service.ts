@@ -6,18 +6,26 @@ import {
   LlmRequest,
   ScrapedData,
   VisaInterface,
+  VisaRequirement,
 } from "./type/VisaInterface";
 import countries from "world-countries";
 import { LlmService } from "./llm.service";
 import { VisaRequirementType } from "./enum/VisaRequirement.enum";
 import { manualCountryCodeMapping } from "./const/ManualCountryData";
 import * as crypto from "crypto";
+import * as path from "path";
+import * as fs from "fs/promises";
+import { DbService } from "../db/db.service";
+import { Prisma } from "../../generated/prisma/client";
 
 @Injectable()
 export class ScraperService {
   private readonly logger = new LoggerService(ScraperService.name);
 
-  constructor(private readonly llmService: LlmService) {}
+  constructor(
+    private readonly llmService: LlmService,
+    private readonly dbService: DbService,
+  ) {}
 
   async scrape(countryCd: string) {
     const countryData = countries.find((c) => c.cca2 === countryCd);
@@ -30,8 +38,106 @@ export class ScraperService {
       countryData.demonyms["eng"]?.m,
     );
     const llmRequests = this.convertToLlmRequest(scrapedData, countryCd);
-    const parsedData = await this.llmService.parseVisaRequirement(llmRequests);
-    return parsedData;
+    // TODO: revert to LLM – temporarily load from file to save LLM calls
+    const parsedData = await this.loadParsedDataFromFile("BD-VISA.json");
+    // const parsedData = await this.llmService.parseVisaRequirement(llmRequests);
+
+    return await this.saveVisaRequirements(countryCd, parsedData);
+  }
+
+  async saveVisaRequirements(
+    originCountryCode: string,
+    visaRequirements: VisaRequirement[],
+  ) {
+    this.logger.log(
+      `Saving ${visaRequirements.length} visa requirements for ${originCountryCode}`,
+    );
+
+    return await this.dbService.client.$transaction(
+      async (tx) => {
+        // Step 1: Delete existing
+        const deleted = await tx.visaRequirement.deleteMany({
+          where: { originCountryCode },
+        });
+
+        this.logger.log(`Deleted ${deleted.count} existing requirements`);
+
+        // Step 2: Create new
+        const createPromises = visaRequirements.map((req) =>
+          tx.visaRequirement.create({
+            data: {
+              originCountryCode: req.originCountryCd,
+              destinationCountryCode: req.destinationCountryCd,
+              primaryRequirement: req.primaryRequirement,
+              entryType: req.entryType || "UNSPECIFIED",
+              duration: (req.duration == null
+                ? Prisma.JsonNull
+                : req.duration) as
+                | Prisma.InputJsonValue
+                | typeof Prisma.JsonNull,
+              processingTime: req.processingTime || null,
+              restrictions: req.restrictions || [],
+              sourceUrl: req.sourceUrl || null,
+              lastVerified: req.lastVerified
+                ? new Date(req.lastVerified)
+                : new Date(),
+              confidence: req.confidence,
+              notesHash: req.notesHash || null,
+
+              // Only create conditions if they exist
+              ...(req.conditions &&
+                req.conditions.length > 0 && {
+                  conditions: {
+                    create: req.conditions.map((condition) => ({
+                      type: condition.type,
+                      description: condition.description,
+                      logic: condition.logic || "OR",
+                      requiredDocuments: condition.requiredDocuments || [],
+                      durationIfMet: (condition.durationIfMet == null
+                        ? Prisma.JsonNull
+                        : condition.durationIfMet) as
+                        | Prisma.InputJsonValue
+                        | typeof Prisma.JsonNull,
+
+                      // Only create requiredVisas if they exist
+                      ...(condition.requiredVisas &&
+                        condition.requiredVisas.length > 0 && {
+                          requiredVisas: {
+                            create: condition.requiredVisas.map((visa) => ({
+                              issuingCountry: visa.issuingCountry,
+                              issuingCountryCode:
+                                visa.issuingCountryCode || null,
+                              visaTypes: visa.visaTypes || [],
+                              mustBeValid: visa.mustBeValid ?? true,
+                              mustBeUsed: visa.mustBeUsed ?? false,
+                              minValidityDays: visa.minValidityDays || null,
+                            })),
+                          },
+                        }),
+                    })),
+                  },
+                }),
+            },
+          }),
+        );
+
+        const created = await Promise.all(createPromises);
+
+        this.logger.log(`Successfully created ${created.length} requirements`);
+
+        return { deleted: deleted.count, created: created.length };
+      },
+      { timeout: 60_000 },
+    );
+  }
+
+  /** Temporarily load parsed visa data from a JSON file to avoid LLM calls. */
+  private async loadParsedDataFromFile(
+    filename: string,
+  ): Promise<VisaRequirement[]> {
+    const filePath = path.join(__dirname, filename);
+    const raw = await fs.readFile(filePath, "utf-8");
+    return JSON.parse(raw) as VisaRequirement[];
   }
 
   private convertToLlmRequest(
