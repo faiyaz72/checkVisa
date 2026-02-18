@@ -22,7 +22,7 @@ export class LlmService {
 
   async parseVisaRequirement(request: LlmRequest[]) {
     this.logger.log(`Parsing ${request.length} visa requirements`);
-    const limit = pLimit(10);
+    const limit = pLimit(5);
 
     const promises = request.map((req) =>
       limit(async () => {

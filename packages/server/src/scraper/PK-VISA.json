@@ -1,0 +1,3630 @@
+[
+  {
+    "destinationCountryCd": "AF",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "AL",
+    "originCountryCd": "PK",
+    "primaryRequirement": "CONDITIONAL_WAIVER",
+    "duration": {
+      "maxStayDays": 90,
+      "description": "Up to 90 days"
+    },
+    "conditions": [
+      {
+        "type": "REQUIRES_VISA",
+        "description": "eVisa obtainable at https://e-visa.al/. Passengers must have a printed eVisa confirmation",
+        "acceptedCountries": [],
+        "mustBeValid": true
+      },
+      {
+        "type": "REQUIRES_VISA",
+        "description": "Visa not required for passengers with a valid multiple entry Schengen visa, or residency permit with the condition that the visa has been used previously in one of the countries of the Schengen area",
+        "acceptedCountries": ["SCHENGEN"],
+        "mustBeValid": true
+      },
+      {
+        "type": "REQUIRES_RESIDENCY",
+        "description": "Visa not required for passengers with a valid 10-year UAE residence permit or holders of a multiple entry visa or residency permit for the United States or the United Kingdom",
+        "acceptedCountries": ["AE", "US", "GB"],
+        "mustBeValid": true
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "confidence": "high",
+    "notesHash": "d5e113488d4c774731d06c3c3a90271b"
+  },
+  {
+    "destinationCountryCd": "DZ",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "AD",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "conditions": [
+      {
+        "type": "REQUIRES_DOCUMENT",
+        "description": "Valid passport with two or multiple-entry Schengen visas required for entry, as Andorra has no international airport and can only be accessed via land border with France or Spain. Lawful re-entry via land France or Spain is required.",
+        "acceptedCountries": [],
+        "mustBeValid": true
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "confidence": "high",
+    "notesHash": "fb5c799275b70262ec32669557ae430d"
+  },
+  {
+    "destinationCountryCd": "AO",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "AG",
+    "originCountryCd": "PK",
+    "primaryRequirement": "CONDITIONAL_WAIVER",
+    "duration": {
+      "maxStayDays": 30,
+      "description": "Up to 30 days"
+    },
+    "conditions": [
+      {
+        "type": "REQUIRES_VISA",
+        "description": "30 day visa on arrival for US$100 if holding a valid Schengen visa or residency",
+        "acceptedCountries": ["SCHENGEN"],
+        "mustBeValid": true
+      },
+      {
+        "type": "REQUIRES_VISA",
+        "description": "30 day visa on arrival for US$100 if holding a valid visa or permanent residency from United Kingdom, United States, or Canada",
+        "acceptedCountries": ["GB", "US", "CA"],
+        "mustBeValid": true
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "confidence": "high",
+    "notesHash": "f56f45246b5ab0d8a4f23f53afb73117"
+  },
+  {
+    "destinationCountryCd": "AR",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "AM",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "duration": {
+      "maxStayDays": 180,
+      "description": "Up to 180 days"
+    },
+    "conditions": [
+      {
+        "type": "REQUIRES_VISA",
+        "description": "Visa granted by invitation only by authorities, diplomatic representations, or international organizations. Pakistan nationals with a valid residence permit from the US, EU, Schengen, or GCC countries, valid for at least six months from entry, are exempt from the visa requirement from January 1 to July 1, 2026, and can stay up to 180 days within a one-year period with the physical residence permit card.",
+        "acceptedCountries": [
+          "US",
+          "EU",
+          "SCHENGEN",
+          "SA",
+          "KW",
+          "OM",
+          "QA",
+          "BH",
+          "AE",
+          "SA"
+        ],
+        "mustBeValid": true
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "confidence": "high",
+    "notesHash": "80d0946b74bd19c7db4d9e4c80b2394f"
+  },
+  {
+    "destinationCountryCd": "AU",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "duration": {
+      "maxStayDays": 365,
+      "description": "Up to 12 months"
+    },
+    "conditions": [
+      {
+        "type": "REQUIRES_DOCUMENT",
+        "description": "Online tourist visa available for 150.00 AUD under Visa class: Visitor-600. Applicants may be asked to submit biometrics or further information before visa approval. Visa can be granted for 3, 6, or 12 months.",
+        "acceptedCountries": [],
+        "mustBeValid": true
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "confidence": "high",
+    "notesHash": "24a33948b820cccd99b1d265b6039d2b"
+  },
+  {
+    "destinationCountryCd": "AT",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "AZ",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_ON_ARRIVAL",
+    "duration": {
+      "maxStayDays": 30,
+      "description": "Up to 30 days"
+    },
+    "conditions": [
+      {
+        "type": "REQUIRES_DOCUMENT",
+        "description": "eVisa obtainable at https://evisa.gov.az/en/",
+        "acceptedCountries": [],
+        "mustBeValid": true
+      },
+      {
+        "type": "REQUIRES_RESIDENCY",
+        "description": "Passengers with a residence permit issued by the United Arab Emirates can obtain a visa upon arrival for a maximum of 30 days, provided the passport is valid for at least 123 days and the residence permit for at least 183 days",
+        "acceptedCountries": ["AE"],
+        "mustBeValid": true,
+        "durationIfMet": {
+          "maxStayDays": 30,
+          "description": "Maximum 30 days"
+        }
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "confidence": "high",
+    "notesHash": "e64dfc9f4971708c62fe9eafe63d7d03"
+  },
+  {
+    "destinationCountryCd": "BS",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "confidence": "high",
+    "notesHash": "c105643da08e5996b2a6e35d4c470cad"
+  },
+  {
+    "destinationCountryCd": "BH",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_ON_ARRIVAL",
+    "duration": {
+      "maxStayDays": 14,
+      "description": "Up to 14 days"
+    },
+    "conditions": [
+      {
+        "type": "REQUIRES_VISA",
+        "description": "Visa on arrival for up to 14 days for those in possession of a valid visit visa to UAE, UK, USA, KSA (excluding Hajj & Umrah visa), Schengen, or USA Green Card",
+        "acceptedCountries": ["AE", "GB", "US", "SA", "SCHENGEN"],
+        "mustBeValid": true
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "confidence": "high",
+    "notesHash": "02a157c214bda7d25fa781461483f782"
+  },
+  {
+    "destinationCountryCd": "BD",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "duration": {
+      "maxStayDays": 30,
+      "description": "Up to 30 days"
+    },
+    "conditions": [
+      {
+        "type": "REQUIRES_VISA",
+        "description": "Visa required. Visa application can be completed online and submitted to the nearest Bangladeshi Embassy. Polio vaccine required. Visa on arrival for 30 days may be available to Pakistani nationals who are residents of countries without a Bangladesh diplomatic/consular mission.",
+        "acceptedCountries": [],
+        "mustBeValid": true
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "confidence": "high",
+    "notesHash": "aee3003abd8df65b4605ec79edf20f3a"
+  },
+  {
+    "destinationCountryCd": "BB",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_FREE",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "BY",
+    "originCountryCd": "PK",
+    "primaryRequirement": "CONDITIONAL_WAIVER",
+    "duration": {
+      "maxStayDays": 30,
+      "description": "Up to 30 days"
+    },
+    "conditions": [
+      {
+        "type": "REQUIRES_VISA",
+        "description": "Visa required, but 30 day visa-free access is granted for holders of a valid multi-entry EU or Schengen visa",
+        "acceptedCountries": ["EU", "SCHENGEN"],
+        "mustBeValid": true
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "confidence": "high",
+    "notesHash": "644a6e2a2f6163d46492645892424e07"
+  },
+  {
+    "destinationCountryCd": "BE",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "BZ",
+    "originCountryCd": "PK",
+    "primaryRequirement": "CONDITIONAL_WAIVER",
+    "duration": {
+      "maxStayDays": 90,
+      "description": "Up to 90 days"
+    },
+    "conditions": [
+      {
+        "type": "REQUIRES_RESIDENCY",
+        "description": "Visa not required for permanent residents of USA, Canada, or Schengen member states, or holders of a multiple entry visa to USA and Canada",
+        "acceptedCountries": ["US", "CA", "SCHENGEN"],
+        "mustBeValid": true
+      },
+      {
+        "type": "REQUIRES_VISA",
+        "description": "Visa required unless holding a permanent residency or multiple entry visa to USA or Canada, or a visa from a Schengen member state",
+        "acceptedCountries": ["US", "CA", "SCHENGEN"],
+        "mustBeValid": true
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "confidence": "high",
+    "notesHash": "3194e31ea221737145eecef1be42cf85"
+  },
+  {
+    "destinationCountryCd": "BJ",
+    "originCountryCd": "PK",
+    "primaryRequirement": "EVISA",
+    "duration": {
+      "maxStayDays": 30,
+      "description": "Up to 30 days"
+    },
+    "conditions": [
+      {
+        "type": "REQUIRES_DOCUMENT",
+        "description": "eVisa can be acquired online at https://evisa.bj/. Must have an international vaccination certificate for Yellow fever.",
+        "acceptedCountries": [],
+        "mustBeValid": true
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "confidence": "high",
+    "notesHash": "eb05ddf5b973438d049286ed3347785b"
+  },
+  {
+    "destinationCountryCd": "BT",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "BO",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "conditions": [
+      {
+        "type": "REQUIRES_VISA",
+        "description": "Visa required. Additionally, a yellow fever vaccination certificate is required. Criminal and/or police record issued by the competent authority in the country of origin or last residence is also required.",
+        "acceptedCountries": [],
+        "mustBeValid": true
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "confidence": "high",
+    "notesHash": "e173f7981356219c0d986e87c8538241"
+  },
+  {
+    "destinationCountryCd": "BA",
+    "originCountryCd": "PK",
+    "primaryRequirement": "CONDITIONAL_WAIVER",
+    "duration": {
+      "maxStayDays": 90,
+      "description": "Up to 90 days"
+    },
+    "conditions": [
+      {
+        "type": "REQUIRES_VISA",
+        "description": "Visa not required if holding a two or multiple entry short-stay visa or residence permit issued by a Schengen member or EU state for stays of no more than 90 days",
+        "acceptedCountries": ["SCHENGEN", "EU"],
+        "mustBeValid": true
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "confidence": "high",
+    "notesHash": "3cfcec80abe5ce6e91273444f54e1324"
+  },
+  {
+    "destinationCountryCd": "BW",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_ON_ARRIVAL",
+    "duration": {
+      "maxStayDays": 30,
+      "description": "Up to 1 month"
+    },
+    "conditions": [
+      {
+        "type": "REQUIRES_DOCUMENT",
+        "description": "eVisa obtainable online at https://evisa.gov.bw/. Both Single entry and Multi entry eVisa (3 months) available.",
+        "acceptedCountries": [],
+        "mustBeValid": true
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "confidence": "high",
+    "notesHash": "4c6e911d9d89fa65c0418bda57bc4e9f"
+  },
+  {
+    "destinationCountryCd": "BR",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "BN",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "confidence": "high",
+    "notesHash": "ae3e6c2f94fae5f2700e47d0407ef83c"
+  },
+  {
+    "destinationCountryCd": "BG",
+    "originCountryCd": "PK",
+    "primaryRequirement": "CONDITIONAL_WAIVER",
+    "duration": {
+      "maxStayDays": 90,
+      "description": "Up to 90 days"
+    },
+    "conditions": [
+      {
+        "type": "REQUIRES_VISA",
+        "description": "Visa not required if holding a two or multiple entry short-stay visa issued by a Schengen member state for stays of no more than 90 days",
+        "acceptedCountries": ["SCHENGEN"],
+        "mustBeValid": true
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "confidence": "high",
+    "notesHash": "9bab4acc9af77efbe77a38174925a4a3"
+  },
+  {
+    "destinationCountryCd": "BF",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "conditions": [
+      {
+        "type": "REQUIRES_DOCUMENT",
+        "description": "Transit through Burkina Faso for less than 24 hours does not require a transit visa if continuing journey by the same or first connecting aircraft and not leaving the airport. Yellow fever vaccination required.",
+        "acceptedCountries": [],
+        "mustBeValid": true
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "confidence": "high",
+    "notesHash": "11ade73f10229dc836e14f2af09630b3"
+  },
+  {
+    "destinationCountryCd": "BI",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_ON_ARRIVAL",
+    "duration": {
+      "maxStayDays": 30,
+      "description": "Up to 1 month"
+    },
+    "conditions": [
+      {
+        "type": "REQUIRES_DOCUMENT",
+        "description": "Yellow fever vaccine certificate required",
+        "acceptedCountries": [],
+        "mustBeValid": true
+      },
+      {
+        "type": "REQUIRES_VISA",
+        "description": "Visa on arrival available for all countries at Burundi International Airport and land borders. Pakistani nationals can also apply for a visa in advance at the Burundi consulate in Doha, Dubai, or the nearest embassy.",
+        "acceptedCountries": ["PK"],
+        "mustBeValid": false
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "confidence": "high",
+    "notesHash": "0ef9ee30bf82e643914293c1aa93844d"
+  },
+  {
+    "destinationCountryCd": "KH",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_ON_ARRIVAL",
+    "duration": {
+      "maxStayDays": 30,
+      "description": "Up to 30 days"
+    },
+    "conditions": [
+      {
+        "type": "REQUIRES_DOCUMENT",
+        "description": "eVisa can be obtained online at https://www.evisa.gov.kh/",
+        "acceptedCountries": [],
+        "mustBeValid": true
+      },
+      {
+        "type": "REQUIRES_VISA",
+        "description": "Visa on arrival at border checkpoints not supported by eVisa",
+        "acceptedCountries": [],
+        "mustBeValid": true
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "confidence": "high",
+    "notesHash": "95091e14e4237092631abb3f278b4e53"
+  },
+  {
+    "destinationCountryCd": "CM",
+    "originCountryCd": "PK",
+    "primaryRequirement": "EVISA",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "confidence": "high",
+    "notesHash": "a939c0cc1798ff55b6339b6ab50ddf2c"
+  },
+  {
+    "destinationCountryCd": "CA",
+    "originCountryCd": "PK",
+    "primaryRequirement": "CONDITIONAL_WAIVER",
+    "conditions": [
+      {
+        "type": "REQUIRES_VISA",
+        "description": "Visa required for general entry. Visa on arrival for United States Permanent residence (Green card) holders. All visitors to Canada must submit Electronic Travel Authorization (eTA) when entering Canada via air.",
+        "acceptedCountries": ["US"],
+        "mustBeValid": true
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "confidence": "high",
+    "notesHash": "db97d3343935d11bc79d99b6dd316248"
+  },
+  {
+    "destinationCountryCd": "CV",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_ON_ARRIVAL",
+    "duration": {
+      "maxStayDays": 5,
+      "description": "Up to 5 days"
+    },
+    "conditions": [
+      {
+        "type": "REQUIRES_DOCUMENT",
+        "description": "ETA is required 5 days before departure and can be obtained on EASE website https://www.ease.gov.cv/",
+        "acceptedCountries": [],
+        "mustBeValid": true
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "confidence": "high",
+    "notesHash": "2f1a9bdea6f86f9b5bbb5da047ad5672"
+  },
+  {
+    "destinationCountryCd": "CF",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "TD",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "CL",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "CN",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "conditions": [
+      {
+        "type": "REQUIRES_VISA",
+        "description": "Visa required for entry. Pakistani nationals can have a 24-hour visa-free transit through any international airports of China (except Ürümqi), which allows domestic travel through different airports. For tourism (Type L visa), travelers must join a tourist group of more than 5 people arranged through an authorized Chinese travel agency with an invitation letter.",
+        "acceptedCountries": ["PK"],
+        "mustBeValid": true
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "confidence": "high",
+    "notesHash": "3126e5a843d4c6540bcdfcf20503a702"
+  },
+  {
+    "destinationCountryCd": "CO",
+    "originCountryCd": "PK",
+    "primaryRequirement": "EVISA",
+    "conditions": [
+      {
+        "type": "REQUIRES_DOCUMENT",
+        "description": "eVisa can be obtained online at https://tramitesmre.cancilleria.gov.co/tramites/enlinea/solicitarVisa.xhtml",
+        "acceptedCountries": [],
+        "mustBeValid": true
+      },
+      {
+        "type": "REQUIRES_PURPOSE",
+        "description": "All visitors require an ETA \"Check Mig\" form to be submitted at most 72 hours before departure and within 72 hours of exiting Colombia (Exit visa).",
+        "acceptedCountries": [],
+        "mustBeValid": true
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "confidence": "high",
+    "notesHash": "6bb6971b4d2d8e322570fe17986d1323"
+  },
+  {
+    "destinationCountryCd": "KM",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_ON_ARRIVAL",
+    "duration": {
+      "maxStayDays": 45,
+      "description": "Up to 45 days"
+    },
+    "conditions": [],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "confidence": "high",
+    "notesHash": "5595d50995c3bd8c27ff17cd9b219e3b"
+  },
+  {
+    "destinationCountryCd": "CR",
+    "originCountryCd": "PK",
+    "primaryRequirement": "CONDITIONAL_WAIVER",
+    "duration": {
+      "maxStayDays": 30,
+      "description": "Up to 30 days"
+    },
+    "conditions": [
+      {
+        "type": "REQUIRES_RESIDENCY",
+        "description": "30 day visa free access for permanent residents or multi-entry visa holders to United States or Canada",
+        "acceptedCountries": ["US", "CA"],
+        "mustBeValid": true
+      },
+      {
+        "type": "REQUIRES_VISA",
+        "description": "30 day visa free access for permanent residents, students, or those in possession of a work visa from EU countries, United Kingdom, Switzerland, Norway, or Iceland",
+        "acceptedCountries": ["EU", "GB", "CH", "NO", "IS"],
+        "mustBeValid": true
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "confidence": "high",
+    "notesHash": "24b3608c7371867d60a9bb66cf9b8a4f"
+  },
+  {
+    "destinationCountryCd": "CI",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "conditions": [
+      {
+        "type": "REQUIRES_VISA",
+        "description": "Visa required for entry. eVisa holders must arrive via Félix-Houphouët-Boigny International Airport. Yellow fever vaccine certificate required.",
+        "acceptedCountries": [],
+        "mustBeValid": true
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "confidence": "high",
+    "notesHash": "7aed777503db24344c106d0f2838e2fd"
+  },
+  {
+    "destinationCountryCd": "HR",
+    "originCountryCd": "PK",
+    "primaryRequirement": "CONDITIONAL_WAIVER",
+    "conditions": [
+      {
+        "type": "REQUIRES_VISA",
+        "description": "Visa free entry for holders of a valid multi-entry visa from Bulgaria, Cyprus, or Romania",
+        "acceptedCountries": ["BG", "CY", "RO"],
+        "mustBeValid": true
+      },
+      {
+        "type": "REQUIRES_RESIDENCY",
+        "description": "Visa free entry for holders of a residence permit from Bulgaria, Cyprus, or Romania",
+        "acceptedCountries": ["BG", "CY", "RO"],
+        "mustBeValid": true
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "confidence": "high",
+    "notesHash": "2ddeb6206c5a354205d9794ea8251b19"
+  },
+  {
+    "destinationCountryCd": "CU",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "conditions": [
+      {
+        "type": "REQUIRES_DOCUMENT",
+        "description": "Travelers require an Advanced travel information form (D'VIAJEROS) at https://dviajeros.mitrans.gob.cu/inicio, to be completed 48 hours before entry into Cuba. Medical travel insurance is also required.",
+        "acceptedCountries": [],
+        "mustBeValid": true
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "confidence": "high",
+    "notesHash": "41c0854992f9517c0d816db805c43a9a"
+  },
+  {
+    "destinationCountryCd": "CY",
+    "originCountryCd": "PK",
+    "primaryRequirement": "CONDITIONAL_WAIVER",
+    "duration": {
+      "maxStayDays": 90,
+      "description": "Up to 90 days"
+    },
+    "conditions": [
+      {
+        "type": "REQUIRES_VISA",
+        "description": "Visa not required if holding a two or multiple entry short-stay visa issued by a Schengen member state for stays of no more than 90 days. Visas will NOT be granted to travelers with evidence of past travel (Visa stamps) to the Turkish Republic of Northern Cyprus, or if their itineraries include illegal entries from ports and airports.",
+        "acceptedCountries": ["SCHENGEN"],
+        "mustBeValid": true
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "confidence": "high",
+    "notesHash": "a67673a5561783aa84fef7e77ab03b40"
+  },
+  {
+    "destinationCountryCd": "CZ",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "DK",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "CD",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "conditions": [
+      {
+        "type": "REQUIRES_DOCUMENT",
+        "description": "Vaccination against yellow fever required. Unvaccinated travelers must submit a 'Travelers Registration Form' available at https://inrbcovid.com/index.php/user/home_en",
+        "acceptedCountries": [],
+        "mustBeValid": true
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "confidence": "high",
+    "notesHash": "7b5457176d47d26b1dad1b516691f569"
+  },
+  {
+    "destinationCountryCd": "DJ",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_ON_ARRIVAL",
+    "duration": {
+      "maxStayDays": 90,
+      "description": "Up to 90 days"
+    },
+    "conditions": [
+      {
+        "type": "REQUIRES_DOCUMENT",
+        "description": "Transit visa is not required if you do not leave the airport",
+        "acceptedCountries": [],
+        "mustBeValid": true
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "confidence": "high",
+    "notesHash": "e23308afbf428f4b0fc73c90895df28a"
+  },
+  {
+    "destinationCountryCd": "DM",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_FREE",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "DO",
+    "originCountryCd": "PK",
+    "primaryRequirement": "CONDITIONAL_WAIVER",
+    "duration": {
+      "maxStayDays": 90,
+      "description": "Up to 90 days"
+    },
+    "conditions": [
+      {
+        "type": "REQUIRES_VISA",
+        "description": "Visa not required if holding a valid visa issued by an EU member state, Canada, or the US for stays of no more than 90 days",
+        "acceptedCountries": ["EU", "CA", "US"],
+        "mustBeValid": true
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "confidence": "high",
+    "notesHash": "5d83e40ea02e140304c4666a5ab6aaff"
+  },
+  {
+    "destinationCountryCd": "EC",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "conditions": [
+      {
+        "type": "REQUIRES_DOCUMENT",
+        "description": "Visa required; temporarily suspended due to updating immigration law. Consular services suspended until April 1, 2023. eVisa available on the virtual embassy website at https://www.consuladovirtual.gob.ec/ but currently temporarily unavailable. Yellow fever vaccination certificate required.",
+        "acceptedCountries": [],
+        "mustBeValid": true
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "confidence": "high",
+    "notesHash": "384a9914847b94eab7fc2dba43e3fe2a"
+  },
+  {
+    "destinationCountryCd": "EG",
+    "originCountryCd": "PK",
+    "primaryRequirement": "CONDITIONAL_WAIVER",
+    "duration": {
+      "maxStayDays": 30,
+      "description": "Up to 30 days"
+    },
+    "conditions": [
+      {
+        "type": "REQUIRES_VISA",
+        "description": "Visa on arrival for 30 days for passengers with a valid and used visa issued by Australia, Canada, Japan, New Zealand, USA, United Kingdom, or Schengen Member States",
+        "acceptedCountries": ["AU", "CA", "JP", "NZ", "US", "GB", "SCHENGEN"],
+        "mustBeValid": true
+      },
+      {
+        "type": "REQUIRES_RESIDENCY",
+        "description": "Visa on arrival for up to 30 days for passengers with a residence permit issued by the United Arab Emirates, valid for a minimum of 6 months from the arrival date, with a confirmed return ticket and sufficient funds",
+        "acceptedCountries": ["AE"],
+        "mustBeValid": true
+      },
+      {
+        "type": "OTHER",
+        "description": "A \"Courtesy visa\" on arrival may be available to wives of Egyptian nationals, subject to approval by immigration authorities and not guaranteed. It is highly recommended to obtain a visa or confirmation before traveling.",
+        "acceptedCountries": [],
+        "mustBeValid": false
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "confidence": "high",
+    "notesHash": "aaa3df94d5273bc83ec031046f302f06"
+  },
+  {
+    "destinationCountryCd": "SV",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "GQ",
+    "originCountryCd": "PK",
+    "primaryRequirement": "EVISA",
+    "duration": {
+      "maxStayDays": 90,
+      "description": "Up to 90 days"
+    },
+    "conditions": [
+      {
+        "type": "REQUIRES_DOCUMENT",
+        "description": "eVisa obtainable at https://egonline.vfsevisa.com/gnq/en/on-boarding. Proof of vaccination for Yellow fever is required.",
+        "acceptedCountries": [],
+        "mustBeValid": true
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "confidence": "high",
+    "notesHash": "f17528f33b284dcf08007424ae978e7d"
+  },
+  {
+    "destinationCountryCd": "ER",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "EE",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "SZ",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "ET",
+    "originCountryCd": "PK",
+    "primaryRequirement": "EVISA",
+    "duration": {
+      "maxStayDays": 90,
+      "description": "Up to 90 days"
+    },
+    "conditions": [],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "confidence": "high",
+    "notesHash": "3360b38b77aad5c37fa3a06dd8b49177"
+  },
+  {
+    "destinationCountryCd": "FJ",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "FI",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "FR",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "GA",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "conditions": [
+      {
+        "type": "REQUIRES_DOCUMENT",
+        "description": "eVisa obtainable at https://evisa.dgdi.ga/. Valid only for entry via Leon Mba International Airport in Libreville. Visitors must hold a hotel voucher or letter of invitation issued by the sponsor.",
+        "acceptedCountries": [],
+        "mustBeValid": true
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "confidence": "high",
+    "notesHash": "082b3de8cfe3bb18cc7846aa5090f963"
+  },
+  {
+    "destinationCountryCd": "GM",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_FREE",
+    "duration": {
+      "maxStayDays": 90,
+      "description": "Up to 90 days"
+    },
+    "conditions": [
+      {
+        "type": "REQUIRES_DOCUMENT",
+        "description": "Yellow Fever Vaccination certificate required",
+        "acceptedCountries": [],
+        "mustBeValid": true
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "confidence": "high",
+    "notesHash": "c0e73144f6365115f575b1ddae558fab"
+  },
+  {
+    "destinationCountryCd": "GE",
+    "originCountryCd": "PK",
+    "primaryRequirement": "CONDITIONAL_WAIVER",
+    "conditions": [
+      {
+        "type": "REQUIRES_VISA",
+        "description": "Visa not required for holders of a valid visa or residence permit to Schengen, any OECD member countries, GCC countries, Japan, or Korea. Travel medical insurance is required. For those not eligible for exemption or eVisa, a visa application can be submitted online and an appointment scheduled at the nearest embassy or consulate.",
+        "acceptedCountries": ["SCHENGEN", "OECD", "SA", "JP", "KR"],
+        "mustBeValid": true
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "confidence": "high",
+    "notesHash": "4154f5cbf93e0760db7ab0cb5163d9fd"
+  },
+  {
+    "destinationCountryCd": "DE",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "GH",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "duration": {
+      "maxStayDays": 3,
+      "description": "Up to 3 days"
+    },
+    "conditions": [
+      {
+        "type": "REQUIRES_VISA",
+        "description": "Visa required. Visa applications for Pakistanis are processed in the Ghana mission in Iran. Applications can be started online at https://tehran.ghanagovernmentmission.com/portal/ and passport is to be submitted to the visa processing center in Islamabad or Tehran. Health declaration form required 3 days prior to travel. Yellow fever vaccine certificate required.",
+        "acceptedCountries": ["PK"],
+        "mustBeValid": true
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "confidence": "high",
+    "notesHash": "df74a77298b1c11f9ac8a163c82a436f"
+  },
+  {
+    "destinationCountryCd": "GR",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "conditions": [
+      {
+        "type": "OTHER",
+        "description": "Visa required. Visas will NOT be granted to travelers with evidence of past travel (Visa stamps) to the Turkish Republic of Northern Cyprus.",
+        "acceptedCountries": [],
+        "mustBeValid": true
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "confidence": "high",
+    "notesHash": "c129b0d2a3a07c3373ce944169d0c591"
+  },
+  {
+    "destinationCountryCd": "GD",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "GT",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "GN",
+    "originCountryCd": "PK",
+    "primaryRequirement": "EVISA",
+    "duration": {
+      "maxStayDays": 90,
+      "description": "Up to 90 days"
+    },
+    "conditions": [
+      {
+        "type": "REQUIRES_DOCUMENT",
+        "description": "eVisa obtainable at https://www.paf.gov.gn/visa. Yellow fever vaccine certificate required.",
+        "acceptedCountries": [],
+        "mustBeValid": true
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "confidence": "high",
+    "notesHash": "0f47bfd644b159bd6e5dc9da0a4c1248"
+  },
+  {
+    "destinationCountryCd": "GW",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_ON_ARRIVAL",
+    "duration": {
+      "maxStayDays": 90,
+      "description": "Up to 90 days"
+    },
+    "conditions": [
+      {
+        "type": "REQUIRES_DOCUMENT",
+        "description": "Prior arrangements and an authorization letter from the Migration Office of Guinea Bissau are required. Yellow fever vaccine certificate is also required.",
+        "acceptedCountries": [],
+        "mustBeValid": true
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "confidence": "high",
+    "notesHash": "1812f94847870362e95e598e6fbe0fdf"
+  },
+  {
+    "destinationCountryCd": "GY",
+    "originCountryCd": "PK",
+    "primaryRequirement": "CONDITIONAL_WAIVER",
+    "duration": {
+      "maxStayDays": 30,
+      "description": "Up to 30 days"
+    },
+    "conditions": [
+      {
+        "type": "REQUIRES_DOCUMENT",
+        "description": "Visa on arrival for 30 days available for those who hold an approval letter issued by Ministry of Home Affairs (Immigration Section) of Guyana",
+        "acceptedCountries": [],
+        "mustBeValid": false
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "confidence": "high",
+    "notesHash": "c39ce8ae2824314c90f0fe49be3bcae5"
+  },
+  {
+    "destinationCountryCd": "HT",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_FREE",
+    "duration": {
+      "maxStayDays": 90,
+      "description": "Up to 3 months"
+    },
+    "conditions": [
+      {
+        "type": "OTHER",
+        "description": "A tourist fee of 10 USD is to be collected upon arrival at the airport",
+        "acceptedCountries": [],
+        "mustBeValid": true
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "confidence": "high",
+    "notesHash": "1688aaf2de19795e64a323b64d35fbd9"
+  },
+  {
+    "destinationCountryCd": "HN",
+    "originCountryCd": "PK",
+    "primaryRequirement": "CONDITIONAL_WAIVER",
+    "conditions": [
+      {
+        "type": "REQUIRES_RESIDENCY",
+        "description": "Visa not required for those who hold Permanent residence or multi-entry visa to USA, Canada, or Schengen area",
+        "acceptedCountries": ["US", "CA", "SCHENGEN"],
+        "mustBeValid": true
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "confidence": "high",
+    "notesHash": "f091e10ac0e20ecc53b85e7b8a18cd14"
+  },
+  {
+    "destinationCountryCd": "HU",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "IS",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "IN",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "conditions": [
+      {
+        "type": "REQUIRES_VISA",
+        "description": "Visa required due to no tourist visas for Pakistanis, with additional scrutiny and prior clearance from the Ministry of Home Affairs of India. Pakistani nationals must apply on their Pakistani passport. Dual nationals, Pakistani origin, spouses of Pakistanis, or those with ancestors who held Pakistani passports must submit a NICOP or Citizenship Renunciation Letter. Polio vaccine certificate is also required.",
+        "acceptedCountries": ["PK"],
+        "mustBeValid": true
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "confidence": "high",
+    "notesHash": "326b87ab94f7dc9713e2864759016345"
+  },
+  {
+    "destinationCountryCd": "ID",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "conditions": [
+      {
+        "type": "REQUIRES_VISA",
+        "description": "Visa required for entry. Travelers to Indonesia for tourism can now apply directly for an eVisa at https://visa-online.imigrasi.go.id/index.xhtml. All travelers must fill out a customs declaration at https://ecd.beacukai.go.id/. Passengers must download the COVID-19 \"Satusehat app\" for health clearance.",
+        "acceptedCountries": [],
+        "mustBeValid": true
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "confidence": "high",
+    "notesHash": "d5c3f732c04b0715be94bc0479832767"
+  },
+  {
+    "destinationCountryCd": "IR",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "confidence": "high",
+    "notesHash": "af567e418088a8bfbc72804ac3af6e7f"
+  },
+  {
+    "destinationCountryCd": "IQ",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "IE",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "conditions": [
+      {
+        "type": "REQUIRES_VISA",
+        "description": "Visa required. Visa application must be submitted online at https://www.visas.inis.gov.ie/. Applicants will need to attend the Irish Embassy, Consulate, Visa Office, or Visa Application Centre to submit biometrics and collect their visa. May transit without a visa.",
+        "acceptedCountries": [],
+        "mustBeValid": true
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "confidence": "high",
+    "notesHash": "f0d14a963b7a05a7320d44af68db543c"
+  },
+  {
+    "destinationCountryCd": "IL",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "conditions": [
+      {
+        "type": "REQUIRES_DOCUMENT",
+        "description": "Invitation required for travel to Israel. Pakistani passports are explicitly invalid for travel to Israel under Pakistani law. Dual nationals attempting to travel without prior arrangement and permission will be stopped at the airport. Israel requires a special invitation submitted at the Israeli Ministry of Interior due to lack of diplomatic ties and the status of Pakistan as a 'hostile' nation.",
+        "acceptedCountries": [],
+        "mustBeValid": true
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "confidence": "high",
+    "notesHash": "3b234b3706d0f7cd2c89a20d630042cc"
+  },
+  {
+    "destinationCountryCd": "IT",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "JM",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "JP",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "conditions": [
+      {
+        "type": "REQUIRES_VISA",
+        "description": "Visa required. eVisa available at https://www.evisa.mofa.go.jp/personal/login for those who hold residence AND reside in Brazil, Cambodia, Canada, Mongolia, Saudi Arabia, Singapore, South Africa, Taiwan, United Arab Emirates, United Kingdom, or United States.",
+        "acceptedCountries": [
+          "BR",
+          "KH",
+          "CA",
+          "MN",
+          "SA",
+          "SG",
+          "ZA",
+          "TW",
+          "AE",
+          "GB",
+          "US"
+        ],
+        "mustBeValid": true
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "confidence": "high",
+    "notesHash": "d806afbb8a3134f39222a063478488f8"
+  },
+  {
+    "destinationCountryCd": "JO",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "conditions": [
+      {
+        "type": "REQUIRES_VISA",
+        "description": "Visa required for Pakistani nationals seeking entry for tourism. A sponsor is required for a 'Visit visa'. Pakistani nationals without a sponsor can only obtain a 'Tourism visa' through a Jordanian tourist agency registered and certified by the Ministry of Tourism. All visa applications can be completed online at https://eservices.moi.gov.jo and receive an Electronic visa within 0-14 business days.",
+        "acceptedCountries": [],
+        "mustBeValid": true
+      },
+      {
+        "type": "REQUIRES_RESIDENCY",
+        "description": "Visa on arrival available for Pakistani nationals who hold at least a 6-month residency permit for Canada, Australia, the UK, South Korea, Japan, EU countries, or GCC countries.",
+        "acceptedCountries": [
+          "CA",
+          "AU",
+          "GB",
+          "KR",
+          "JP",
+          "EU",
+          "SA",
+          "AE",
+          "BH",
+          "KW",
+          "OM",
+          "QA",
+          "SA"
+        ],
+        "mustBeValid": true
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "confidence": "high",
+    "notesHash": "a9e15826a8fc0fd03d876c01fe9cc3b2"
+  },
+  {
+    "destinationCountryCd": "KZ",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "conditions": [
+      {
+        "type": "REQUIRES_DOCUMENT",
+        "description": "Invitation registered with the Ministry of Internal Affairs is required",
+        "acceptedCountries": [],
+        "mustBeValid": true
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "confidence": "high",
+    "notesHash": "5608efeb584b0f3b394c70a821f4e4f6"
+  },
+  {
+    "destinationCountryCd": "KE",
+    "originCountryCd": "PK",
+    "primaryRequirement": "EVISA",
+    "duration": {
+      "maxStayDays": 90,
+      "description": "Up to 90 days"
+    },
+    "conditions": [
+      {
+        "type": "REQUIRES_DOCUMENT",
+        "description": "Application must be submitted online up to 90 days prior to travel and at least 3 days in advance. Proof of hotel reservation or invitation letter if staying with friends is required. Yellow fever vaccination certificate required if coming from endemic countries.",
+        "acceptedCountries": [],
+        "mustBeValid": true
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "confidence": "high",
+    "notesHash": "16b44c00c1e212d683473cc874a123d7"
+  },
+  {
+    "destinationCountryCd": "KI",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "KW",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "KG",
+    "originCountryCd": "PK",
+    "primaryRequirement": "EVISA",
+    "conditions": [
+      {
+        "type": "REQUIRES_DOCUMENT",
+        "description": "eVisa obtainable at https://www.evisa.e-gov.kg/ if holding Brunei or GCC residency",
+        "acceptedCountries": ["BN", "BH", "KW", "OM", "QA", "SA", "AE"],
+        "mustBeValid": true
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "confidence": "high",
+    "notesHash": "ccd6a46c56de48eb2bdfaf4410ba92b7"
+  },
+  {
+    "destinationCountryCd": "LA",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "LV",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "LB",
+    "originCountryCd": "PK",
+    "primaryRequirement": "CONDITIONAL_WAIVER",
+    "conditions": [
+      {
+        "type": "REQUIRES_RESIDENCY",
+        "description": "Visa on arrival for Pakistani nationals holding a valid Jordanian or GCC residence permit. The residence permit issued by a GCC Member State must have a profession of businessmen, managers, company owners, doctors, engineers, or lawyers.",
+        "acceptedCountries": ["JO", "BH", "KW", "OM", "QA", "SA", "AE"],
+        "mustBeValid": true
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "confidence": "high",
+    "notesHash": "ff0117a2bcb7de4788770442f4f91f8f"
+  },
+  {
+    "destinationCountryCd": "LS",
+    "originCountryCd": "PK",
+    "primaryRequirement": "EVISA",
+    "conditions": [
+      {
+        "type": "REQUIRES_DOCUMENT",
+        "description": "eVisa can be obtained online, but the website is currently not functioning properly. Travel medical health insurance and invitation letter are required.",
+        "acceptedCountries": [],
+        "mustBeValid": true
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "confidence": "high",
+    "notesHash": "ab63173ec729db0b48773d5bc7a70fad"
+  },
+  {
+    "destinationCountryCd": "LR",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "confidence": "high",
+    "notesHash": "215eda6a6598029ede8b8ae02644e6e1"
+  },
+  {
+    "destinationCountryCd": "LY",
+    "originCountryCd": "PK",
+    "primaryRequirement": "ADMISSION_REFUSED",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "LI",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "LT",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "LU",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "MG",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_ON_ARRIVAL",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "MW",
+    "originCountryCd": "PK",
+    "primaryRequirement": "EVISA",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "MY",
+    "originCountryCd": "PK",
+    "primaryRequirement": "EVISA",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "MV",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_ON_ARRIVAL",
+    "duration": {
+      "maxStayDays": 30,
+      "description": "Up to 30 days"
+    },
+    "conditions": [
+      {
+        "type": "REQUIRES_DOCUMENT",
+        "description": "Must complete a traveler declaration within 96 hours before arrival at https://imuga.immigration.gov.mv/ethd. Must have a booking at a registered tourist facility.",
+        "acceptedCountries": [],
+        "mustBeValid": true
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "confidence": "high",
+    "notesHash": "15f54a1c920d223c5a4523a08fb18d8f"
+  },
+  {
+    "destinationCountryCd": "ML",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "MT",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "MH",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "MR",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_ON_ARRIVAL",
+    "duration": {
+      "maxStayDays": 90,
+      "description": "Up to 90 days"
+    },
+    "conditions": [],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "confidence": "high",
+    "notesHash": "3eb92ba032c99e6cce441b7ede0563e8"
+  },
+  {
+    "destinationCountryCd": "MU",
+    "originCountryCd": "PK",
+    "primaryRequirement": "CONDITIONAL_WAIVER",
+    "conditions": [
+      {
+        "type": "REQUIRES_RESIDENCY",
+        "description": "Visa not required for spouses of Mauritian citizens",
+        "acceptedCountries": ["MU"],
+        "mustBeValid": true
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "confidence": "high",
+    "notesHash": "a959d0d1e42d0e61265837e14bc7454f"
+  },
+  {
+    "destinationCountryCd": "MX",
+    "originCountryCd": "PK",
+    "primaryRequirement": "CONDITIONAL_WAIVER",
+    "conditions": [
+      {
+        "type": "REQUIRES_VISA",
+        "description": "Visa not required for those in possession of a used Multi entry visa from Canada, Japan, United Kingdom, or a Schengen Member State",
+        "acceptedCountries": ["CA", "JP", "GB", "SCHENGEN"],
+        "mustBeValid": false
+      },
+      {
+        "type": "REQUIRES_RESIDENCY",
+        "description": "Visa not required for those with residency for Canada, Japan, United Kingdom, or a Schengen Member State",
+        "acceptedCountries": ["CA", "JP", "GB", "SCHENGEN"],
+        "mustBeValid": false
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "confidence": "high",
+    "notesHash": "3d9e45a137537dad008e7d290c4b80e5"
+  },
+  {
+    "destinationCountryCd": "FM",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_FREE",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "MD",
+    "originCountryCd": "PK",
+    "primaryRequirement": "EVISA",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "confidence": "high",
+    "notesHash": "1b123f67566900b72c38840519537605"
+  },
+  {
+    "destinationCountryCd": "MC",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "conditions": [
+      {
+        "type": "REQUIRES_VISA",
+        "description": "Visa required; must be in possession of a Schengen visa",
+        "acceptedCountries": ["SCHENGEN"],
+        "mustBeValid": true
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "confidence": "high",
+    "notesHash": "05c1ca194e312545df2b105daa30035e"
+  },
+  {
+    "destinationCountryCd": "MN",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "ME",
+    "originCountryCd": "PK",
+    "primaryRequirement": "CONDITIONAL_WAIVER",
+    "duration": {
+      "maxStayDays": 90,
+      "description": "Up to 90 days"
+    },
+    "conditions": [
+      {
+        "type": "REQUIRES_VISA",
+        "description": "Visa not required if holding a two or multiple entry short-stay visa issued by a Schengen member state for stays of no more than 90 days",
+        "acceptedCountries": ["SCHENGEN"],
+        "mustBeValid": true
+      },
+      {
+        "type": "REQUIRES_RESIDENCY",
+        "description": "Visa not required if holding a valid USA or UK permanent residence or multi-entry visa",
+        "acceptedCountries": ["US", "GB"],
+        "mustBeValid": true
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "confidence": "high",
+    "notesHash": "fc4f605eea74427f42f29ee8b4ef9607"
+  },
+  {
+    "destinationCountryCd": "MA",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "conditions": [
+      {
+        "type": "REQUIRES_VISA",
+        "description": "eVisa can be obtained at https://www.acces-maroc.ma for holders of a valid visa from United Kingdom, Ireland, Japan, New Zealand, Australia, Canada, USA, or Schengen zone visa",
+        "acceptedCountries": [
+          "GB",
+          "IE",
+          "JP",
+          "NZ",
+          "AU",
+          "CA",
+          "US",
+          "SCHENGEN"
+        ],
+        "mustBeValid": true
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "confidence": "high",
+    "notesHash": "b4b63c10b4f4b0c33e73eb0df687c108"
+  },
+  {
+    "destinationCountryCd": "MZ",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "duration": {
+      "maxStayDays": 30,
+      "description": "Up to 30 days"
+    },
+    "conditions": [
+      {
+        "type": "REQUIRES_VISA",
+        "description": "eVisa obtainable at https://evisa.gov.mz/; invitation required. For nationals from countries without Mozambican consular representation, a border visa may be available. Passengers with a printed confirmation from the Immigration Authority (SENAMI) in Maputo that a visa has been approved before departure can obtain a visa on arrival. Travel is restricted to the Rovuma Basin Project.",
+        "acceptedCountries": [],
+        "mustBeValid": true
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "confidence": "high",
+    "notesHash": "b648fc9e0614628018cb34e00e663fdc"
+  },
+  {
+    "destinationCountryCd": "MM",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_ON_ARRIVAL",
+    "duration": {
+      "maxStayDays": 28,
+      "description": "Up to 28 days"
+    },
+    "conditions": [
+      {
+        "type": "REQUIRES_DOCUMENT",
+        "description": "COVID-19 vaccine certificate and health insurance from an approved retailer are required. eVisa can be obtained online. Must arrive via Yangon, Nay Pyi Taw, or Mandalay airports or land border crossings with Thailand (Tachileik, Myawaddy, Kawthaung) or India (Rih Khaw Dar, Tamu).",
+        "acceptedCountries": [],
+        "mustBeValid": true
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "confidence": "high",
+    "notesHash": "3911e423cf00fc3e4aaedee8520ad83a"
+  },
+  {
+    "destinationCountryCd": "NA",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "NR",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "NP",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_ON_ARRIVAL",
+    "duration": {
+      "maxStayDays": 150,
+      "description": "Up to 150 days"
+    },
+    "conditions": [
+      {
+        "type": "REQUIRES_DOCUMENT",
+        "description": "Visa on arrival available only at Tribhuvan International Airport or land border checkpoints. eVisa and Visa on arrival authorization can be obtained in advance at https://nepaliport.immigration.gov.np/",
+        "acceptedCountries": [],
+        "mustBeValid": false
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "confidence": "high",
+    "notesHash": "491f88133768fc365c39641cc3066051"
+  },
+  {
+    "destinationCountryCd": "NL",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "NZ",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "duration": {
+      "maxStayDays": 270,
+      "description": "Up to 9 months"
+    },
+    "conditions": [
+      {
+        "type": "REQUIRES_VISA",
+        "description": "Visa required. Visa application can be obtained online at https://www.immigration.govt.nz/new-zealand-visas/visas/visa/visitor-visa. Visa is valid for up to 9 months. A high-quality scan of your passport is sufficient; physical passport may be requested if necessary. Health exam required for stays over 6 months.",
+        "acceptedCountries": [],
+        "mustBeValid": true
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "confidence": "high",
+    "notesHash": "a7ff74af30e31cd25d8234a925b31d25"
+  },
+  {
+    "destinationCountryCd": "NI",
+    "originCountryCd": "PK",
+    "primaryRequirement": "CONDITIONAL_WAIVER",
+    "conditions": [
+      {
+        "type": "REQUIRES_VISA",
+        "description": "Visa on arrival if holding valid visas of United States, Canada, or Schengen Member states",
+        "acceptedCountries": ["US", "CA", "SCHENGEN"],
+        "mustBeValid": true
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "confidence": "high",
+    "notesHash": "3a7d48b98868439408d08ee54447fbe1"
+  },
+  {
+    "destinationCountryCd": "NE",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "confidence": "high",
+    "notesHash": "215eda6a6598029ede8b8ae02644e6e1"
+  },
+  {
+    "destinationCountryCd": "NG",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "KP",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "MK",
+    "originCountryCd": "PK",
+    "primaryRequirement": "CONDITIONAL_WAIVER",
+    "duration": {
+      "maxStayDays": 15,
+      "description": "Up to 15 days"
+    },
+    "conditions": [
+      {
+        "type": "REQUIRES_VISA",
+        "description": "Visa not required if holding a multiple entry visa or permanent residence issued by an EU or Schengen member state. May stay no longer than 15 days at a time, and no more than 90 days total in every 180 days.",
+        "acceptedCountries": ["EU", "SCHENGEN"],
+        "mustBeValid": true,
+        "durationIfMet": {
+          "maxStayDays": 15,
+          "description": "Up to 15 days"
+        }
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "confidence": "high",
+    "notesHash": "7e98188784dc584563b364baac69083d"
+  },
+  {
+    "destinationCountryCd": "NO",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "OM",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_ON_ARRIVAL",
+    "conditions": [
+      {
+        "type": "REQUIRES_DOCUMENT",
+        "description": "Online eVisa available for those holding GCC residency, spouses or children of G1 nationals with visa subtype 26B or 26M (must travel with them), and spouses or children of Brunei, New Zealand, and South Korea (must travel with them). Required documents include marriage certificate, proof of relationship (birth certificate), and proof that the spouse has received a visa.",
+        "acceptedCountries": ["SA", "AE", "KW", "OM", "BN", "NZ", "KR"],
+        "mustBeValid": false
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "confidence": "high",
+    "notesHash": "49c0856fd9cc7004141118dbbde624cb"
+  },
+  {
+    "destinationCountryCd": "PW",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_ON_ARRIVAL",
+    "duration": {
+      "maxStayDays": 30,
+      "description": "Up to 30 days"
+    },
+    "conditions": [
+      {
+        "type": "REQUIRES_DOCUMENT",
+        "description": "Must complete health declaration form at https://www.palauhdf.com/ before arriving",
+        "acceptedCountries": [],
+        "mustBeValid": true
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "confidence": "high",
+    "notesHash": "2011808514d9877b390d468c63e6220c"
+  },
+  {
+    "destinationCountryCd": "PA",
+    "originCountryCd": "PK",
+    "primaryRequirement": "CONDITIONAL_WAIVER",
+    "duration": {
+      "maxStayDays": 30,
+      "description": "Up to 30 days"
+    },
+    "conditions": [
+      {
+        "type": "REQUIRES_RESIDENCY",
+        "description": "Visa not required for 30 days if holding valid residency in Canada, USA, Australia, Japan, South Korea, Singapore, or any EU state",
+        "acceptedCountries": ["CA", "US", "AU", "JP", "KR", "SG", "EU"],
+        "mustBeValid": true
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "confidence": "high",
+    "notesHash": "74cc28e54ef7bb77eb376c53fdec9e8c"
+  },
+  {
+    "destinationCountryCd": "PG",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "confidence": "high",
+    "notesHash": "bb214faa3083090ddb05225940072adf"
+  },
+  {
+    "destinationCountryCd": "PY",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "confidence": "high",
+    "notesHash": "ca5d5f52696782c0604c7d413d08b25f"
+  },
+  {
+    "destinationCountryCd": "PE",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "PH",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "conditions": [
+      {
+        "type": "REQUIRES_VISA",
+        "description": "Visa required. Visa can be submitted online at https://www.visa.gov.ph/. Applicants must contact the nearest Philippine embassy to make arrangements for an appointment to submit their passport. Residents of the United Arab Emirates may obtain an eVisa through the official Philippine eVisa website, and must show a valid Emirati residence visa upon application.",
+        "acceptedCountries": [],
+        "mustBeValid": true
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "confidence": "high",
+    "notesHash": "cd8a6afc74596beb73e5a26f2608a4f3"
+  },
+  {
+    "destinationCountryCd": "PL",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "PT",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "QA",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_ON_ARRIVAL",
+    "duration": {
+      "maxStayDays": 30,
+      "description": "Up to 30 days"
+    },
+    "conditions": [
+      {
+        "type": "REQUIRES_DOCUMENT",
+        "description": "Visa on arrival only if holding a hotel reservation made via Discover Qatar, POLIO vaccine certificate, and travel health insurance from an approved provider. Documents will be verified at the Discover Qatar counter upon arrival at Hamad International Airport. Hotel reservation name must match the visa request name. Visa on arrival is free of charge. All foreign nationals can transit without a visa.",
+        "acceptedCountries": [],
+        "mustBeValid": true
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "confidence": "high",
+    "notesHash": "54f5a0cd66e6c725192ac9ea86aa2e1e"
+  },
+  {
+    "destinationCountryCd": "CG",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "confidence": "high",
+    "notesHash": "208b6be60d6b7e09446dc74198119ea5"
+  },
+  {
+    "destinationCountryCd": "RO",
+    "originCountryCd": "PK",
+    "primaryRequirement": "CONDITIONAL_WAIVER",
+    "conditions": [
+      {
+        "type": "REQUIRES_VISA",
+        "description": "Visa required unless holding a multi-entry visa or residency issued by a Schengen member state, Bulgaria, Cyprus, or Croatia",
+        "acceptedCountries": ["SCHENGEN", "BG", "CY", "HR"],
+        "mustBeValid": true
+      },
+      {
+        "type": "REQUIRES_DOCUMENT",
+        "description": "Polio vaccination certificate required",
+        "acceptedCountries": []
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "confidence": "high",
+    "notesHash": "c051e3baf10dfcf2b0acc4698ed1e5f7"
+  },
+  {
+    "destinationCountryCd": "RU",
+    "originCountryCd": "PK",
+    "primaryRequirement": "CONDITIONAL_WAIVER",
+    "conditions": [
+      {
+        "type": "REQUIRES_VISA",
+        "description": "Visa required for general visits. Application can be submitted online at https://visa.kdmid.ru/ and then attend the embassy to receive the visa.",
+        "acceptedCountries": [],
+        "mustBeValid": true
+      },
+      {
+        "type": "REQUIRES_VISA",
+        "description": "Visa not required if visiting Saint Petersburg for up to 72 hours via the cruise St. Peter Line ferries, from Helsinki or Tallinn.",
+        "acceptedCountries": ["FI", "EE"],
+        "mustBeValid": false
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "confidence": "high",
+    "notesHash": "ea0756ea70b026389c48f4c9c9be537d"
+  },
+  {
+    "destinationCountryCd": "RW",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_FREE",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "KN",
+    "originCountryCd": "PK",
+    "primaryRequirement": "EVISA",
+    "duration": {
+      "maxStayDays": 30,
+      "description": "Up to 30 days"
+    },
+    "conditions": [],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "confidence": "high",
+    "notesHash": "9f064873c44e859796fbc0446800f53e"
+  },
+  {
+    "destinationCountryCd": "LC",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "conditions": [
+      {
+        "type": "REQUIRES_DOCUMENT",
+        "description": "Must complete traveler declaration within 72 hours of arriving at https://travelslu.govt.lc/",
+        "acceptedCountries": [],
+        "mustBeValid": true
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "confidence": "high",
+    "notesHash": "62a26c8dff786fdc408ba030958f4fb5"
+  },
+  {
+    "destinationCountryCd": "VC",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_FREE",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "WS",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_ON_ARRIVAL",
+    "duration": {
+      "maxStayDays": 90,
+      "description": "Up to 90 days"
+    },
+    "conditions": [
+      {
+        "type": "REQUIRES_VISA",
+        "description": "Visa on arrival for up to 90 days if meeting entry conditions. Must have a valid visa or permit for entry into the country to which they will travel from Samoa. Must have no deportation record for any other country.",
+        "acceptedCountries": ["WS"],
+        "mustBeValid": true
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "confidence": "high",
+    "notesHash": "9a01c71b3b062bf3d9f9e50dff2584d5"
+  },
+  {
+    "destinationCountryCd": "SM",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "duration": {
+      "maxStayDays": 30,
+      "description": "Up to 30 days"
+    },
+    "conditions": [
+      {
+        "type": "REQUIRES_DOCUMENT",
+        "description": "Entry requires a Schengen visa or permission from Italian authorities to transit, as San Marino does not grant entry visas for periods of 30 days or less. No international airport in San Marino.",
+        "acceptedCountries": ["SCHENGEN", "IT"],
+        "mustBeValid": false
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "confidence": "high",
+    "notesHash": "508271ca3e256cbd009eea92dfebbea8"
+  },
+  {
+    "destinationCountryCd": "ST",
+    "originCountryCd": "PK",
+    "primaryRequirement": "EVISA",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "confidence": "high",
+    "notesHash": "66f7a353a498ceac7c32f84065de6358"
+  },
+  {
+    "destinationCountryCd": "SA",
+    "originCountryCd": "PK",
+    "primaryRequirement": "CONDITIONAL_WAIVER",
+    "conditions": [
+      {
+        "type": "REQUIRES_VISA",
+        "description": "eVisa available for tourist visas or permanent residents of USA, UK, UAE, or Schengen countries",
+        "acceptedCountries": ["US", "GB", "AE", "SCHENGEN"],
+        "mustBeValid": true
+      },
+      {
+        "type": "REQUIRES_DOCUMENT",
+        "description": "A Polio vaccine certificate is required",
+        "acceptedCountries": []
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "confidence": "high",
+    "notesHash": "13e7e1e3aa82f01caaba489c6b4fb4c0"
+  },
+  {
+    "destinationCountryCd": "SN",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_ON_ARRIVAL",
+    "conditions": [
+      {
+        "type": "REQUIRES_DOCUMENT",
+        "description": "Yellow fever vaccine certificate is required",
+        "acceptedCountries": [],
+        "mustBeValid": true
+      },
+      {
+        "type": "REQUIRES_VISA",
+        "description": "Visa on arrival available for Pakistani nationals who have received a “visa préalable” letter before traveling to Senegal. Visa will be stamped on their passport upon arriving at Dakar Blaise Diagne airport",
+        "acceptedCountries": ["PK"],
+        "mustBeValid": true
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "confidence": "high",
+    "notesHash": "da5805378605c7524cc1e762f9a0d2d2"
+  },
+  {
+    "destinationCountryCd": "RS",
+    "originCountryCd": "PK",
+    "primaryRequirement": "CONDITIONAL_WAIVER",
+    "duration": {
+      "maxStayDays": 90,
+      "description": "Up to 90 days"
+    },
+    "conditions": [
+      {
+        "type": "REQUIRES_VISA",
+        "description": "Visa not required for passengers with a visa issued by Switzerland, United Kingdom, USA, or an EEA Member State for a maximum stay of 90 days. Short stay (up to 90 days) and long stay (up to 180 days) visas are issued free of charge.",
+        "acceptedCountries": ["CH", "GB", "US", "EEA"],
+        "mustBeValid": true
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "confidence": "high",
+    "notesHash": "dcd055705c84a2f449d33d84f76444a5"
+  },
+  {
+    "destinationCountryCd": "SC",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_ON_ARRIVAL",
+    "duration": {
+      "maxStayDays": 90,
+      "description": "Up to 3 months (90 days)"
+    },
+    "conditions": [
+      {
+        "type": "REQUIRES_DOCUMENT",
+        "description": "Application can be submitted up to 30 days before travel. Visitors must upload reservation confirmation(s) for each location of stay in Seychelles. Yellow fever vaccination certificate is required if coming from endemic countries. Payment of EUR 10 by credit or debit card. Valid for one journey only and expires once exit the country.",
+        "acceptedCountries": [],
+        "mustBeValid": true
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "confidence": "high",
+    "notesHash": "5eca70d028235f9c8e43f3971c84ebfa"
+  },
+  {
+    "destinationCountryCd": "SL",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_ON_ARRIVAL",
+    "duration": {
+      "maxStayDays": 30,
+      "description": "Up to 30 days"
+    },
+    "conditions": [
+      {
+        "type": "REQUIRES_VISA",
+        "description": "Visa on arrival costs US$80. eVisa can be obtained in advance at https://evisa.sl/#/home. Yellow fever vaccine certificate is required.",
+        "acceptedCountries": [],
+        "mustBeValid": true
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "confidence": "high",
+    "notesHash": "8ebb986cf159236f0f16f955b76bc301"
+  },
+  {
+    "destinationCountryCd": "SG",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "SK",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "SI",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "SB",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "confidence": "high",
+    "notesHash": "4ce79f3c91d5fb124397b3a1cfb1fb16"
+  },
+  {
+    "destinationCountryCd": "SO",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_ON_ARRIVAL",
+    "duration": {
+      "maxStayDays": 30,
+      "description": "Up to 30 days"
+    },
+    "conditions": [
+      {
+        "type": "REQUIRES_VISA",
+        "description": "eVisa available at https://apply.visa.gov.so/ or visa on arrival available at Bosaso (BSA), Galcaio (GLK), Garowe (GGR), Kisimayu (KMU), and Mogadishu (MGQ) airports, for up to 30 days",
+        "acceptedCountries": ["SO"],
+        "mustBeValid": true
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "confidence": "high",
+    "notesHash": "b56a5a810ff8da1a2ae622fe8b0e90d4"
+  },
+  {
+    "destinationCountryCd": "ZA",
+    "originCountryCd": "PK",
+    "primaryRequirement": "EVISA",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "confidence": "high",
+    "notesHash": "49f05e411e123743971011d6e87df65c"
+  },
+  {
+    "destinationCountryCd": "SS",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "KR",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "ES",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "LK",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_ON_ARRIVAL",
+    "duration": {
+      "maxStayDays": 60,
+      "description": "Up to 60 days"
+    },
+    "conditions": [
+      {
+        "type": "REQUIRES_VISA",
+        "description": "eVisa or Visa on arrival for up to 60 days. Visa fees for Standard visitor visa: USD 35 for SAARC countries, USD 75 for non-SAARC countries. e-Visa categories will be charged an additional USD 18.50 service fee. If transiting from any Sri Lankan airports, an e-Visa is exempted for a 2-day transit period.",
+        "acceptedCountries": [
+          "SAARC",
+          "US",
+          "GB",
+          "CA",
+          "AU",
+          "NZ",
+          "JP",
+          "DE",
+          "FR",
+          "IN",
+          "CN",
+          "SG",
+          "AE",
+          "SA",
+          "RU",
+          "BR",
+          "ZA",
+          "NG",
+          "KE",
+          "TZ",
+          "UG",
+          "GH",
+          "DZ",
+          "EG",
+          "MA",
+          "TN",
+          "LY",
+          "DZ",
+          "IN",
+          "PK"
+        ],
+        "mustBeValid": true
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "confidence": "high",
+    "notesHash": "1ad70c94ba268642cb5e28e709136978"
+  },
+  {
+    "destinationCountryCd": "SD",
+    "originCountryCd": "PK",
+    "primaryRequirement": "ADMISSION_REFUSED",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "confidence": "high",
+    "notesHash": "02297f6b3628125d81e9d89a1fdb6934"
+  },
+  {
+    "destinationCountryCd": "SR",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "conditions": [
+      {
+        "type": "REQUIRES_DOCUMENT",
+        "description": "Invitation letter is required for the eVisa application",
+        "acceptedCountries": [],
+        "mustBeValid": true
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "confidence": "high",
+    "notesHash": "8f5139a8ce5aa8091faeebfabbfdd4a9"
+  },
+  {
+    "destinationCountryCd": "SE",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "CH",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "SY",
+    "originCountryCd": "PK",
+    "primaryRequirement": "EVISA",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "TJ",
+    "originCountryCd": "PK",
+    "primaryRequirement": "EVISA",
+    "duration": {
+      "maxStayDays": 60,
+      "description": "Up to 60 days"
+    },
+    "conditions": [],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "confidence": "high",
+    "notesHash": "0e429868f5b8683410c40e6361b95a7b"
+  },
+  {
+    "destinationCountryCd": "TZ",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "duration": {
+      "maxStayDays": 90,
+      "description": "Up to 90 days"
+    },
+    "conditions": [
+      {
+        "type": "REQUIRES_VISA",
+        "description": "eVisa for up to 90 days. Applicants are advised to submit their applications at least 2 months before their travel date. Having an invitation letter or a request letter for visa from the host is recommended to add credibility to their application.",
+        "acceptedCountries": [],
+        "mustBeValid": true
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "confidence": "high",
+    "notesHash": "82e93cc1d830dd57892e2d0e006c58d1"
+  },
+  {
+    "destinationCountryCd": "TH",
+    "originCountryCd": "PK",
+    "primaryRequirement": "EVISA",
+    "duration": {
+      "maxStayDays": 30,
+      "description": "Up to 30 days"
+    },
+    "conditions": [
+      {
+        "type": "REQUIRES_DOCUMENT",
+        "description": "eVisa available for all nationalities starting Jan. 01, 2025, for transit and visit purposes. Payment may still need to be made at the embassy in certain countries until a payment system is established.",
+        "acceptedCountries": [],
+        "mustBeValid": true
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "confidence": "high",
+    "notesHash": "01efd219b1aab4a67b47f7789123a558"
+  },
+  {
+    "destinationCountryCd": "TL",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_ON_ARRIVAL",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "TG",
+    "originCountryCd": "PK",
+    "primaryRequirement": "EVISA",
+    "duration": {
+      "maxStayDays": 15,
+      "description": "Up to 15 days"
+    },
+    "conditions": [
+      {
+        "type": "REQUIRES_DOCUMENT",
+        "description": "Yellow fever vaccine certificate is required",
+        "acceptedCountries": [],
+        "mustBeValid": true
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "confidence": "high",
+    "notesHash": "ca5d5f52696782c0604c7d413d08b25f"
+  },
+  {
+    "destinationCountryCd": "TO",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "TT",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_FREE",
+    "duration": {
+      "maxStayDays": 90,
+      "description": "Up to 90 days"
+    },
+    "conditions": [
+      {
+        "type": "REQUIRES_DOCUMENT",
+        "description": "Yellow fever vaccine certificate is required. Minors under 18 years of age without parents require a certified copy of their parents' national ID and a letter giving permission for them to travel.",
+        "acceptedCountries": [],
+        "mustBeValid": true
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "confidence": "high",
+    "notesHash": "de84cd54f05b0c6471743bd590266783"
+  },
+  {
+    "destinationCountryCd": "TN",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "TR",
+    "originCountryCd": "PK",
+    "primaryRequirement": "EVISA",
+    "conditions": [
+      {
+        "type": "REQUIRES_VISA",
+        "description": "eVisa available for Pakistani citizens who hold a visa in Schengen Countries, USA, UK, or Ireland",
+        "acceptedCountries": ["SCHENGEN", "US", "GB", "IE"],
+        "mustBeValid": true
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "confidence": "high",
+    "notesHash": "981a991cf69697e534f963c6bae1dc79"
+  },
+  {
+    "destinationCountryCd": "TM",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "TV",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_ON_ARRIVAL",
+    "duration": {
+      "maxStayDays": 30,
+      "description": "Up to 30 days"
+    },
+    "conditions": [
+      {
+        "type": "REQUIRES_DOCUMENT",
+        "description": "Will be given a 30-day Visitors Permit upon arrival if they meet the conditions of entry. Countries not separately listed in Schedule 1 of the Visa Regulations must pay US$100 upon entry.",
+        "acceptedCountries": [],
+        "mustBeValid": true
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "confidence": "high",
+    "notesHash": "586e93bd1ea75be7b5cef8c29980cdf3"
+  },
+  {
+    "destinationCountryCd": "UG",
+    "originCountryCd": "PK",
+    "primaryRequirement": "EVISA",
+    "duration": {
+      "maxStayDays": 90,
+      "description": "Up to 3 months"
+    },
+    "conditions": [
+      {
+        "type": "REQUIRES_DOCUMENT",
+        "description": "Yellow fever vaccine certificate is required",
+        "acceptedCountries": [],
+        "mustBeValid": false
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "confidence": "high",
+    "notesHash": "ca5d5f52696782c0604c7d413d08b25f"
+  },
+  {
+    "destinationCountryCd": "UA",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "AE",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "duration": {
+      "maxStayDays": 30,
+      "description": "Up to 30 days"
+    },
+    "conditions": [
+      {
+        "type": "REQUIRES_VISA",
+        "description": "Online eVisa available for 30 days, issued online regardless of airline, with a return flight booked through the same city. eVisa can be obtained if holding a booking from Emirates, Air Arabia, or Flydubai. Visa can also be obtained through a licensed agent for faster processing. For land entries without flight booking, an online application is required. Diplomatic or official passport holders from Pakistan do not require a visa for 90 days within a 180-day period. Transit visa is not required when transferring at a UAE airport without exiting the transit area.",
+        "acceptedCountries": ["PK"],
+        "mustBeValid": true
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "confidence": "high",
+    "notesHash": "9994a768af1f282c9f7d4a542380b90f"
+  },
+  {
+    "destinationCountryCd": "GB",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "confidence": "high",
+    "notesHash": "0ce1a162a56418cc69871beaaebc3b51"
+  },
+  {
+    "destinationCountryCd": "US",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "UY",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "UZ",
+    "originCountryCd": "PK",
+    "primaryRequirement": "CONDITIONAL_WAIVER",
+    "duration": {
+      "maxStayDays": 30,
+      "description": "Up to 30 days"
+    },
+    "conditions": [
+      {
+        "type": "REQUIRES_RESIDENCY",
+        "description": "Visa not required for holders of a valid residence permit of a GCC country. GCC residency must be valid for three months or more. They must have a physical residence ID card.",
+        "acceptedCountries": ["BH", "KW", "OM", "QA", "SA", "AE"],
+        "mustBeValid": true
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "confidence": "high",
+    "notesHash": "07300f4fa4a3603a1f075fda349e9f20"
+  },
+  {
+    "destinationCountryCd": "VU",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_FREE",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "VA",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "VE",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "VN",
+    "originCountryCd": "PK",
+    "primaryRequirement": "EVISA",
+    "duration": {
+      "maxStayDays": 90,
+      "description": "Up to 90 days"
+    },
+    "conditions": [],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "confidence": "high",
+    "notesHash": "a69cd8ceb6413f73efdb45318f69b93d"
+  },
+  {
+    "destinationCountryCd": "YE",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "ZM",
+    "originCountryCd": "PK",
+    "primaryRequirement": "EVISA",
+    "duration": {
+      "maxStayDays": 90,
+      "description": "Up to 90 days"
+    },
+    "conditions": [
+      {
+        "type": "REQUIRES_DOCUMENT",
+        "description": "Must be 16 or older to apply for an eVisa",
+        "acceptedCountries": [],
+        "mustBeValid": true
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "confidence": "high",
+    "notesHash": "2740a4a0151a820cce218e4d5c712bd8"
+  },
+  {
+    "destinationCountryCd": "ZW",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "duration": {
+      "maxStayDays": 30,
+      "description": "Up to 30 days"
+    },
+    "conditions": [
+      {
+        "type": "REQUIRES_DOCUMENT",
+        "description": "Host invitation and proof of host residence are required if not staying at a hotel",
+        "acceptedCountries": [],
+        "mustBeValid": true
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "confidence": "high",
+    "notesHash": "c95a3c8b4c25862d91c3e31b51b0a408"
+  },
+  {
+    "destinationCountryCd": "AS",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "duration": {
+      "maxStayDays": 3,
+      "description": "Up to 3 days"
+    },
+    "conditions": [
+      {
+        "type": "REQUIRES_VISA",
+        "description": "Visa required for entry. Visa-free transit allowed with conditions: must leave within 24 hours or face a fine of US$50 per day overstayed. Applicants for a visa must have a sponsor. Must apply for OK to board 3 days prior to entry at https://www.legalaffairs.as.gov/copy-of-ok-board-transit-1",
+        "acceptedCountries": [],
+        "mustBeValid": true
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "confidence": "high",
+    "notesHash": "4740513b326dde9b5666cb33eb67ffce"
+  },
+  {
+    "destinationCountryCd": "AI",
+    "originCountryCd": "PK",
+    "primaryRequirement": "CONDITIONAL_WAIVER",
+    "conditions": [
+      {
+        "type": "REQUIRES_RESIDENCY",
+        "description": "Visa on arrival for Pakistani nationals who have a valid residence permit for United Kingdom, United States, or Canada",
+        "acceptedCountries": ["GB", "US", "CA"],
+        "mustBeValid": true
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "confidence": "high",
+    "notesHash": "7184ffce48a6c535218672009a527b70"
+  },
+  {
+    "destinationCountryCd": "AW",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "conditions": [
+      {
+        "type": "REQUIRES_VISA",
+        "description": "Must apply for an Aruba visa at the Netherlands Embassy in person. Visa not required for Permanent residence holders for Canada, USA, UK, Ireland, and Overseas France. Visa not required for Schengen country residence or multi-entry Schengen visa holders. Visa not required for transit in certain cases; see website for details: https://www.netherlandsworldwide.nl/caribbean-visa/visa-needed-caribbean. Passengers must complete 'Embarkation/Disembarkation Card (ED Card)' before departure at www.edcardaruba.aw. They will receive a 'Travel Authorization' which must be presented before boarding.",
+        "acceptedCountries": ["CA", "US", "GB", "IE", "FR", "SCHENGEN"],
+        "mustBeValid": true
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "confidence": "high",
+    "notesHash": "7db4a2ce5aacdd852756dde0083c5d9e"
+  },
+  {
+    "destinationCountryCd": "BM",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "duration": {
+      "maxStayDays": 45,
+      "description": "Up to 45 days"
+    },
+    "conditions": [
+      {
+        "type": "REQUIRES_VISA",
+        "description": "Must have a valid multi-entry visa for Canada, USA, or UK that is valid for 45 days after the expiration of a visitor stay. A 45-day multi-entry visa is not required for those who wish to take up residence in Bermuda as the spouse or dependent of a Bermudian.",
+        "acceptedCountries": ["CA", "US", "GB"],
+        "mustBeValid": true
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "confidence": "high",
+    "notesHash": "115a8972f2d610a247a59bee1a60c8dd"
+  },
+  {
+    "destinationCountryCd": "XX",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "conditions": [
+      {
+        "type": "REQUIRES_DOCUMENT",
+        "description": "Visitors are required to pay a Tourist Tax online and print out proof of payment to present upon arrival in Bonaire, which is governed by the Netherlands and considered a public body.",
+        "acceptedCountries": [],
+        "mustBeValid": true
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "confidence": "high",
+    "notesHash": "e8aa4e0bc3db9cda5f17ae12793784e2"
+  },
+  {
+    "destinationCountryCd": "VG",
+    "originCountryCd": "PK",
+    "primaryRequirement": "CONDITIONAL_WAIVER",
+    "duration": {
+      "maxStayDays": 180,
+      "description": "Up to 6 months"
+    },
+    "conditions": [
+      {
+        "type": "REQUIRES_RESIDENCY",
+        "description": "Visa not required for those who hold 6 months or more residency for Canada, USA, or United Kingdom",
+        "acceptedCountries": ["CA", "US", "GB"],
+        "mustBeValid": true
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "confidence": "high",
+    "notesHash": "be6521c09bff6ea58c04186485a8546c"
+  },
+  {
+    "destinationCountryCd": "KY",
+    "originCountryCd": "PK",
+    "primaryRequirement": "CONDITIONAL_WAIVER",
+    "duration": {
+      "maxStayDays": 30,
+      "description": "Up to 30 days"
+    },
+    "conditions": [
+      {
+        "type": "REQUIRES_RESIDENCY",
+        "description": "30 day tourist visa on arrival given holding valid PR or residence permit of Canada, United Kingdom, or USA",
+        "acceptedCountries": ["CA", "GB", "US"],
+        "mustBeValid": true
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "confidence": "high",
+    "notesHash": "016d5e6649efa7fd01ee7eb451b54a21"
+  },
+  {
+    "destinationCountryCd": "CK",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_FREE",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "CW",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "duration": {
+      "maxStayDays": 7,
+      "description": "Up to 7 days"
+    },
+    "conditions": [
+      {
+        "type": "REQUIRES_DOCUMENT",
+        "description": "All travelers must complete the Digital Immigration Card (DI card) online up to 7 days prior to departure. Yellow fever vaccine certificate and valid travel medical insurance are required.",
+        "acceptedCountries": [],
+        "mustBeValid": true
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "confidence": "high",
+    "notesHash": "3ada989e9c48a6d696601579dda2daed"
+  },
+  {
+    "destinationCountryCd": "FK",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "conditions": [
+      {
+        "type": "REQUIRES_DOCUMENT",
+        "description": "Travel medical insurance for the duration of the intended stay to cover aero-medical evacuation costs to a minimum value of US$200,000 is required to apply for a visitor permit",
+        "acceptedCountries": [],
+        "mustBeValid": true
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "confidence": "high",
+    "notesHash": "fbca85ba6c18936783101d254e1bc338"
+  },
+  {
+    "destinationCountryCd": "FO",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "confidence": "high",
+    "notesHash": "0658c04586182b79ceb1fe97c9e2d620"
+  },
+  {
+    "destinationCountryCd": "GF",
+    "originCountryCd": "PK",
+    "primaryRequirement": "CONDITIONAL_WAIVER",
+    "conditions": [
+      {
+        "type": "REQUIRES_RESIDENCY",
+        "description": "Visa not required if in possession of a long-stay visa or hold a valid residence permit issued by a Schengen member state, or a residence permit for Andorra or Monaco",
+        "acceptedCountries": ["EU", "AD", "MC"],
+        "mustBeValid": true
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "confidence": "high",
+    "notesHash": "4506cfe665314868ea30ad4af5942e0a"
+  },
+  {
+    "destinationCountryCd": "PF",
+    "originCountryCd": "PK",
+    "primaryRequirement": "CONDITIONAL_WAIVER",
+    "conditions": [
+      {
+        "type": "REQUIRES_RESIDENCY",
+        "description": "Visa not required if in possession of a long-stay visa or hold a valid residence permit issued by a Schengen member state",
+        "acceptedCountries": ["SCHENGEN"],
+        "mustBeValid": true
+      },
+      {
+        "type": "REQUIRES_RESIDENCY",
+        "description": "Visa not required if holding a residence permit for Andorra or Monaco",
+        "acceptedCountries": ["AD", "MC"],
+        "mustBeValid": true
+      },
+      {
+        "type": "OTHER",
+        "description": "All other tourist visa applications can be done online in certain cases after submitting the required documents. More info at https://france-visas.gouv.fr/",
+        "acceptedCountries": []
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "confidence": "high",
+    "notesHash": "a872b3855ced4c56b5d94f88bf10467f"
+  },
+  {
+    "destinationCountryCd": "GI",
+    "originCountryCd": "PK",
+    "primaryRequirement": "CONDITIONAL_WAIVER",
+    "duration": {
+      "maxStayDays": 365,
+      "description": "Up to 12 months"
+    },
+    "conditions": [
+      {
+        "type": "REQUIRES_RESIDENCY",
+        "description": "Visa not required for those who hold permanent residency in the United Kingdom and have not been absent from the UK for more than 2 years",
+        "acceptedCountries": ["GB"],
+        "mustBeValid": true
+      },
+      {
+        "type": "REQUIRES_VISA",
+        "description": "Visa not required for those who hold family visas to EU nations",
+        "acceptedCountries": ["EU"],
+        "mustBeValid": true
+      },
+      {
+        "type": "REQUIRES_RESIDENCY",
+        "description": "Visa not required for those who hold residency permits to the United Kingdom for a period of 12 months or more",
+        "acceptedCountries": ["GB"],
+        "mustBeValid": true
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "confidence": "high",
+    "notesHash": "79fe23043d2e2053310bf6a3be7de504"
+  },
+  {
+    "destinationCountryCd": "GL",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "confidence": "high",
+    "notesHash": "6780804e401689e7777e9f6fae7f9071"
+  },
+  {
+    "destinationCountryCd": "GP",
+    "originCountryCd": "PK",
+    "primaryRequirement": "CONDITIONAL_WAIVER",
+    "conditions": [
+      {
+        "type": "REQUIRES_RESIDENCY",
+        "description": "Visa not required if in possession of a long-stay visa or hold a valid residence permit issued by a Schengen member state",
+        "acceptedCountries": ["SCHENGEN"],
+        "mustBeValid": true
+      },
+      {
+        "type": "REQUIRES_RESIDENCY",
+        "description": "Visa not required for those who hold a residence permit for Andorra or Monaco",
+        "acceptedCountries": ["AD", "MC"],
+        "mustBeValid": true
+      },
+      {
+        "type": "REQUIRES_VISA",
+        "description": "All other tourist visa applications can be done online in certain cases after submitting the required documents",
+        "acceptedCountries": [],
+        "mustBeValid": true
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "confidence": "high",
+    "notesHash": "1463ea929bfbab06036e2b2fc7e4fcfa"
+  },
+  {
+    "destinationCountryCd": "GU",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "conditions": [
+      {
+        "type": "REQUIRES_VISA",
+        "description": "Must hold a valid United States visa. Pakistani citizens need to obtain a US visa before entering Guam. If transiting through the United States, a COVID-19 vaccine certificate is required.",
+        "acceptedCountries": ["US"],
+        "mustBeValid": true
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "confidence": "high",
+    "notesHash": "4f8c7afa827586b78ddc98c209514bc7"
+  },
+  {
+    "destinationCountryCd": "HK",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "conditions": [
+      {
+        "type": "REQUIRES_VISA",
+        "description": "A Hong Kong visa is required. Separate visa is required for those who wish to visit mainland China. If traveling from Taiwan to Hong Kong, a separate entry permit is required.",
+        "acceptedCountries": [],
+        "mustBeValid": true
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "confidence": "high",
+    "notesHash": "127f8d310a531c1cdacbb27a5a10b621"
+  },
+  {
+    "destinationCountryCd": "XK",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "XX",
+    "originCountryCd": "PK",
+    "primaryRequirement": "CONDITIONAL_WAIVER",
+    "conditions": [
+      {
+        "type": "REQUIRES_VISA",
+        "description": "Visa required for most travelers. Special visa for Kurdistan Region of Iraq required. eVisa available for those with a sponsor code. Pakistani nationals require a sponsor. Visa exempt for those born in Iraq.",
+        "acceptedCountries": ["IQ"],
+        "mustBeValid": true
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "confidence": "high",
+    "notesHash": "a92c652d95403589a6b3b57ba0432ab1"
+  },
+  {
+    "destinationCountryCd": "MQ",
+    "originCountryCd": "PK",
+    "primaryRequirement": "CONDITIONAL_WAIVER",
+    "conditions": [
+      {
+        "type": "REQUIRES_RESIDENCY",
+        "description": "Visa not required if in possession of a long-stay visa or hold a valid residence permit issued by a Schengen member state, or holding a residence permit for Andorra or Monaco",
+        "acceptedCountries": ["EU", "AD", "MC"],
+        "mustBeValid": true
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "confidence": "high",
+    "notesHash": "d636e45a982240973dee715fa67c78f0"
+  },
+  {
+    "destinationCountryCd": "MO",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "conditions": [
+      {
+        "type": "REQUIRES_VISA",
+        "description": "Visa required for entry. Pakistani nationals in Pakistan must use Gerrys visa services to apply for a Macau visa, as Chinese Embassy is no longer accepting applications directly. The application can be accessed online at https://www.visaforchina.cn/ISB2_EN/. Pakistanis abroad should refer to instructions from the nearest Chinese embassy on how to obtain a Macau visa. Separate visa is required for those who wish to visit mainland China.",
+        "acceptedCountries": ["PK"],
+        "mustBeValid": true
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "confidence": "high",
+    "notesHash": "2d02d1b9cc35a9915f3348af404d3f86"
+  },
+  {
+    "destinationCountryCd": "YT",
+    "originCountryCd": "PK",
+    "primaryRequirement": "CONDITIONAL_WAIVER",
+    "conditions": [
+      {
+        "type": "REQUIRES_RESIDENCY",
+        "description": "Visa not required if in possession of a long-stay visa or hold a valid residence permit issued by a Schengen member state",
+        "acceptedCountries": ["SCHENGEN"],
+        "mustBeValid": true
+      },
+      {
+        "type": "REQUIRES_RESIDENCY",
+        "description": "Visa not required if holding a residence permit for Andorra or Monaco",
+        "acceptedCountries": ["AD", "MC"],
+        "mustBeValid": true
+      },
+      {
+        "type": "REQUIRES_VISA",
+        "description": "All other tourist visa applications can be done online in certain cases after submitting the required documents",
+        "acceptedCountries": [],
+        "mustBeValid": false
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "confidence": "high",
+    "notesHash": "a872b3855ced4c56b5d94f88bf10467f"
+  },
+  {
+    "destinationCountryCd": "MS",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_FREE",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "NC",
+    "originCountryCd": "PK",
+    "primaryRequirement": "CONDITIONAL_WAIVER",
+    "conditions": [
+      {
+        "type": "REQUIRES_RESIDENCY",
+        "description": "Visa not required if in possession of a long-stay visa or hold a valid residence permit issued by a Schengen member state, or holding a residence permit for Andorra or Monaco",
+        "acceptedCountries": ["EU", "AD", "MC"],
+        "mustBeValid": true
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "confidence": "high",
+    "notesHash": "d636e45a982240973dee715fa67c78f0"
+  },
+  {
+    "destinationCountryCd": "NU",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_FREE",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "NF",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "confidence": "high",
+    "notesHash": "f7448dfe6caa29f65f9714f6f52baed1"
+  },
+  {
+    "destinationCountryCd": "XX",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "confidence": "high",
+    "notesHash": "f5924702b905180a62abe3f3f9e9a2ae"
+  },
+  {
+    "destinationCountryCd": "MP",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "conditions": [
+      {
+        "type": "REQUIRES_VISA",
+        "description": "Must hold a valid United States visa. Pakistani citizens need to obtain a US visa before entering Northern Mariana Islands, as it is part of the United States with border controls and customs offices. Entry from any nation except the United States requires a US visa.",
+        "acceptedCountries": ["US"],
+        "mustBeValid": true
+      },
+      {
+        "type": "REQUIRES_DOCUMENT",
+        "description": "A COVID-19 double-dose vaccine certificate is required for entry.",
+        "acceptedCountries": []
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "confidence": "high",
+    "notesHash": "ea0f7007c5e1891d0099e22871967efd"
+  },
+  {
+    "destinationCountryCd": "PS",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "PN",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_ON_ARRIVAL",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "PR",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "confidence": "high",
+    "notesHash": "8536f2ab29e8ac605cbbac227f0c4986"
+  },
+  {
+    "destinationCountryCd": "RE",
+    "originCountryCd": "PK",
+    "primaryRequirement": "CONDITIONAL_WAIVER",
+    "conditions": [
+      {
+        "type": "REQUIRES_RESIDENCY",
+        "description": "Visa not required if in possession of a long-stay visa or hold a valid residence permit issued by a Schengen member state",
+        "acceptedCountries": ["SCHENGEN"],
+        "mustBeValid": true
+      },
+      {
+        "type": "REQUIRES_RESIDENCY",
+        "description": "Visa not required if in possession of a residence permit for Andorra or Monaco",
+        "acceptedCountries": ["AD", "MC"],
+        "mustBeValid": true
+      },
+      {
+        "type": "REQUIRES_VISA",
+        "description": "All other tourist visa applications can be done online in certain cases after submitting the required documents",
+        "acceptedCountries": [],
+        "mustBeValid": true
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "confidence": "high",
+    "notesHash": "0ca2d859879c6189d1d0dd8676c0aa50"
+  },
+  {
+    "destinationCountryCd": "XX",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "conditions": [
+      {
+        "type": "REQUIRES_VISA",
+        "description": "Visa required for entry. Visa on arrival may be available for tour groups entering from the Russian-Abkhaz for less than 24 hours. Upon arrival, travelers must appear at the Consular Department within 3 working days to receive a visa of the Republic of Abkhazia. Entry through the Russian border is considered illegal under Georgian law, and evidence of an Abkhazian visa, stamps, or Russian checkpoint stamps may result in fines, visa cancellation, deportation, or bans from Georgia.",
+        "acceptedCountries": [],
+        "mustBeValid": true
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "confidence": "high",
+    "notesHash": "ec81b5829e17b98e6c86a7abedefa00e"
+  },
+  {
+    "destinationCountryCd": "XX",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "confidence": "high",
+    "notesHash": "e037321085205c1a094018d027174e52"
+  },
+  {
+    "destinationCountryCd": "BL",
+    "originCountryCd": "PK",
+    "primaryRequirement": "CONDITIONAL_WAIVER",
+    "conditions": [
+      {
+        "type": "REQUIRES_RESIDENCY",
+        "description": "Visa not required if in possession of a long-stay visa or hold a valid residence permit issued by a Schengen member state",
+        "acceptedCountries": ["SCHENGEN"],
+        "mustBeValid": true
+      },
+      {
+        "type": "REQUIRES_RESIDENCY",
+        "description": "Visa not required if holding a residence permit for Andorra or Monaco",
+        "acceptedCountries": ["AD", "MC"],
+        "mustBeValid": true
+      },
+      {
+        "type": "REQUIRES_VISA",
+        "description": "All other tourist visa applications can be done online in certain cases after submitting the required documents",
+        "acceptedCountries": [],
+        "mustBeValid": true
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "confidence": "high",
+    "notesHash": "a872b3855ced4c56b5d94f88bf10467f"
+  },
+  {
+    "destinationCountryCd": "SH",
+    "originCountryCd": "PK",
+    "primaryRequirement": "EVISA",
+    "duration": {
+      "maxStayDays": 180,
+      "description": "Up to 6 months"
+    },
+    "conditions": [],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "confidence": "high",
+    "notesHash": "6488fdfceae15aba7ba244f20f1da66f"
+  },
+  {
+    "destinationCountryCd": "MF",
+    "originCountryCd": "PK",
+    "primaryRequirement": "CONDITIONAL_WAIVER",
+    "conditions": [
+      {
+        "type": "REQUIRES_RESIDENCY",
+        "description": "Visa not required if in possession of a long-stay visa or hold a valid residence permit issued by a Schengen member state",
+        "acceptedCountries": ["SCHENGEN"],
+        "mustBeValid": true
+      },
+      {
+        "type": "REQUIRES_RESIDENCY",
+        "description": "Visa not required if in possession of a residence permit for Andorra or Monaco",
+        "acceptedCountries": ["AD", "MC"],
+        "mustBeValid": true
+      },
+      {
+        "type": "REQUIRES_VISA",
+        "description": "All other tourist visa applications can be done online in certain cases after submitting the required documents",
+        "acceptedCountries": [],
+        "mustBeValid": true
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "confidence": "high",
+    "notesHash": "0ca2d859879c6189d1d0dd8676c0aa50"
+  },
+  {
+    "destinationCountryCd": "PM",
+    "originCountryCd": "PK",
+    "primaryRequirement": "CONDITIONAL_WAIVER",
+    "conditions": [
+      {
+        "type": "REQUIRES_RESIDENCY",
+        "description": "Visa not required if in possession of a long-stay visa or hold a valid residence permit issued by a Schengen member state, or a residence permit for Andorra or Monaco",
+        "acceptedCountries": ["EU", "AD", "MC"],
+        "mustBeValid": true
+      },
+      {
+        "type": "REQUIRES_VISA",
+        "description": "All other tourist visa applications can be done online in certain cases after submitting the required documents. For travel directly from Canada to Saint Pierre and Miquelon, a Canadian Permanent residence card may be used to enter",
+        "acceptedCountries": ["CA"],
+        "mustBeValid": true
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "confidence": "high",
+    "notesHash": "60713140376d73152310fefa8b7b3fae"
+  },
+  {
+    "destinationCountryCd": "XX",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "confidence": "high",
+    "notesHash": "17812542e4faa2346f3d27fd27a04b12"
+  },
+  {
+    "destinationCountryCd": "XX",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "confidence": "high",
+    "notesHash": "f33d1f947d11a9bb5725dcb20d026ea2"
+  },
+  {
+    "destinationCountryCd": "XX",
+    "originCountryCd": "PK",
+    "primaryRequirement": "CONDITIONAL_WAIVER",
+    "conditions": [
+      {
+        "type": "REQUIRES_RESIDENCY",
+        "description": "No visa required for residency, work, or tourism in Svalbard and Jan Mayen. Transit through Norway requires a transit visa for most Pakistani nationals unless holding USA, Japan, or Canadian permanent residence.",
+        "acceptedCountries": ["US", "JP", "CA"],
+        "mustBeValid": true
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "confidence": "high",
+    "notesHash": "91b6840da11d412b1564593e1bc5641e"
+  },
+  {
+    "destinationCountryCd": "TW",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "conditions": [
+      {
+        "type": "REQUIRES_VISA",
+        "description": "Visa required. eVisa is available for those who wish to enter Taiwan for the purpose of conducting business at the recommendation of local offices of the Taiwan External Trade Development Council (TAITRA).",
+        "acceptedCountries": [],
+        "mustBeValid": true
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "confidence": "high",
+    "notesHash": "c7b8f297303442279e6bb4a1c5b62d96"
+  },
+  {
+    "destinationCountryCd": "TC",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "XX",
+    "originCountryCd": "PK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "duration": {
+      "maxStayDays": 90,
+      "description": "Up to 90 days"
+    },
+    "conditions": [
+      {
+        "type": "REQUIRES_VISA",
+        "description": "eVisa obtainable online at https://visa.immigration.go.tz. Applicants should submit their applications at least 2 months before travel. An invitation letter or request letter from the host adds credibility. If visiting both Mainland and Zanzibar, select the first destination when filling the form.",
+        "acceptedCountries": ["TZ"],
+        "mustBeValid": true
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Pakistani_citizens",
+    "lastVerified": "2026-02-18T05:11:48.230Z",
+    "confidence": "high",
+    "notesHash": "3cd7a1497486b2dedd3b5ff42e69890d"
+  }
+]

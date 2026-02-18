@@ -38,12 +38,20 @@ export class ScraperService {
       countryData.demonyms["eng"]?.m,
     );
     const llmRequests = this.convertToLlmRequest(scrapedData, countryCd);
-    // // TODO: revert to LLM – temporarily load from file to save LLM calls
-    // const parsedData = await this.loadParsedDataFromFile("BD-VISA.json");
+    // TODO: revert to LLM – temporarily load from file to save LLM calls
+    // const parsedData = await this.loadParsedDataFromFile(`${countryCd}-VISA.json`);
     const parsedData = await this.llmService.parseVisaRequirement(llmRequests);
-    return parsedData;
+    await this.writeToFile(`${countryCd}-VISA.json`, parsedData);
 
-    // return await this.saveVisaRequirements(countryCd, parsedData);
+    return await this.saveVisaRequirements(countryCd, parsedData);
+  }
+
+  private async writeToFile(filename: string, data: VisaRequirement[]) {
+    this.logger.log(
+      `Writing ${data.length} visa requirements to file ${filename}`,
+    );
+    const filePath = path.join(__dirname, filename);
+    await fs.writeFile(filePath, JSON.stringify(data, null, 2));
   }
 
   async saveVisaRequirements(
@@ -60,52 +68,91 @@ export class ScraperService {
         const deleted = await tx.visaRequirement.deleteMany({
           where: { originCountryCode },
         });
-
         this.logger.log(`Deleted ${deleted.count} existing requirements`);
 
-        // Step 2: Create new
-        const createPromises = visaRequirements.map((req) =>
-          tx.visaRequirement.create({
-            data: {
-              originCountryCode: req.originCountryCd,
-              destinationCountryCode: req.destinationCountryCd,
-              primaryRequirement: req.primaryRequirement,
-              duration:
-                req.duration == null
-                  ? Prisma.JsonNull
-                  : (req.duration as Prisma.InputJsonValue),
-              sourceUrl: req.sourceUrl ?? null,
-              lastVerified: req.lastVerified
-                ? new Date(req.lastVerified)
-                : new Date(),
-              notesHash: req.notesHash ?? null,
+        // Step 2: Dedupe by (origin, destination) – same pair in batch causes unique constraint error
+        const seen = new Set<string>();
+        const uniqueRequirements: VisaRequirement[] = [];
+        for (const req of visaRequirements) {
+          if (req.originCountryCd === req.destinationCountryCd) {
+            this.logger.warn(
+              `Skipping same country: ${req.originCountryCd} -> ${req.destinationCountryCd}`,
+            );
+            continue;
+          }
+          const key = `${req.originCountryCd}|${req.destinationCountryCd}`;
+          if (seen.has(key)) {
+            this.logger.warn(
+              `Skipping duplicate: ${req.originCountryCd} -> ${req.destinationCountryCd}`,
+            );
+            continue;
+          }
+          seen.add(key);
+          uniqueRequirements.push(req);
+        }
 
-              ...(req.conditions &&
-                req.conditions.length > 0 && {
-                  conditions: {
-                    create: req.conditions.map((condition) => ({
-                      type: condition.type,
-                      description: condition.description,
-                      acceptedCountries: condition.acceptedCountries,
-                      mustBeValid: condition.mustBeValid ?? true,
-                      durationIfMet:
-                        condition.durationIfMet == null
-                          ? Prisma.JsonNull
-                          : (condition.durationIfMet as Prisma.InputJsonValue),
-                    })),
-                  },
-                }),
-            },
-          }),
+        const requirementData = uniqueRequirements.map((req) => ({
+          originCountryCode: req.originCountryCd,
+          destinationCountryCode: req.destinationCountryCd,
+          primaryRequirement: req.primaryRequirement,
+          duration:
+            req.duration == null
+              ? Prisma.JsonNull
+              : (req.duration as Prisma.InputJsonValue),
+          sourceUrl: req.sourceUrl ?? null,
+          lastVerified: req.lastVerified
+            ? new Date(req.lastVerified)
+            : new Date(),
+          notesHash: req.notesHash ?? null,
+        }));
+
+        const created = await tx.visaRequirement.createManyAndReturn({
+          data: requirementData,
+          select: { id: true },
+        });
+
+        // Step 3: Bulk create conditions – same order as uniqueRequirements
+        const conditionsData: {
+          visaRequirementId: string;
+          type: string;
+          description: string;
+          acceptedCountries: string[];
+          mustBeValid: boolean;
+          durationIfMet: Prisma.InputJsonValue | typeof Prisma.JsonNull;
+        }[] = [];
+        for (let i = 0; i < uniqueRequirements.length; i++) {
+          const req = uniqueRequirements[i]!;
+          const requirementId = created[i]!.id;
+          if (req.conditions?.length) {
+            for (const condition of req.conditions) {
+              conditionsData.push({
+                visaRequirementId: requirementId,
+                type: condition.type,
+                description: condition.description,
+                acceptedCountries: condition.acceptedCountries,
+                mustBeValid: condition.mustBeValid ?? true,
+                durationIfMet:
+                  condition.durationIfMet == null
+                    ? Prisma.JsonNull
+                    : (condition.durationIfMet as Prisma.InputJsonValue),
+              });
+            }
+          }
+        }
+
+        if (conditionsData.length > 0) {
+          await tx.visaCondition.createMany({ data: conditionsData });
+        }
+
+        this.logger.log(
+          `Created ${created.length} requirements, ${conditionsData.length} conditions`,
         );
-
-        const created = await Promise.all(createPromises);
-
-        this.logger.log(`Successfully created ${created.length} requirements`);
-
         return { deleted: deleted.count, created: created.length };
       },
-      { timeout: 60_000 },
+      {
+        timeout: 60_000, // max duration transaction can run
+        maxWait: 15_000, // max time to wait to acquire a connection (default 2s)
+      },
     );
   }
 
@@ -122,13 +169,7 @@ export class ScraperService {
     scrapedData: ScrapedData,
     originCountryCd: string,
   ): LlmRequest[] {
-    // TODO: test – only entries with notes, first 5; remove for full run
-    const withNotes = scrapedData.entries.filter((entry) =>
-      entry.notes?.trim(),
-    );
-    const limited = withNotes.slice(0, 5);
-
-    return limited.map((entry) => ({
+    return scrapedData.entries.map((entry) => ({
       destinationCountryCd: this.getCountryCodeByName(entry.country),
       originCountryCd,
       visaType: this.categorizeVisaRequirement(entry.visaRequirement),

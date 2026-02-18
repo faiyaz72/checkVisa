@@ -1,0 +1,105 @@
+[
+  {
+    "destinationCountryCd": "AF",
+    "originCountryCd": "IN",
+    "primaryRequirement": "VISA_REQUIRED",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Indian_citizens",
+    "lastVerified": "2026-02-18T04:17:59.531Z",
+    "confidence": "high",
+    "notesHash": "69cf590e881ebe74a59927a3496c3ab2"
+  },
+  {
+    "destinationCountryCd": "AL",
+    "originCountryCd": "IN",
+    "primaryRequirement": "CONDITIONAL_WAIVER",
+    "conditions": [
+      {
+        "type": "REQUIRES_RESIDENCY",
+        "description": "Visa exempt if holding a valid residence permit in one of the Schengen countries, US, or UK",
+        "acceptedCountries": ["SCHENGEN", "US", "GB"],
+        "mustBeValid": true
+      },
+      {
+        "type": "REQUIRES_VISA",
+        "description": "Visa exempt if holding a valid multiple-entry Schengen visa that has been used once in a Schengen country",
+        "acceptedCountries": ["SCHENGEN"],
+        "mustBeValid": true
+      },
+      {
+        "type": "REQUIRES_RESIDENCY",
+        "description": "Visa exempt if holding a 10-year UAE residence permit with more than one year remaining validity",
+        "acceptedCountries": ["AE"],
+        "mustBeValid": true
+      },
+      {
+        "type": "REQUIRES_VISA",
+        "description": "Visa exempt if holding a valid multiple-entry US or UK visa that has been used once in the country of issuance",
+        "acceptedCountries": ["US", "GB"],
+        "mustBeValid": true
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Indian_citizens",
+    "lastVerified": "2026-02-18T04:17:59.531Z",
+    "confidence": "high",
+    "notesHash": "f7d4b77738b06e138e8ba2853510cba5"
+  },
+  {
+    "destinationCountryCd": "AD",
+    "originCountryCd": "IN",
+    "primaryRequirement": "CONDITIONAL_WAIVER",
+    "conditions": [
+      {
+        "type": "REQUIRES_VISA",
+        "description": "Access requires a double- or multiple-entry Schengen Visa or a Schengen Area residence permit, as Andorra has no visa regime and is only accessible through France and Spain",
+        "acceptedCountries": ["FR", "ES"],
+        "mustBeValid": true
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Indian_citizens",
+    "lastVerified": "2026-02-18T04:17:59.531Z",
+    "confidence": "high",
+    "notesHash": "f5b7898cfdfb8c655d8d182c94b4ff90"
+  },
+  {
+    "destinationCountryCd": "AO",
+    "originCountryCd": "IN",
+    "primaryRequirement": "VISA_FREE",
+    "duration": {
+      "maxStayDays": 30,
+      "description": "Up to 30 days"
+    },
+    "conditions": [
+      {
+        "type": "OTHER",
+        "description": "Visa not required for tourism purposes. Visitors must have a return/onward ticket, hotel reservation, and an International Certificate of Vaccination. Allowed stay is 30 days per trip, with a maximum of 90 days within any 1 calendar year.",
+        "acceptedCountries": ["IN"],
+        "mustBeValid": true
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Indian_citizens",
+    "lastVerified": "2026-02-18T04:17:59.531Z",
+    "confidence": "high",
+    "notesHash": "7b55c36e0dfb2e6203a65492e793f584"
+  },
+  {
+    "destinationCountryCd": "AG",
+    "originCountryCd": "IN",
+    "primaryRequirement": "VISA_ON_ARRIVAL",
+    "duration": {
+      "maxStayDays": 30,
+      "description": "Up to 30 days"
+    },
+    "conditions": [
+      {
+        "type": "REQUIRES_VISA",
+        "description": "Visa on arrival for USD 100 for a maximum stay of 30 days for valid visa holders or residents of Canada, the Schengen Area, UK, and US",
+        "acceptedCountries": ["CA", "SCHENGEN", "GB", "US"],
+        "mustBeValid": true
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Indian_citizens",
+    "lastVerified": "2026-02-18T04:17:59.531Z",
+    "confidence": "high",
+    "notesHash": "0637e926867b3cec3921e95ce7eac5c7"
+  }
+]
