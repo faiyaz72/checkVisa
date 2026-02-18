@@ -1,6 +1,6 @@
 # CheckVisa
 
-A visa requirement lookup platform for travelers, starting with Bangladeshi passport holders.
+A visa requirement lookup platform for travelers. In the MVP phase, data is available for Bangladeshi, Indian, and Pakistani passport holders.
 
 **Status:** Early development - backend data pipeline complete, frontend coming soon.
 
@@ -15,7 +15,7 @@ This project aggregates visa data and uses AI to parse the messy, unstructured t
 Built the core data pipeline:
 
 - Scrapes visa requirements from Wikipedia
-- Uses GPT-4o-mini to parse complex conditions (like "visa-free with US visa")
+- Uses GPT-4.1-nano to parse complex conditions (like "visa-free with US visa")
 - Stores everything in a PostgreSQL database with proper relationships
 - REST API built with NestJS
 
@@ -30,7 +30,7 @@ Gets structured into actual queryable data with country codes, conditions, and d
 - Build the actual frontend (Vue 3)
 - Add search and filtering
 - "Where can I go with my X visa?" feature
-- Expand beyond Bangladesh to other countries
+- Expand beyond Bangladesh, India, and Pakistan to other countries
 - Mobile responsiveness
 
 ## Tech Stack
