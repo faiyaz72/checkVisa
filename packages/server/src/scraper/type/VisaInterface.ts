@@ -1,8 +1,4 @@
-import {
-  ConditionType,
-  EntryType,
-  VisaRequirementType,
-} from "../enum/VisaRequirement.enum";
+import { VisaRequirementType } from "../enum/VisaRequirement.enum";
 
 export interface LlmRequest {
   destinationCountryCd: string;
@@ -31,19 +27,16 @@ export interface ScrapedData {
   rawTableCount: number;
 }
 
+/** Matches VisaRequirement model in schema. */
 export interface VisaRequirement {
   destinationCountryCd: string;
   originCountryCd: string;
-  primaryRequirement: VisaRequirementType;
+  primaryRequirement: string; // VISA_FREE, VISA_REQUIRED, etc.
   duration?: DurationInfo;
-  conditions?: VisaCondition[];
-  entryType?: EntryType;
-  processingTime?: string;
-  restrictions?: string[];
   notesHash?: string;
   sourceUrl?: string;
   lastVerified?: string;
-  confidence?: "high" | "medium" | "low";
+  conditions?: VisaCondition[];
 }
 
 export interface DurationInfo {
@@ -59,20 +52,11 @@ export interface DurationInfo {
   cumulative?: boolean;
 }
 
+/** Matches VisaCondition model in schema. */
 export interface VisaCondition {
-  type: ConditionType;
-  requiredVisas?: RequiredVisa[];
-  requiredDocuments?: string[];
-  durationIfMet?: DurationInfo;
+  type: string; // REQUIRES_VISA, REQUIRES_RESIDENCY, etc.
   description: string;
-  logic?: "AND" | "OR";
-}
-
-export interface RequiredVisa {
-  issuingCountry: string;
-  issuingCountryCode?: string;
-  visaTypes?: string[];
+  acceptedCountries: string[]; // ["US", "CA", "GB", "SCHENGEN"]
   mustBeValid?: boolean;
-  mustBeUsed?: boolean;
-  minValidityDays?: number;
+  durationIfMet?: DurationInfo;
 }

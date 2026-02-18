@@ -90,7 +90,6 @@ export class LlmService {
       duration: request.duration,
       lastVerified: request.lastVerified,
       sourceUrl: request.sourceUrl,
-      confidence: "high",
     };
   }
 }

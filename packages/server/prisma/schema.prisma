@@ -10,34 +10,24 @@ datasource db {
 }
 
 // ============================================
-// MAIN TABLES
+// SIMPLIFIED SCHEMA
 // ============================================
 
 model VisaRequirement {
   id String @id @default(cuid())
 
-  // Just store country codes directly (no FK constraint)
+  // Country codes
   originCountryCode      String
   destinationCountryCode String
 
-  // Core visa information (stored as string, e.g. VISA_REQUIRED, UNSPECIFIED)
-  primaryRequirement String
-  entryType          String @default("UNSPECIFIED")
-
-  // Duration stored as JSONB (flexible structure)
-  duration Json? // DurationInfo object
-
-  // Additional info
-  processingTime String?
-  restrictions   String[] @default([])
+  // Core visa information
+  primaryRequirement String // VISA_FREE, VISA_REQUIRED, etc.
+  duration           Json? // { maxStayDays: 180, description: "..." }
 
   // Metadata
   sourceUrl    String?
   lastVerified DateTime?
-  confidence   String @default("MEDIUM")
-
-  // Cache hash for detecting changes
-  notesHash String?
+  notesHash    String?
 
   // Relations
   conditions VisaCondition[]
@@ -45,7 +35,6 @@ model VisaRequirement {
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 
-  // Ensure unique combination
   @@unique([originCountryCode, destinationCountryCode])
   @@index([originCountryCode])
   @@index([destinationCountryCode])
@@ -59,47 +48,18 @@ model VisaCondition {
   visaRequirementId String
   visaRequirement   VisaRequirement @relation(fields: [visaRequirementId], references: [id], onDelete: Cascade)
 
-  // Condition details (stored as string, e.g. REQUIRES_VISA, OR)
-  type        String
-  description String
-  logic       String @default("OR")
+  // Condition details
+  type              String // REQUIRES_VISA, REQUIRES_RESIDENCY, etc.
+  description       String // Full explanation
+  acceptedCountries String[] // ["US", "CA", "UK", "SCHENGEN"]
 
-  // Documents required (if applicable)
-  requiredDocuments String[] @default([])
-
-  // Duration if this condition is met (stored as JSONB)
-  durationIfMet Json? // DurationInfo object
-
-  // Relations
-  requiredVisas RequiredVisa[]
+  // Common rules
+  mustBeValid   Boolean @default(true)
+  durationIfMet Json? // { maxStayDays: 30 }
 
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 
   @@index([visaRequirementId])
-  @@index([type])
-}
-
-model RequiredVisa {
-  id String @id @default(cuid())
-
-  // Relation
-  visaConditionId String
-  visaCondition   VisaCondition @relation(fields: [visaConditionId], references: [id], onDelete: Cascade)
-
-  // Required visa details
-  issuingCountry     String
-  issuingCountryCode String? // US, GB, SCHENGEN, etc.
-
-  // Visa requirements
-  visaTypes       String[] @default([]) // ["tourist", "business", "any"]
-  mustBeValid     Boolean  @default(true)
-  mustBeUsed      Boolean  @default(false)
-  minValidityDays Int?
-
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
-
-  @@index([visaConditionId])
-  @@index([issuingCountryCode])
+  @@index([acceptedCountries]) // For filtering "I have X visa"
 }

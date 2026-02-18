@@ -1,0 +1,97 @@
+[
+  {
+    "destinationCountryCd": "AL",
+    "originCountryCd": "BD",
+    "primaryRequirement": "CONDITIONAL_WAIVER",
+    "conditions": [
+      {
+        "type": "REQUIRES_VISA",
+        "description": "e-Visa available for holders of a valid Schengen visa",
+        "acceptedCountries": ["SCHENGEN"],
+        "mustBeValid": true
+      },
+      {
+        "type": "REQUIRES_VISA",
+        "description": "Visa not required for those who have a valid visa or residence permit from any USA, UK, or Schengen countries",
+        "acceptedCountries": ["US", "GB", "SCHENGEN"],
+        "mustBeValid": true
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "lastVerified": "2026-02-18T04:15:39.440Z",
+    "confidence": "high",
+    "notesHash": "98e58b237ad6c1dbda585ede26b3b9f5"
+  },
+  {
+    "destinationCountryCd": "AD",
+    "originCountryCd": "BD",
+    "primaryRequirement": "CONDITIONAL_WAIVER",
+    "conditions": [
+      {
+        "type": "REQUIRES_RESIDENCY",
+        "description": "Visa not required for holders of Schengen residence cards",
+        "acceptedCountries": ["SCHENGEN"],
+        "mustBeValid": true
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "lastVerified": "2026-02-18T04:15:39.440Z",
+    "confidence": "high",
+    "notesHash": "0462f85950c0852b9a798ae42307d32c"
+  },
+  {
+    "destinationCountryCd": "AG",
+    "originCountryCd": "BD",
+    "primaryRequirement": "VISA_REQUIRED",
+    "duration": {
+      "maxStayDays": 30,
+      "description": "Up to 30 days"
+    },
+    "conditions": [
+      {
+        "type": "REQUIRES_VISA",
+        "description": "eVisa with a visa waiver fee of 100 USD applies for a maximum stay of 30 days",
+        "acceptedCountries": [],
+        "mustBeValid": true
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "lastVerified": "2026-02-18T04:15:39.440Z",
+    "confidence": "high",
+    "notesHash": "17f84deef64724af7aefefa225245f11"
+  },
+  {
+    "destinationCountryCd": "AU",
+    "originCountryCd": "BD",
+    "primaryRequirement": "VISA_REQUIRED",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "lastVerified": "2026-02-18T04:15:39.440Z",
+    "confidence": "high",
+    "notesHash": "7c6483eaaf2cfc3375b1c65c3a00e7ee"
+  },
+  {
+    "destinationCountryCd": "AZ",
+    "originCountryCd": "BD",
+    "primaryRequirement": "CONDITIONAL_WAIVER",
+    "duration": {
+      "maxStayDays": 90,
+      "description": "Up to 90 days"
+    },
+    "conditions": [
+      {
+        "type": "REQUIRES_RESIDENCY",
+        "description": "Visa on arrival for up to 90 days for holders of valid residence permits from any country in the Gulf Cooperation Council (GCC), including Bahrain, Kuwait, Oman, Qatar, Saudi Arabia, and the UAE",
+        "acceptedCountries": ["BH", "KW", "OM", "QA", "SA", "AE"],
+        "mustBeValid": true,
+        "durationIfMet": {
+          "maxStayDays": 90,
+          "description": "Up to 90 days"
+        }
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+    "lastVerified": "2026-02-18T04:15:39.440Z",
+    "confidence": "high",
+    "notesHash": "f891111215c6398655f1585ee9ef7fa3"
+  }
+]

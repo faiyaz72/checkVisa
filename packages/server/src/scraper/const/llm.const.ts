@@ -1,4 +1,4 @@
-export const VISA_PARSING_SYSTEM_PROMPT = `You are a visa requirement parser. Your job is to parse visa requirement information from a pre-structured JSON object into a more detailed, structured format.
+export const VISA_PARSING_SYSTEM_PROMPT = `You are a visa requirement parser. Your job is to parse visa requirement information from a pre-structured JSON object into a simplified, structured format.
 
 You will receive a JSON object with basic visa information that needs to be enriched and properly structured. The input format is:
 
@@ -13,11 +13,11 @@ You will receive a JSON object with basic visa information that needs to be enri
   "sourceUrl": "string - source URL"
 }
 
-Parse this into the following detailed JSON schema:
+Parse this into the following SIMPLIFIED JSON schema:
 
 {
-  "destinationCountryCd": "string - ISO 3166-1 alpha-2 code for destination country (from input)",
-  "originCountryCd": "string - ISO 3166-1 alpha-2 code for origin/passport country (from input)",
+  "destinationCountryCd": "string - ISO 3166-1 alpha-2 code (from input)",
+  "originCountryCd": "string - ISO 3166-1 alpha-2 code (from input)",
   "primaryRequirement": "VISA_FREE | VISA_ON_ARRIVAL | ETA | EVISA | VISA_REQUIRED | CONDITIONAL_WAIVER | ADMISSION_REFUSED | SPECIAL_TERRITORY",
   "duration": {
     "maxStayDays": "number - maximum stay in days",
@@ -25,135 +25,171 @@ Parse this into the following detailed JSON schema:
   },
   "conditions": [
     {
-      "type": "REQUIRES_VISA | REQUIRES_DOCUMENT | REQUIRES_RESIDENCY | REQUIRES_PURPOSE | REQUIRES_ARRIVAL_METHOD | REQUIRES_DEPARTURE | AGE_RESTRICTION | OTHER",
-      "description": "string - what the condition is",
-      "logic": "AND | OR - if multiple conditions",
-      "requiredVisas": [
-        {
-          "issuingCountry": "string - country name",
-          "issuingCountryCode": "string - ISO code if known (US, GB, etc)",
-          "mustBeValid": "boolean - must be currently valid",
-          "mustBeUsed": "boolean - must have been used for entry"
-        }
-      ],
-      "requiredDocuments": ["string - document names"],
-      "durationIfMet": { /* same as duration */ }
+      "type": "REQUIRES_VISA | REQUIRES_RESIDENCY | REQUIRES_DOCUMENT | REQUIRES_PURPOSE | OTHER",
+      "description": "string - FULL explanation of the condition including all details",
+      "acceptedCountries": ["string - ISO codes like US, GB, CA, SCHENGEN"],
+      "mustBeValid": "boolean - whether visa/residency must be currently valid",
+      "durationIfMet": {
+        "maxStayDays": "number",
+        "description": "string"
+      }
     }
   ],
-  "entryType": "SINGLE | MULTIPLE | TRANSIT_ONLY | UNSPECIFIED",
-  "processingTime": "string",
-  "restrictions": ["string - restrictions"],
   "sourceUrl": "string - from input",
   "lastVerified": "string - ISO date from input",
-  "confidence": "high | medium | low - your confidence in parsing"
+  "confidence": "high | medium | low"
 }
 
-IMPORTANT RULES FOR PARSING:
+CRITICAL PARSING RULES:
 
 1. PRIMARY REQUIREMENT CLASSIFICATION:
-   - Analyze both 'visaType' and 'notes' to determine correct primaryRequirement
-   - If notes mention "visa not required with [condition]" → CONDITIONAL_WAIVER
-   - If notes mention multiple visa options (eVisa OR visa waiver) → Choose most flexible as primary
-   - Cross-check rawRequirement and notes for conflicts
+   - Check the 'notes' field FIRST for ANY conditional entry possibility
+   - If notes contain ANY of these phrases → ALWAYS set primaryRequirement to CONDITIONAL_WAIVER:
+     * "visa not required if"
+     * "visa not required for holders of"
+     * "visa not required who have"
+     * "no visa required if"
+     * "exempt if"
+     * "waived if"
+     * "without a visa if"
+   - IGNORE the preliminary 'visaType' if notes indicate a conditional waiver
+   - NEVER set VISA_REQUIRED if any conditional entry exists
 
-2. PARSING THE 'NOTES' FIELD (CRITICAL):
-   - The 'notes' field contains the most important information about conditions
-   - Look for phrases like:
-     * "valid visa from" → REQUIRES_VISA condition
-     * "residence permit from" → REQUIRES_RESIDENCY condition  
-     * "visa not required who have" → CONDITIONAL_WAIVER
-     * "available for holders of" → eligibility conditions
-     * "only" / "must" → restrictions
-   - Extract ALL conditions from notes into the conditions array
-   - Parse visa waiver conditions: list ALL accepted countries/regions
+2. CONDITIONS ARRAY - SIMPLIFIED STRUCTURE:
+   - Create ONE condition per type (REQUIRES_VISA, REQUIRES_RESIDENCY, etc.)
+   - Put ALL accepted countries in the acceptedCountries array as ISO codes
+   - The description field should include ALL relevant details and special rules
+   - Extract EVERY country mentioned and add its ISO code to acceptedCountries
+   
+   Country ISO Code Mappings (CRITICAL - use these):
+   - United States / USA / US → "US"
+   - United Kingdom / UK / Britain → "GB"
+   - Canada → "CA"
+   - Japan → "JP"
+   - Australia → "AU"
+   - New Zealand → "NZ"
+   - Schengen / Schengen Area / Schengen countries → "SCHENGEN"
+   - European Union / EU → "EU"
+   
+   GOOD example:
+   {
+     "type": "REQUIRES_VISA",
+     "description": "Visa-free for 180 days if holding a valid visa from USA, Canada, Japan, UK, or Schengen Area member states",
+     "acceptedCountries": ["US", "CA", "JP", "GB", "SCHENGEN"],
+     "mustBeValid": true,
+     "durationIfMet": {
+       "maxStayDays": 180,
+       "description": "Up to 180 days"
+     }
+   }
 
-3. CONDITIONAL WAIVER DETECTION:
-   - If notes contain "visa not required" + "with/who have/for holders of" → CONDITIONAL_WAIVER
-   - Example: "Visa not required who have valid visa from USA, UK" → CONDITIONAL_WAIVER with conditions
-   - Example: "e-Visa available for holders of Schengen visa" → May be EVISA with conditions OR CONDITIONAL_WAIVER
+3. DESCRIPTION FIELD - INCLUDE ALL DETAILS:
+   - Put EVERYTHING relevant in the description
+   - Include special rules like "when transiting to that country"
+   - Include restrictions like "tourist purposes only"
+   - Include any timing requirements
+   - Make it human-readable and complete
+   
+   Example: "Valid AND previously used visa from USA, Japan, Australia, Canada, or Schengen when transiting TO that specific country. Maximum 7 days stay."
 
-4. REQUIRED VISAS PARSING:
-   - Extract country names from notes: "USA", "UK", "Schengen countries", etc.
-   - Map to ISO codes: USA→US, UK→GB, Schengen countries→SCHENGEN
-   - Determine if must be valid: look for "valid visa", "current visa"
-   - Determine if must be used: look for "used for entry", "previously used"
-   - Logic is OR by default when multiple countries listed with commas
+4. ACCEPTED COUNTRIES ARRAY:
+   - ALWAYS populate if condition mentions any countries
+   - Use ISO codes (US, GB, CA, JP, etc.)
+   - Use "SCHENGEN" for Schengen Area
+   - List ALL countries mentioned, separated into individual array items
+   - For REQUIRES_RESIDENCY: still use acceptedCountries (countries whose residency is accepted)
 
-5. DURATION PARSING:
-   - Use durationDays if provided, but verify against notes
-   - Notes may have more detailed duration info: "90 days within 180 days"
-   - Extract both maxStayDays and additional context
+5. MUST BE VALID:
+   - Set to true if notes say "valid visa" or "current visa"
+   - Set to false if notes say "even expired visa" (rare)
+   - Default to true if unclear
 
-6. PROCESSING TIME:
-   - Extract processing time if mentioned in notes or rawRequirement
-   - Examples: "instant", "24 hours", "3-5 business days"
+6. DURATION IF MET:
+   - Only include if the condition gives a DIFFERENT duration than the main requirement
+   - Must match the duration format with maxStayDays and description
 
-7. RESTRICTIONS:
-   - Extract any limitations from notes
-   - Common patterns: "tourist purposes only", "by air only", "must have onward ticket"
+7. CONDITION TYPE CLASSIFICATION (CRITICAL):
+   
+   Use REQUIRES_RESIDENCY when notes mention:
+   - "residence permit"
+   - "residency card"
+   - "permanent residence"
+   - "residence card"
+   - "PR" (permanent residency)
+   - "green card"
+   
+   Use REQUIRES_VISA when notes mention:
+   - "visa" (without residence/residency/permit)
+   - "valid visa"
+   - "tourist visa"
+   - "business visa"
+   
+   EXAMPLES:
+   ✅ "residence permit holders from GCC" → REQUIRES_RESIDENCY
+   ✅ "Schengen residence card" → REQUIRES_RESIDENCY
+   ✅ "permanent residence of United States" → REQUIRES_RESIDENCY
+   ✅ "valid visa from USA" → REQUIRES_VISA
+   ✅ "holding a visa from Schengen" → REQUIRES_VISA
+   
+   ❌ WRONG: "residence permit from GCC" → REQUIRES_VISA (this is INCORRECT!)
+   
+   IF BOTH are mentioned:
+   - "valid visa OR residence permit from USA" → create TWO separate conditions
+   - First: type "REQUIRES_VISA" with acceptedCountries
+   - Second: type "REQUIRES_RESIDENCY" with same acceptedCountries
 
-8. CONFIDENCE LEVELS:
-   - "high": Notes are clear, no contradictions with visaType/rawRequirement
-   - "medium": Some interpretation needed, minor ambiguity
-   - "low": Contradictory information, unclear conditions, or incomplete notes
 
-9. OUTPUT FORMAT:
-   - Return ONLY valid JSON, no markdown formatting
-   - Omit fields that have no data (except required fields)
-   - Keep sourceUrl, lastVerified, destinationCountryCd, and originCountryCd from input unchanged
+8. OUTPUT FORMAT:
+   - Return ONLY valid JSON, no markdown
+   - Omit fields with no data (duration, durationIfMet, conditions can be omitted if not applicable)
+   - ALWAYS include: destinationCountryCd, originCountryCd, primaryRequirement, sourceUrl, lastVerified, confidence
+   - NEVER leave brackets unclosed
 
 EXAMPLE TRANSFORMATIONS:
 
 Input:
 {
-  "destinationCountryCd": "AL",
-  "originCountryCd": "US",
-  "visaType": "EVISA",
-  "rawRequirement": "eVisa",
-  "notes": "e-Visa available for holders of a valid Schengen visa; Visa not required who have valid visa or residence permit from any USA, UK or Schengen countries."
+  "destinationCountryCd": "CA",
+  "originCountryCd": "BD",
+  "visaType": "VISA_REQUIRED",
+  "notes": "Visa is not required if holding a permanent residency card from the United States.",
+  "sourceUrl": "https://...",
+  "lastVerified": "2026-02-17T00:40:33.031Z"
 }
 
 Output:
 {
-  "destinationCountryCd": "AL",
-  "originCountryCd": "US",
+  "destinationCountryCd": "CA",
+  "originCountryCd": "BD",
   "primaryRequirement": "CONDITIONAL_WAIVER",
   "conditions": [
     {
-      "type": "REQUIRES_VISA",
-      "description": "Visa not required with valid visa from USA, UK, or Schengen countries",
-      "logic": "OR",
-      "requiredVisas": [
-        {"issuingCountry": "United States", "issuingCountryCode": "US", "mustBeValid": true},
-        {"issuingCountry": "United Kingdom", "issuingCountryCode": "GB", "mustBeValid": true},
-        {"issuingCountry": "Schengen Area", "issuingCountryCode": "SCHENGEN", "mustBeValid": true}
-      ]
-    },
-    {
       "type": "REQUIRES_RESIDENCY",
-      "description": "OR residence permit from USA, UK, or Schengen countries",
-      "logic": "OR"
+      "description": "Visa not required if holding a permanent residency card from the United States",
+      "acceptedCountries": ["US"],
+      "mustBeValid": true
     }
   ],
-  "entryType": "UNSPECIFIED",
-  "notes": ["eVisa also available for holders of valid Schengen visa"],
+  "sourceUrl": "https://...",
+  "lastVerified": "2026-02-17T00:40:33.031Z",
   "confidence": "high"
 }
 
 Input:
 {
   "destinationCountryCd": "MX",
-  "originCountryCd": "CA",
+  "originCountryCd": "BD",
   "visaType": "VISA_REQUIRED",
-  "rawRequirement": "Visa required",
   "durationDays": 180,
-  "notes": "Visa not required for a maximum stay of 180 days if holding a valid visa or permanent residence of United States, Canada, Japan, United Kingdom or a Schengen Area member state."
+  "notes": "Visa not required for a maximum stay of 180 days if holding a valid visa or permanent residence of United States, Canada, Japan, United Kingdom or a Schengen Area member state.",
+  "sourceUrl": "https://...",
+  "lastVerified": "2026-02-17T00:40:33.031Z"
 }
 
 Output:
 {
   "destinationCountryCd": "MX",
-  "originCountryCd": "CA",
+  "originCountryCd": "BD",
   "primaryRequirement": "CONDITIONAL_WAIVER",
   "duration": {
     "maxStayDays": 180,
@@ -162,41 +198,111 @@ Output:
   "conditions": [
     {
       "type": "REQUIRES_VISA",
-      "description": "Visa-free if holding valid visa from USA, Canada, Japan, UK, or Schengen Area",
-      "logic": "OR",
-      "requiredVisas": [
-        {"issuingCountry": "United States", "issuingCountryCode": "US", "mustBeValid": true},
-        {"issuingCountry": "Canada", "issuingCountryCode": "CA", "mustBeValid": true},
-        {"issuingCountry": "Japan", "issuingCountryCode": "JP", "mustBeValid": true},
-        {"issuingCountry": "United Kingdom", "issuingCountryCode": "GB", "mustBeValid": true},
-        {"issuingCountry": "Schengen Area", "issuingCountryCode": "SCHENGEN", "mustBeValid": true}
-      ],
+      "description": "Visa-free for up to 180 days if holding a valid visa from United States, Canada, Japan, United Kingdom, or Schengen Area member states",
+      "acceptedCountries": ["US", "CA", "JP", "GB", "SCHENGEN"],
+      "mustBeValid": true,
       "durationIfMet": {
-        "maxStayDays": 180
+        "maxStayDays": 180,
+        "description": "Up to 180 days"
       }
     },
     {
       "type": "REQUIRES_RESIDENCY",
-      "description": "OR permanent residence from same countries",
-      "logic": "OR"
+      "description": "Visa-free for up to 180 days if holding permanent residence from United States, Canada, Japan, United Kingdom, or Schengen Area member states",
+      "acceptedCountries": ["US", "CA", "JP", "GB", "SCHENGEN"],
+      "mustBeValid": true,
+      "durationIfMet": {
+        "maxStayDays": 180,
+        "description": "Up to 180 days"
+      }
     }
   ],
-  "entryType": "UNSPECIFIED",
+  "sourceUrl": "https://...",
+  "lastVerified": "2026-02-17T00:40:33.031Z",
   "confidence": "high"
 }
 
-CRITICAL: Focus heavily on parsing the 'notes' field - this is where all the conditional requirements, visa waivers, and important details are hidden. The preliminary 'visaType' may be incorrect if conditions exist.
-IMPORTANT - JSON COMPLETENESS:
-- ALWAYS close all JSON objects and arrays properly
-- If you don't have information for a field, OMIT it entirely (don't include empty arrays/objects)
-- Only include fields where you have actual data to provide
-- Ensure the JSON is valid and complete before finishing your response
-- Examples:
-  * If no conditions exist → omit the "conditions" field entirely
-  * If requiredVisas is empty → omit "requiredVisas" from the condition
-  * If no restrictions → omit "restrictions" field
-- NEVER leave arrays or objects unclosed
-- Double-check your closing brackets before ending response`;
+Input:
+{
+  "destinationCountryCd": "KR",
+  "originCountryCd": "BD",
+  "notes": "Visa not required for up to 30 days if holding a valid and previously used visa from USA, Canada, Japan, Australia, or New Zealand when transiting to that country. Diplomatic passport holders do not require a visa.",
+  "sourceUrl": "https://...",
+  "lastVerified": "2026-02-17T00:40:33.031Z"
+}
+
+Output:
+{
+  "destinationCountryCd": "KR",
+  "originCountryCd": "BD",
+  "primaryRequirement": "CONDITIONAL_WAIVER",
+  "duration": {
+    "maxStayDays": 30,
+    "description": "Up to 30 days"
+  },
+  "conditions": [
+    {
+      "type": "REQUIRES_VISA",
+      "description": "Visa-free for up to 30 days if holding a valid AND previously used visa from USA, Canada, Japan, Australia, or New Zealand when transiting to that specific country",
+      "acceptedCountries": ["US", "CA", "JP", "AU", "NZ"],
+      "mustBeValid": true,
+      "durationIfMet": {
+        "maxStayDays": 30,
+        "description": "Up to 30 days"
+      }
+    },
+    {
+      "type": "REQUIRES_DOCUMENT",
+      "description": "Diplomatic passport holders do not require a visa",
+      "acceptedCountries": []
+    }
+  ],
+  "sourceUrl": "https://...",
+  "lastVerified": "2026-02-17T00:40:33.031Z",
+  "confidence": "high"
+}
+
+Input:
+{
+  "destinationCountryCd": "AZ",
+  "originCountryCd": "BD",
+  "notes": "Visa on arrival for up to 90 days for valid residence permit holders of any country in the GCC (Bahrain, Kuwait, Oman, Qatar, Saudi Arabia, and the UAE)",
+  "sourceUrl": "https://...",
+  "lastVerified": "2026-02-18T04:08:36.592Z"
+}
+
+Output:
+{
+  "destinationCountryCd": "AZ",
+  "originCountryCd": "BD",
+  "primaryRequirement": "CONDITIONAL_WAIVER",
+  "duration": {
+    "maxStayDays": 90,
+    "description": "Up to 90 days"
+  },
+  "conditions": [
+    {
+      "type": "REQUIRES_RESIDENCY",
+      "description": "Visa on arrival for up to 90 days for holders of valid residence permit from any GCC country (Bahrain, Kuwait, Oman, Qatar, Saudi Arabia, UAE)",
+      "acceptedCountries": ["BH", "KW", "OM", "QA", "SA", "AE"],
+      "mustBeValid": true,
+      "durationIfMet": {
+        "maxStayDays": 90,
+        "description": "Up to 90 days"
+      }
+    }
+  ],
+  "sourceUrl": "https://...",
+  "lastVerified": "2026-02-18T04:08:36.592Z",
+  "confidence": "high"
+}
+
+REMEMBER:
+- Focus on the NOTES field - it has all the important details
+- Put ALL countries in acceptedCountries array as ISO codes
+- Put ALL special rules and details in the description
+- Create separate conditions for VISA vs RESIDENCY requirements
+- Always close your JSON properly`;
 
 export const VISA_REQUIREMENT_RESPONSE_FORMAT = {
   type: "json_schema",
@@ -256,61 +362,26 @@ export const VISA_REQUIREMENT_RESPONSE_FORMAT = {
                 "REQUIRES_DOCUMENT",
                 "REQUIRES_RESIDENCY",
                 "REQUIRES_PURPOSE",
-                "REQUIRES_ARRIVAL_METHOD",
-                "REQUIRES_DEPARTURE",
-                "AGE_RESTRICTION",
                 "OTHER",
               ],
               description: "Type of condition that applies",
             },
             description: {
               type: "string",
-              description: "Explanation of this condition",
-            },
-            logic: {
-              type: "string",
-              enum: ["AND", "OR"],
-              description: "Logic if multiple conditions apply",
-            },
-            requiredVisas: {
-              type: "array",
-              items: {
-                type: "object",
-                properties: {
-                  issuingCountry: {
-                    type: "string",
-                    description: "Country issuing the visa",
-                  },
-                  issuingCountryCode: {
-                    type: "string",
-                    description: "ISO code for issuing country",
-                  },
-                  mustBeValid: {
-                    type: "boolean",
-                    description: "Must visa be currently valid",
-                  },
-                  mustBeUsed: {
-                    type: "boolean",
-                    description: "Whether visa must have been used for entry",
-                  },
-                },
-                required: [
-                  "issuingCountry",
-                  "issuingCountryCode",
-                  "mustBeValid",
-                  "mustBeUsed",
-                ],
-                additionalProperties: false,
-              },
               description:
-                "Array of visas that may be required under this condition",
+                "Full explanation of this condition including all details",
             },
-            requiredDocuments: {
+            acceptedCountries: {
               type: "array",
               items: {
                 type: "string",
               },
-              description: "List of document names required",
+              description:
+                "Array of ISO country codes (e.g. US, GB, CA, SCHENGEN)",
+            },
+            mustBeValid: {
+              type: "boolean",
+              description: "Whether visa/residency must be currently valid",
             },
             durationIfMet: {
               type: "object",
@@ -330,36 +401,10 @@ export const VISA_REQUIREMENT_RESPONSE_FORMAT = {
               description: "Duration allowed if this condition is satisfied",
             },
           },
-          // ❌ REMOVE THIS - Don't require all nested fields
-          // required: [
-          //   "type",
-          //   "description",
-          //   "logic",
-          //   "requiredVisas",
-          //   "requiredDocuments",
-          //   "durationIfMet",
-          // ],
-          // ✅ REPLACE WITH THIS - Only require essential fields
           required: ["type", "description"],
           additionalProperties: false,
         },
         description: "Array of special conditions that apply",
-      },
-      entryType: {
-        type: "string",
-        enum: ["SINGLE", "MULTIPLE", "TRANSIT_ONLY", "UNSPECIFIED"],
-        description: "Type of permitted entry",
-      },
-      processingTime: {
-        type: "string",
-        description: "How long visa processing takes",
-      },
-      restrictions: {
-        type: "array",
-        items: {
-          type: "string",
-        },
-        description: "Special restrictions that may apply",
       },
       sourceUrl: {
         type: "string",
@@ -367,7 +412,6 @@ export const VISA_REQUIREMENT_RESPONSE_FORMAT = {
       },
       lastVerified: {
         type: "string",
-        format: "date",
         description: "Date the information was last verified (ISO format)",
       },
       confidence: {
@@ -380,6 +424,8 @@ export const VISA_REQUIREMENT_RESPONSE_FORMAT = {
       "destinationCountryCd",
       "originCountryCd",
       "primaryRequirement",
+      "sourceUrl",
+      "lastVerified",
       "confidence",
     ],
     additionalProperties: false,

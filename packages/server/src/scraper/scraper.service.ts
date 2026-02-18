@@ -38,11 +38,12 @@ export class ScraperService {
       countryData.demonyms["eng"]?.m,
     );
     const llmRequests = this.convertToLlmRequest(scrapedData, countryCd);
-    // TODO: revert to LLM – temporarily load from file to save LLM calls
-    const parsedData = await this.loadParsedDataFromFile("BD-VISA.json");
-    // const parsedData = await this.llmService.parseVisaRequirement(llmRequests);
+    // // TODO: revert to LLM – temporarily load from file to save LLM calls
+    // const parsedData = await this.loadParsedDataFromFile("BD-VISA.json");
+    const parsedData = await this.llmService.parseVisaRequirement(llmRequests);
+    return parsedData;
 
-    return await this.saveVisaRequirements(countryCd, parsedData);
+    // return await this.saveVisaRequirements(countryCd, parsedData);
   }
 
   async saveVisaRequirements(
@@ -69,51 +70,28 @@ export class ScraperService {
               originCountryCode: req.originCountryCd,
               destinationCountryCode: req.destinationCountryCd,
               primaryRequirement: req.primaryRequirement,
-              entryType: req.entryType || "UNSPECIFIED",
-              duration: (req.duration == null
-                ? Prisma.JsonNull
-                : req.duration) as
-                | Prisma.InputJsonValue
-                | typeof Prisma.JsonNull,
-              processingTime: req.processingTime || null,
-              restrictions: req.restrictions || [],
-              sourceUrl: req.sourceUrl || null,
+              duration:
+                req.duration == null
+                  ? Prisma.JsonNull
+                  : (req.duration as Prisma.InputJsonValue),
+              sourceUrl: req.sourceUrl ?? null,
               lastVerified: req.lastVerified
                 ? new Date(req.lastVerified)
                 : new Date(),
-              confidence: req.confidence,
-              notesHash: req.notesHash || null,
+              notesHash: req.notesHash ?? null,
 
-              // Only create conditions if they exist
               ...(req.conditions &&
                 req.conditions.length > 0 && {
                   conditions: {
                     create: req.conditions.map((condition) => ({
                       type: condition.type,
                       description: condition.description,
-                      logic: condition.logic || "OR",
-                      requiredDocuments: condition.requiredDocuments || [],
-                      durationIfMet: (condition.durationIfMet == null
-                        ? Prisma.JsonNull
-                        : condition.durationIfMet) as
-                        | Prisma.InputJsonValue
-                        | typeof Prisma.JsonNull,
-
-                      // Only create requiredVisas if they exist
-                      ...(condition.requiredVisas &&
-                        condition.requiredVisas.length > 0 && {
-                          requiredVisas: {
-                            create: condition.requiredVisas.map((visa) => ({
-                              issuingCountry: visa.issuingCountry,
-                              issuingCountryCode:
-                                visa.issuingCountryCode || null,
-                              visaTypes: visa.visaTypes || [],
-                              mustBeValid: visa.mustBeValid ?? true,
-                              mustBeUsed: visa.mustBeUsed ?? false,
-                              minValidityDays: visa.minValidityDays || null,
-                            })),
-                          },
-                        }),
+                      acceptedCountries: condition.acceptedCountries,
+                      mustBeValid: condition.mustBeValid ?? true,
+                      durationIfMet:
+                        condition.durationIfMet == null
+                          ? Prisma.JsonNull
+                          : (condition.durationIfMet as Prisma.InputJsonValue),
                     })),
                   },
                 }),
@@ -144,7 +122,13 @@ export class ScraperService {
     scrapedData: ScrapedData,
     originCountryCd: string,
   ): LlmRequest[] {
-    return scrapedData.entries.map((entry) => ({
+    // TODO: test – only entries with notes, first 5; remove for full run
+    const withNotes = scrapedData.entries.filter((entry) =>
+      entry.notes?.trim(),
+    );
+    const limited = withNotes.slice(0, 5);
+
+    return limited.map((entry) => ({
       destinationCountryCd: this.getCountryCodeByName(entry.country),
       originCountryCd,
       visaType: this.categorizeVisaRequirement(entry.visaRequirement),
