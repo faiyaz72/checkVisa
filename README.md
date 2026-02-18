@@ -97,6 +97,68 @@ bun run dev
 
 Backend runs on http://localhost:3000
 
+## Querying data
+
+To get visa requirements for a specific origin → destination pair, send a POST request with query params:
+
+```
+POST /data?originCountryCode=BD&destinationCountryCode=MX
+```
+
+Use [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) country codes (e.g. `BD` Bangladesh, `IN` India, `PK` Pakistan, `MX` Mexico). The response includes the primary requirement, any conditions (e.g. visa waivers if you hold another visa), source URL, and when it was last verified.
+
+**Example response** (Bangladesh → Mexico):
+
+```json
+{
+  "id": "cmlrjljbp0033btk5gr05krke",
+  "originCountryCode": "BD",
+  "destinationCountryCode": "MX",
+  "primaryRequirement": "CONDITIONAL_WAIVER",
+  "duration": null,
+  "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+  "lastVerified": "2026-02-18T04:23:19.941Z",
+  "notesHash": "d046926e06a29b3174fd7d1284571dc8",
+  "createdAt": "2026-02-18T04:39:03.443Z",
+  "updatedAt": "2026-02-18T04:39:03.443Z",
+  "conditions": [
+    {
+      "id": "cmlrjlkcj005ybtk56n7dkd3x",
+      "visaRequirementId": "cmlrjljbp0033btk5gr05krke",
+      "type": "REQUIRES_RESIDENCY",
+      "description": "Visa not required if holding a permanent residency card from Canada, Chile, Colombia, Japan, United Kingdom, Peru, United States, or any of the Schengen countries",
+      "acceptedCountries": [
+        "CA",
+        "CL",
+        "CO",
+        "JP",
+        "GB",
+        "PE",
+        "US",
+        "SCHENGEN"
+      ],
+      "mustBeValid": true,
+      "durationIfMet": null,
+      "createdAt": "2026-02-18T04:39:04.771Z",
+      "updatedAt": "2026-02-18T04:39:04.771Z"
+    },
+    {
+      "id": "cmlrjlkcj005zbtk5k5peeeva",
+      "visaRequirementId": "cmlrjljbp0033btk5gr05krke",
+      "type": "REQUIRES_VISA",
+      "description": "Visa not required if holding a valid visa from Canada, Japan, United Kingdom, United States, or any of the Schengen countries",
+      "acceptedCountries": ["CA", "JP", "GB", "US", "SCHENGEN"],
+      "mustBeValid": true,
+      "durationIfMet": null,
+      "createdAt": "2026-02-18T04:39:04.771Z",
+      "updatedAt": "2026-02-18T04:39:04.771Z"
+    }
+  ]
+}
+```
+
+Here Mexico is `CONDITIONAL_WAIVER`: no visa needed if you meet one of the listed conditions (e.g. valid US/UK/Schengen visa or residency). The `conditions` array spells out each option with `acceptedCountries` and `mustBeValid`.
+
 ## Why This Exists
 
 Started this because I was planning a trip and got frustrated trying to figure out where I could go with my existing visas. Thought "there has to be a better way than checking 20 embassy websites."
