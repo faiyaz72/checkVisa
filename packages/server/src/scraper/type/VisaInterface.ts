@@ -60,3 +60,21 @@ export interface VisaCondition {
   mustBeValid?: boolean;
   durationIfMet?: DurationInfo;
 }
+
+/** Prisma findUnique result shape (originCountryCode/destinationCountryCode). Used when mapping DB rows to app VisaRequirement. */
+export type VisaRequirementResponse = {
+  originCountryCode: string;
+  destinationCountryCode: string;
+  primaryRequirement: string;
+  duration: unknown;
+  sourceUrl: string | null;
+  lastVerified: Date | null;
+  notesHash: string | null;
+  conditions: Array<{
+    type: string;
+    description: string;
+    acceptedCountries: string[];
+    mustBeValid?: boolean;
+    durationIfMet?: unknown;
+  }>;
+};

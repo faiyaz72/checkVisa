@@ -49,10 +49,20 @@ export class ScraperService {
     }
 
     if (request.saveToDb) {
-      return await this.saveVisaRequirements(request.countryCd, parsedData);
+      const saved = await this.saveVisaRequirements(
+        request.countryCd,
+        parsedData,
+      );
+      return {
+        dataRetrieved: parsedData.length,
+        dataCreated: saved.created,
+        dataDeleted: saved.deleted,
+      };
     }
 
-    return parsedData;
+    return {
+      dataRetrieved: parsedData.length,
+    };
   }
 
   public async recoverScrapedDataFromFile(
@@ -181,15 +191,6 @@ export class ScraperService {
         maxWait: 15_000, // max time to wait to acquire a connection (default 2s)
       },
     );
-  }
-
-  /** Temporarily load parsed visa data from a JSON file to avoid LLM calls. */
-  private async loadParsedDataFromFile(
-    filename: string,
-  ): Promise<VisaRequirement[]> {
-    const filePath = path.join(__dirname, filename);
-    const raw = await fs.readFile(filePath, "utf-8");
-    return JSON.parse(raw) as VisaRequirement[];
   }
 
   private convertToLlmRequest(

@@ -97,6 +97,14 @@ bun run dev
 
 Backend runs on http://localhost:3000
 
+### API docs (Swagger)
+
+With the server running, open the interactive API docs at:
+
+**http://localhost:3000/docs**
+
+You can explore endpoints, see request/response schemas, and try requests from the browser. (Use your actual port if you set `PORT` in `.env`.)
+
 ## Querying data
 
 To get visa requirements for a specific origin → destination pair, send a POST request with query params:
