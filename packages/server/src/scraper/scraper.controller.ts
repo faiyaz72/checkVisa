@@ -1,13 +1,15 @@
-import { Body, Controller, Post } from "@nestjs/common";
-import { ApiBody, ApiParam, ApiResponse, ApiTags } from "@nestjs/swagger";
+import { Body, Controller, Post, UseGuards } from "@nestjs/common";
+import { ApiBody, ApiResponse, ApiTags } from "@nestjs/swagger";
 import {
   RecoverScrapedDataFromFileRequest,
   ScraperRequest,
 } from "./request/ScraperRequest.vo";
+import { ScraperAuthGuard } from "./scraper-auth.guard";
 import { ScraperService } from "./scraper.service";
 
 @ApiTags("scraper")
 @Controller("scraper")
+@UseGuards(ScraperAuthGuard)
 export class ScraperController {
   constructor(private readonly scraperService: ScraperService) {}
 
