@@ -11,9 +11,9 @@ export class ScraperRequest {
   @IsNotEmpty()
   @ApiPropertyOptional({
     description: "Whether to save the scraped data to a file",
-    default: true,
+    default: false,
   })
-  saveToFile: boolean = true;
+  saveToFile: boolean = false;
 
   @IsBoolean()
   @IsNotEmpty()
