@@ -1,0 +1,2095 @@
+[
+  {
+    "destinationCountryCd": "AF",
+    "originCountryCd": "LK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "AL",
+    "originCountryCd": "LK",
+    "primaryRequirement": "CONDITIONAL_WAIVER",
+    "duration": {
+      "maxStayDays": 90,
+      "description": "Up to 90 days"
+    },
+    "conditions": [
+      {
+        "type": "REQUIRES_VISA",
+        "description": "Visa-free travel for up to 90 days within any 180-day period if holding a valid or previously used visa issued by a Schengen area country, the United States, or the United Kingdom",
+        "acceptedCountries": ["SCHENGEN", "US", "GB"],
+        "mustBeValid": true
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri_Lankan_citizens",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "confidence": "high",
+    "notesHash": "fc92affe4605f2589b31f54b998e46d1"
+  },
+  {
+    "destinationCountryCd": "DZ",
+    "originCountryCd": "LK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "AD",
+    "originCountryCd": "LK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "confidence": "high",
+    "notesHash": "8f15c24a5f377b4e4a260d69cf03d9f1"
+  },
+  {
+    "destinationCountryCd": "AO",
+    "originCountryCd": "LK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "AG",
+    "originCountryCd": "LK",
+    "primaryRequirement": "EVISA",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "AR",
+    "originCountryCd": "LK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "AM",
+    "originCountryCd": "LK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "AU",
+    "originCountryCd": "LK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "confidence": "high",
+    "notesHash": "7c6483eaaf2cfc3375b1c65c3a00e7ee"
+  },
+  {
+    "destinationCountryCd": "AT",
+    "originCountryCd": "LK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "AZ",
+    "originCountryCd": "LK",
+    "primaryRequirement": "EVISA",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "BS",
+    "originCountryCd": "LK",
+    "primaryRequirement": "VISA_FREE",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "BH",
+    "originCountryCd": "LK",
+    "primaryRequirement": "VISA_ON_ARRIVAL",
+    "duration": {
+      "maxStayDays": 14,
+      "description": "Up to 14 days"
+    },
+    "conditions": [
+      {
+        "type": "REQUIRES_RESIDENCY",
+        "description": "Visa on arrival for a maximum stay of 14 days for those who hold a valid residency permit to Gulf Cooperation Council (GCC) countries and have already stayed for more than 6 months in their country of residence",
+        "acceptedCountries": ["BH", "KW", "OM", "QA", "SA", "AE"],
+        "mustBeValid": true,
+        "durationIfMet": {
+          "maxStayDays": 14,
+          "description": "Up to 14 days"
+        }
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "confidence": "high",
+    "notesHash": "b6134e6a4f5dfaf2f06c5db5eeb35bc6"
+  },
+  {
+    "destinationCountryCd": "BD",
+    "originCountryCd": "LK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "BB",
+    "originCountryCd": "LK",
+    "primaryRequirement": "VISA_FREE",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "BY",
+    "originCountryCd": "LK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "BE",
+    "originCountryCd": "LK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "BZ",
+    "originCountryCd": "LK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri_Lankan_citizens",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "confidence": "high",
+    "notesHash": "e088597619085b483ff79a07cd26c614"
+  },
+  {
+    "destinationCountryCd": "BJ",
+    "originCountryCd": "LK",
+    "primaryRequirement": "EVISA",
+    "duration": {
+      "maxStayDays": 30,
+      "description": "Up to 30 days"
+    },
+    "conditions": [
+      {
+        "type": "REQUIRES_DOCUMENT",
+        "description": "Must have an International Vaccination Certificate",
+        "acceptedCountries": [],
+        "mustBeValid": true
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "confidence": "high",
+    "notesHash": "da3aacc16f4ea46a092b359b068dcde0"
+  },
+  {
+    "destinationCountryCd": "BT",
+    "originCountryCd": "LK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "duration": {
+      "maxStayDays": 90,
+      "description": "Up to 90 days"
+    },
+    "conditions": [
+      {
+        "type": "REQUIRES_VISA",
+        "description": "eVisa with a fee of 40 USD per person, processed within 5 business days, valid for 90 days. Applicant is also subject to pay Sustainable Development Fee.",
+        "acceptedCountries": [],
+        "mustBeValid": true
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri_Lankan_citizens",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "confidence": "high",
+    "notesHash": "f851a3451c07927631fec833c9daa583"
+  },
+  {
+    "destinationCountryCd": "BO",
+    "originCountryCd": "LK",
+    "primaryRequirement": "VISA_ON_ARRIVAL",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "BA",
+    "originCountryCd": "LK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "duration": {
+      "maxStayDays": 30,
+      "description": "Maximum stay of 30 days"
+    },
+    "conditions": [
+      {
+        "type": "REQUIRES_VISA",
+        "description": "Multiple-entry visa issued by a Schengen country, Bulgaria, Croatia, Cyprus, Ireland, Monaco, Romania, the United Kingdom, or the United States covers entry for a maximum stay of 30 days or until the visa expires. A maximum stay of 90 days within any 180-day period is permitted.",
+        "acceptedCountries": [
+          "EU",
+          "BG",
+          "HR",
+          "CY",
+          "IE",
+          "MC",
+          "RO",
+          "GB",
+          "US"
+        ],
+        "mustBeValid": true
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri_Lankan_citizens",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "confidence": "high",
+    "notesHash": "596c5a8fb8d12a7b996fc910a32c379a"
+  },
+  {
+    "destinationCountryCd": "BW",
+    "originCountryCd": "LK",
+    "primaryRequirement": "EVISA",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "BR",
+    "originCountryCd": "LK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "BN",
+    "originCountryCd": "LK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "BG",
+    "originCountryCd": "LK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "confidence": "high",
+    "notesHash": "8f15c24a5f377b4e4a260d69cf03d9f1"
+  },
+  {
+    "destinationCountryCd": "BF",
+    "originCountryCd": "LK",
+    "primaryRequirement": "EVISA",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "BI",
+    "originCountryCd": "LK",
+    "primaryRequirement": "VISA_ON_ARRIVAL",
+    "duration": {
+      "maxStayDays": 30,
+      "description": "Up to 1 month"
+    },
+    "conditions": [],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "confidence": "high",
+    "notesHash": "9281b8608596569b3cbbdd4b0b36a9cd"
+  },
+  {
+    "destinationCountryCd": "KH",
+    "originCountryCd": "LK",
+    "primaryRequirement": "VISA_ON_ARRIVAL",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "CM",
+    "originCountryCd": "LK",
+    "primaryRequirement": "EVISA",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "CA",
+    "originCountryCd": "LK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri_Lankan_citizens",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "confidence": "high",
+    "notesHash": "41f169963f56303d4ae20da6dd2bedbc"
+  },
+  {
+    "destinationCountryCd": "CV",
+    "originCountryCd": "LK",
+    "primaryRequirement": "VISA_ON_ARRIVAL",
+    "duration": {
+      "maxStayDays": 5,
+      "description": "Up to 5 days"
+    },
+    "conditions": [
+      {
+        "type": "REQUIRES_DOCUMENT",
+        "description": "Visa on arrival at Sal, Boa Vista, São Vicente, or Santiago international airports. Requirement to register online 5 days before arrival. Also pay the airport security fee of CVE 3400 either online or on arrival.",
+        "acceptedCountries": [],
+        "mustBeValid": true
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri_Lankan_citizens",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "confidence": "high",
+    "notesHash": "b6dbc7200f2077f2efc9ae3312bc1d45"
+  },
+  {
+    "destinationCountryCd": "CF",
+    "originCountryCd": "LK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "TD",
+    "originCountryCd": "LK",
+    "primaryRequirement": "EVISA",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "CL",
+    "originCountryCd": "LK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "CN",
+    "originCountryCd": "LK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "conditions": [],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "confidence": "high",
+    "notesHash": "227a4c25e04c23e42af5bc2492eee87f"
+  },
+  {
+    "destinationCountryCd": "CO",
+    "originCountryCd": "LK",
+    "primaryRequirement": "EVISA",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "KM",
+    "originCountryCd": "LK",
+    "primaryRequirement": "VISA_ON_ARRIVAL",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "CG",
+    "originCountryCd": "LK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "CD",
+    "originCountryCd": "LK",
+    "primaryRequirement": "EVISA",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "CR",
+    "originCountryCd": "LK",
+    "primaryRequirement": "CONDITIONAL_WAIVER",
+    "duration": {
+      "maxStayDays": 30,
+      "description": "Maximum stay of 30 days"
+    },
+    "conditions": [
+      {
+        "type": "REQUIRES_VISA",
+        "description": "Visa not required for up to 30 days if holding a valid multiple-entry visa of any member state of the Schengen Area, Canada, or the United States",
+        "acceptedCountries": ["SCHENGEN", "CA", "US"],
+        "mustBeValid": true,
+        "durationIfMet": {
+          "maxStayDays": 30,
+          "description": "Up to 30 days"
+        }
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "confidence": "high",
+    "notesHash": "ce70ddfdbb3e92fa4dbfe37b6fc34f98"
+  },
+  {
+    "destinationCountryCd": "CI",
+    "originCountryCd": "LK",
+    "primaryRequirement": "EVISA",
+    "duration": {
+      "maxStayDays": 90,
+      "description": "Up to 3 months"
+    },
+    "conditions": [
+      {
+        "type": "REQUIRES_DOCUMENT",
+        "description": "e-Visa holders must arrive via Port Bouet Airport",
+        "acceptedCountries": [],
+        "mustBeValid": true
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "confidence": "high",
+    "notesHash": "7cf3fa4136eeceef78a956c8741f04ec"
+  },
+  {
+    "destinationCountryCd": "HR",
+    "originCountryCd": "LK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "confidence": "high",
+    "notesHash": "8f15c24a5f377b4e4a260d69cf03d9f1"
+  },
+  {
+    "destinationCountryCd": "CU",
+    "originCountryCd": "LK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "CY",
+    "originCountryCd": "LK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "CZ",
+    "originCountryCd": "LK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "DK",
+    "originCountryCd": "LK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "confidence": "high",
+    "notesHash": "8f15c24a5f377b4e4a260d69cf03d9f1"
+  },
+  {
+    "destinationCountryCd": "DJ",
+    "originCountryCd": "LK",
+    "primaryRequirement": "EVISA",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "DM",
+    "originCountryCd": "LK",
+    "primaryRequirement": "VISA_FREE",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "DO",
+    "originCountryCd": "LK",
+    "primaryRequirement": "CONDITIONAL_WAIVER",
+    "conditions": [
+      {
+        "type": "REQUIRES_VISA",
+        "description": "Visa not required if holding a valid visa or a residence permit from any member state of the Schengen Area, Canada, Cyprus, Ireland, the United Kingdom, or the United States",
+        "acceptedCountries": ["EU", "CA", "GB", "US"],
+        "mustBeValid": true
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "confidence": "high",
+    "notesHash": "f59e2e32ddbaea5fb47d8ac0c739b132"
+  },
+  {
+    "destinationCountryCd": "EC",
+    "originCountryCd": "LK",
+    "primaryRequirement": "EVISA",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "EG",
+    "originCountryCd": "LK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "SV",
+    "originCountryCd": "LK",
+    "primaryRequirement": "EVISA",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "GQ",
+    "originCountryCd": "LK",
+    "primaryRequirement": "EVISA",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "ER",
+    "originCountryCd": "LK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "EE",
+    "originCountryCd": "LK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "confidence": "high",
+    "notesHash": "8f15c24a5f377b4e4a260d69cf03d9f1"
+  },
+  {
+    "destinationCountryCd": "SZ",
+    "originCountryCd": "LK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "ET",
+    "originCountryCd": "LK",
+    "primaryRequirement": "EVISA",
+    "duration": {
+      "maxStayDays": 90,
+      "description": "Up to 90 days"
+    },
+    "conditions": [
+      {
+        "type": "REQUIRES_DOCUMENT",
+        "description": "e-Visa holders must arrive via Addis Ababa Bole International Airport",
+        "acceptedCountries": []
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "confidence": "high",
+    "notesHash": "685067b3c024620350932c25be0ef9c9"
+  },
+  {
+    "destinationCountryCd": "FJ",
+    "originCountryCd": "LK",
+    "primaryRequirement": "EVISA",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "FI",
+    "originCountryCd": "LK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "confidence": "high",
+    "notesHash": "8f15c24a5f377b4e4a260d69cf03d9f1"
+  },
+  {
+    "destinationCountryCd": "FR",
+    "originCountryCd": "LK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "confidence": "high",
+    "notesHash": "8f15c24a5f377b4e4a260d69cf03d9f1"
+  },
+  {
+    "destinationCountryCd": "GA",
+    "originCountryCd": "LK",
+    "primaryRequirement": "EVISA",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "confidence": "high",
+    "notesHash": "3b4f443d9078078a02f963f3f65dcb44"
+  },
+  {
+    "destinationCountryCd": "GM",
+    "originCountryCd": "LK",
+    "primaryRequirement": "VISA_FREE",
+    "duration": {
+      "maxStayDays": 90,
+      "description": "Up to 90 days"
+    },
+    "conditions": [
+      {
+        "type": "REQUIRES_DOCUMENT",
+        "description": "Must obtain an entry clearance from Gambian Immigration prior to arrival",
+        "acceptedCountries": [],
+        "mustBeValid": false
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "confidence": "high",
+    "notesHash": "36f22d825b2814f16756e3f86a1a8c44"
+  },
+  {
+    "destinationCountryCd": "GE",
+    "originCountryCd": "LK",
+    "primaryRequirement": "CONDITIONAL_WAIVER",
+    "duration": {
+      "maxStayDays": 90,
+      "description": "Up to 90 days"
+    },
+    "conditions": [
+      {
+        "type": "REQUIRES_VISA",
+        "description": "Visa-free for 90 days if holding a valid visa or residence permit from a Schengen area country, OECD member country, or a GCC country. GCC resident permit should be at least six months old for visa exemption. Entry visa stamp obtained on arrival.",
+        "acceptedCountries": [
+          "SCHENGEN",
+          "OECD",
+          "BH",
+          "KW",
+          "OM",
+          "QA",
+          "SA",
+          "AE"
+        ],
+        "mustBeValid": true
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "confidence": "high",
+    "notesHash": "ee50a86dabfd2e50c0e8be0d6ba6c7c0"
+  },
+  {
+    "destinationCountryCd": "DE",
+    "originCountryCd": "LK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "confidence": "high",
+    "notesHash": "8f15c24a5f377b4e4a260d69cf03d9f1"
+  },
+  {
+    "destinationCountryCd": "GH",
+    "originCountryCd": "LK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "GR",
+    "originCountryCd": "LK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "confidence": "high",
+    "notesHash": "8f15c24a5f377b4e4a260d69cf03d9f1"
+  },
+  {
+    "destinationCountryCd": "GD",
+    "originCountryCd": "LK",
+    "primaryRequirement": "VISA_FREE",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "GT",
+    "originCountryCd": "LK",
+    "primaryRequirement": "CONDITIONAL_WAIVER",
+    "duration": {
+      "maxStayDays": 90,
+      "description": "Up to 90 days"
+    },
+    "conditions": [
+      {
+        "type": "REQUIRES_RESIDENCY",
+        "description": "Visa not required up to 90 days if holding a valid residence permit issued by Australia, Canada, GCC member state, United States, United Kingdom, or a Schengen Area Member State",
+        "acceptedCountries": [
+          "AU",
+          "CA",
+          "BH",
+          "KW",
+          "OM",
+          "QA",
+          "SA",
+          "AE",
+          "US",
+          "GB",
+          "SCHENGEN"
+        ],
+        "mustBeValid": true
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "confidence": "high",
+    "notesHash": "4e3df1d8425195f4f75b2b7a2f2de0d1"
+  },
+  {
+    "destinationCountryCd": "GN",
+    "originCountryCd": "LK",
+    "primaryRequirement": "EVISA",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "GW",
+    "originCountryCd": "LK",
+    "primaryRequirement": "VISA_ON_ARRIVAL",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "GY",
+    "originCountryCd": "LK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "HT",
+    "originCountryCd": "LK",
+    "primaryRequirement": "VISA_FREE",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "HN",
+    "originCountryCd": "LK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "HU",
+    "originCountryCd": "LK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "confidence": "high",
+    "notesHash": "8f15c24a5f377b4e4a260d69cf03d9f1"
+  },
+  {
+    "destinationCountryCd": "IS",
+    "originCountryCd": "LK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "confidence": "high",
+    "notesHash": "8f15c24a5f377b4e4a260d69cf03d9f1"
+  },
+  {
+    "destinationCountryCd": "IN",
+    "originCountryCd": "LK",
+    "primaryRequirement": "EVISA",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "ID",
+    "originCountryCd": "LK",
+    "primaryRequirement": "EVISA",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "IR",
+    "originCountryCd": "LK",
+    "primaryRequirement": "EVISA",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "IQ",
+    "originCountryCd": "LK",
+    "primaryRequirement": "EVISA",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "IE",
+    "originCountryCd": "LK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "confidence": "high",
+    "notesHash": "5f3d7b7ad62df22df9606aaaa941eb0c"
+  },
+  {
+    "destinationCountryCd": "IL",
+    "originCountryCd": "LK",
+    "primaryRequirement": "EVISA",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "IT",
+    "originCountryCd": "LK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "confidence": "high",
+    "notesHash": "8f15c24a5f377b4e4a260d69cf03d9f1"
+  },
+  {
+    "destinationCountryCd": "JM",
+    "originCountryCd": "LK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "JP",
+    "originCountryCd": "LK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "confidence": "high",
+    "notesHash": "77018b524e5549bf48e849706e8e582e"
+  },
+  {
+    "destinationCountryCd": "JO",
+    "originCountryCd": "LK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "KZ",
+    "originCountryCd": "LK",
+    "primaryRequirement": "EVISA",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "KE",
+    "originCountryCd": "LK",
+    "primaryRequirement": "EVISA",
+    "duration": {
+      "maxStayDays": 90,
+      "description": "Up to 90 days"
+    },
+    "conditions": [
+      {
+        "type": "REQUIRES_DOCUMENT",
+        "description": "Application must be submitted online up to 90 days prior to travel and at least 3 days in advance. Proof of hotel reservation or invitation letter if staying with friends is required. Yellow fever vaccination certificate required if coming from endemic countries.",
+        "acceptedCountries": [],
+        "mustBeValid": true
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri_Lankan_citizens",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "confidence": "high",
+    "notesHash": "16b44c00c1e212d683473cc874a123d7"
+  },
+  {
+    "destinationCountryCd": "KI",
+    "originCountryCd": "LK",
+    "primaryRequirement": "VISA_FREE",
+    "duration": {
+      "maxStayDays": 90,
+      "description": "Up to 90 days within any 12-month period"
+    },
+    "conditions": [],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri_Lankan_citizens",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "confidence": "high",
+    "notesHash": "5cce36266bd2dee8d263ce57f6541232"
+  },
+  {
+    "destinationCountryCd": "KP",
+    "originCountryCd": "LK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "KR",
+    "originCountryCd": "LK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "duration": {
+      "maxStayDays": 730,
+      "description": "Up to 2 years"
+    },
+    "conditions": [
+      {
+        "type": "OTHER",
+        "description": "Multiple-Entry eVisa may be granted to those who entered South Korea 4 or more times within the last 2 years, or 10 or more visits in total, with at least one visit within the last 2 years. Application can be made online.",
+        "acceptedCountries": [],
+        "mustBeValid": true
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "confidence": "high",
+    "notesHash": "5c5304acb8a8da58a052a80ac630d77f"
+  },
+  {
+    "destinationCountryCd": "KW",
+    "originCountryCd": "LK",
+    "primaryRequirement": "CONDITIONAL_WAIVER",
+    "conditions": [
+      {
+        "type": "REQUIRES_VISA",
+        "description": "Visa required for general entry. GCC residents can apply for e-Visa if they have residency in one of the GCC countries (Saudi Arabia, Bahrain, Qatar, United Arab Emirates, and Oman).",
+        "acceptedCountries": ["SA", "BH", "QA", "AE", "OM"],
+        "mustBeValid": true
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri_Lankan_citizens",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "confidence": "high",
+    "notesHash": "c28a31f1df66861b5fde00a214f22ea1"
+  },
+  {
+    "destinationCountryCd": "KG",
+    "originCountryCd": "LK",
+    "primaryRequirement": "EVISA",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "LA",
+    "originCountryCd": "LK",
+    "primaryRequirement": "VISA_ON_ARRIVAL",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "LV",
+    "originCountryCd": "LK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "confidence": "high",
+    "notesHash": "8f15c24a5f377b4e4a260d69cf03d9f1"
+  },
+  {
+    "destinationCountryCd": "LB",
+    "originCountryCd": "LK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "conditions": [
+      {
+        "type": "REQUIRES_VISA",
+        "description": "Visa required. Approval must also be obtained from the Immigration Department of the General Directorate of General Security (La Surete Generale).",
+        "acceptedCountries": [],
+        "mustBeValid": true
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "confidence": "high",
+    "notesHash": "0064b4b0d0c8e71e80a6b66b85f351dc"
+  },
+  {
+    "destinationCountryCd": "LS",
+    "originCountryCd": "LK",
+    "primaryRequirement": "VISA_FREE",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "LR",
+    "originCountryCd": "LK",
+    "primaryRequirement": "EVISA",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "LY",
+    "originCountryCd": "LK",
+    "primaryRequirement": "EVISA",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "LI",
+    "originCountryCd": "LK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "LT",
+    "originCountryCd": "LK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri_Lankan_citizens",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "confidence": "high",
+    "notesHash": "8f15c24a5f377b4e4a260d69cf03d9f1"
+  },
+  {
+    "destinationCountryCd": "LU",
+    "originCountryCd": "LK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri_Lankan_citizens",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "confidence": "high",
+    "notesHash": "8f15c24a5f377b4e4a260d69cf03d9f1"
+  },
+  {
+    "destinationCountryCd": "MG",
+    "originCountryCd": "LK",
+    "primaryRequirement": "VISA_ON_ARRIVAL",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "MW",
+    "originCountryCd": "LK",
+    "primaryRequirement": "VISA_FREE",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "MY",
+    "originCountryCd": "LK",
+    "primaryRequirement": "EVISA",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "MV",
+    "originCountryCd": "LK",
+    "primaryRequirement": "VISA_FREE",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "ML",
+    "originCountryCd": "LK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "MT",
+    "originCountryCd": "LK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "MH",
+    "originCountryCd": "LK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "MR",
+    "originCountryCd": "LK",
+    "primaryRequirement": "EVISA",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "MU",
+    "originCountryCd": "LK",
+    "primaryRequirement": "VISA_ON_ARRIVAL",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "MX",
+    "originCountryCd": "LK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "duration": {
+      "maxStayDays": 180,
+      "description": "Up to 180 days"
+    },
+    "conditions": [
+      {
+        "type": "REQUIRES_VISA",
+        "description": "Visa required unless holding a valid visa for Canada, Japan, the United States, the United Kingdom, or a Schengen area country, which allows a maximum stay of 180 days",
+        "acceptedCountries": ["CA", "JP", "US", "GB", "SCHENGEN"],
+        "mustBeValid": true
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri_Lankan_citizens",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "confidence": "high",
+    "notesHash": "2d3205280cc53fc73b0f6040178fb74a"
+  },
+  {
+    "destinationCountryCd": "FM",
+    "originCountryCd": "LK",
+    "primaryRequirement": "VISA_FREE",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "MD",
+    "originCountryCd": "LK",
+    "primaryRequirement": "CONDITIONAL_WAIVER",
+    "conditions": [
+      {
+        "type": "REQUIRES_VISA",
+        "description": "Citizens holding a residence permit or a valid visa issued by one of the member states of the European Union or one of the parties to the Schengen Agreement can apply for an electronic visa",
+        "acceptedCountries": ["EU", "SCHENGEN"],
+        "mustBeValid": true
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "confidence": "high",
+    "notesHash": "05d3fef0e6943cf420626cab7a2243a3"
+  },
+  {
+    "destinationCountryCd": "MC",
+    "originCountryCd": "LK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "MN",
+    "originCountryCd": "LK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "ME",
+    "originCountryCd": "LK",
+    "primaryRequirement": "CONDITIONAL_WAIVER",
+    "duration": {
+      "maxStayDays": 30,
+      "description": "Up to 30 days"
+    },
+    "conditions": [
+      {
+        "type": "REQUIRES_VISA",
+        "description": "Visa not required for holders of a valid Australia, Japan, Canada, New Zealand, Ireland, US, UK, or Schengen visa. Multiple-entry Schengen visa covers entry for a maximum of 30 days.",
+        "acceptedCountries": [
+          "AU",
+          "JP",
+          "CA",
+          "NZ",
+          "IE",
+          "US",
+          "GB",
+          "SCHENGEN"
+        ],
+        "mustBeValid": true
+      },
+      {
+        "type": "REQUIRES_RESIDENCY",
+        "description": "Holders of residence permit in the United Arab Emirates may enter Montenegro for a duration of 10 days",
+        "acceptedCountries": ["AE"],
+        "mustBeValid": true,
+        "durationIfMet": {
+          "maxStayDays": 10,
+          "description": "Up to 10 days"
+        }
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "confidence": "high",
+    "notesHash": "6b9e5d5471fc3630031418a371290cd1"
+  },
+  {
+    "destinationCountryCd": "MA",
+    "originCountryCd": "LK",
+    "primaryRequirement": "CONDITIONAL_WAIVER",
+    "conditions": [
+      {
+        "type": "REQUIRES_VISA",
+        "description": "Visa required unless holding a valid visa or residency document issued by Schengen Area, Australia, Canada, Ireland, New Zealand, United Kingdom, or United States",
+        "acceptedCountries": ["SCHENGEN", "AU", "CA", "IE", "NZ", "GB", "US"],
+        "mustBeValid": true
+      },
+      {
+        "type": "REQUIRES_RESIDENCY",
+        "description": "May apply for an e-Visa if holding a residency document issued by Cyprus, Japan, or United Arab Emirates",
+        "acceptedCountries": ["CY", "JP", "AE"],
+        "mustBeValid": true
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri_Lankan_citizens",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "confidence": "high",
+    "notesHash": "739d405e942f2e18aa668d3dd1336f82"
+  },
+  {
+    "destinationCountryCd": "MZ",
+    "originCountryCd": "LK",
+    "primaryRequirement": "VISA_ON_ARRIVAL",
+    "duration": {
+      "maxStayDays": 30,
+      "description": "Up to 30 days"
+    },
+    "conditions": [
+      {
+        "type": "REQUIRES_DOCUMENT",
+        "description": "Visa issued upon arrival after payment of the fee at the point of entry",
+        "acceptedCountries": [],
+        "mustBeValid": false
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "confidence": "high",
+    "notesHash": "6545edfeda4b83e893f28ad2d8ca9f62"
+  },
+  {
+    "destinationCountryCd": "MM",
+    "originCountryCd": "LK",
+    "primaryRequirement": "VISA_ON_ARRIVAL",
+    "duration": {
+      "maxStayDays": 28,
+      "description": "Up to 28 days"
+    },
+    "conditions": [
+      {
+        "type": "REQUIRES_DOCUMENT",
+        "description": "e-Visa available for tourism only, must arrive via Yangon, Nay Pyi Taw, Mandalay airports or land border crossings with Thailand (Tachileik, Myawaddy, Kawthaung) or India (Rih Khaw Dar, Tamu)",
+        "acceptedCountries": [],
+        "mustBeValid": true
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri_Lankan_citizens",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "confidence": "high",
+    "notesHash": "f5c04f379140e4d812307527668adc20"
+  },
+  {
+    "destinationCountryCd": "NA",
+    "originCountryCd": "LK",
+    "primaryRequirement": "EVISA",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "NR",
+    "originCountryCd": "LK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "NP",
+    "originCountryCd": "LK",
+    "primaryRequirement": "VISA_ON_ARRIVAL",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "NL",
+    "originCountryCd": "LK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "confidence": "high",
+    "notesHash": "8f15c24a5f377b4e4a260d69cf03d9f1"
+  },
+  {
+    "destinationCountryCd": "NZ",
+    "originCountryCd": "LK",
+    "primaryRequirement": "CONDITIONAL_WAIVER",
+    "conditions": [
+      {
+        "type": "REQUIRES_RESIDENCY",
+        "description": "Holders of an Australian Permanent Resident Visa or Resident Return Visa may be granted a New Zealand Resident Visa on arrival permitting indefinite stay, subject to meeting character requirements and obtaining Electronic Travel Authorization prior to departure",
+        "acceptedCountries": ["AU"],
+        "mustBeValid": true
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "confidence": "high",
+    "notesHash": "cabb6644590da334104dc143ec442823"
+  },
+  {
+    "destinationCountryCd": "NI",
+    "originCountryCd": "LK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "NE",
+    "originCountryCd": "LK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "NG",
+    "originCountryCd": "LK",
+    "primaryRequirement": "EVISA",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "MK",
+    "originCountryCd": "LK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "duration": {
+      "maxStayDays": 15,
+      "description": "Maximum stay of 15 days"
+    },
+    "conditions": [
+      {
+        "type": "REQUIRES_VISA",
+        "description": "Visa required. Multiple-entry Schengen visa covers entry for a maximum of 15 days and at least five more days than the stay.",
+        "acceptedCountries": ["SCHENGEN"],
+        "mustBeValid": true
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri_Lankan_citizens",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "confidence": "high",
+    "notesHash": "2d1780569d86fc5c1f0658c0d8043ffb"
+  },
+  {
+    "destinationCountryCd": "NO",
+    "originCountryCd": "LK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "confidence": "high",
+    "notesHash": "8f15c24a5f377b4e4a260d69cf03d9f1"
+  },
+  {
+    "destinationCountryCd": "OM",
+    "originCountryCd": "LK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "conditions": [
+      {
+        "type": "REQUIRES_VISA",
+        "description": "Visa required for most travelers. Foreigners residing in GCC countries may obtain a visa on arrival in Oman. Entry visas are issued to residents of any GCC country who arrive directly from any GCC country. Restrictions apply to non-degree related professions (e.g., labourers, carpenters). Entry visas are also granted to members of the resident's family as long as they enter together.",
+        "acceptedCountries": ["BH", "KW", "OM", "QA", "SA", "AE"],
+        "mustBeValid": true
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri_Lankan_citizens",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "confidence": "high",
+    "notesHash": "b2c10ea1c67cbcf88946aefb7128d57e"
+  },
+  {
+    "destinationCountryCd": "PK",
+    "originCountryCd": "LK",
+    "primaryRequirement": "VISA_ON_ARRIVAL",
+    "duration": {
+      "maxStayDays": 30,
+      "description": "Up to 30 days"
+    },
+    "conditions": [
+      {
+        "type": "REQUIRES_VISA",
+        "description": "Electronic Travel Authorization (ETA) allows visa on arrival for business and tourism purposes, fee is free",
+        "acceptedCountries": [],
+        "mustBeValid": true
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri_Lankan_citizens",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "confidence": "high",
+    "notesHash": "680ceee878dc84901f3fa5bbb99f915d"
+  },
+  {
+    "destinationCountryCd": "PW",
+    "originCountryCd": "LK",
+    "primaryRequirement": "VISA_ON_ARRIVAL",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "PA",
+    "originCountryCd": "LK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "PG",
+    "originCountryCd": "LK",
+    "primaryRequirement": "EVISA",
+    "duration": {
+      "maxStayDays": 60,
+      "description": "Up to 60 days"
+    },
+    "conditions": [
+      {
+        "type": "REQUIRES_DOCUMENT",
+        "description": "Visitors may apply for an eVisa online under the \"Tourist - Own Itinerary\" category",
+        "acceptedCountries": [],
+        "mustBeValid": true
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri_Lankan_citizens",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "confidence": "high",
+    "notesHash": "bb214faa3083090ddb05225940072adf"
+  },
+  {
+    "destinationCountryCd": "PY",
+    "originCountryCd": "LK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "PE",
+    "originCountryCd": "LK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "PH",
+    "originCountryCd": "LK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "conditions": [
+      {
+        "type": "REQUIRES_VISA",
+        "description": "Visa required for most travelers. Residents of the United Arab Emirates may obtain an eVisa through the official Philippine eVisa website. A valid Emirati residence visa must be shown upon an eVisa application.",
+        "acceptedCountries": ["AE"],
+        "mustBeValid": true
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "confidence": "high",
+    "notesHash": "8928aedde6922321ca7a18f50dc71e82"
+  },
+  {
+    "destinationCountryCd": "PL",
+    "originCountryCd": "LK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "confidence": "high",
+    "notesHash": "8f15c24a5f377b4e4a260d69cf03d9f1"
+  },
+  {
+    "destinationCountryCd": "PT",
+    "originCountryCd": "LK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "confidence": "high",
+    "notesHash": "8f15c24a5f377b4e4a260d69cf03d9f1"
+  },
+  {
+    "destinationCountryCd": "QA",
+    "originCountryCd": "LK",
+    "primaryRequirement": "VISA_ON_ARRIVAL",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "confidence": "high",
+    "notesHash": "b2b3792051d7d5d9e4199acca2fc6224"
+  },
+  {
+    "destinationCountryCd": "RO",
+    "originCountryCd": "LK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "confidence": "high",
+    "notesHash": "8f15c24a5f377b4e4a260d69cf03d9f1"
+  },
+  {
+    "destinationCountryCd": "RU",
+    "originCountryCd": "LK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "RW",
+    "originCountryCd": "LK",
+    "primaryRequirement": "VISA_FREE",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "KN",
+    "originCountryCd": "LK",
+    "primaryRequirement": "VISA_FREE",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "LC",
+    "originCountryCd": "LK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "VC",
+    "originCountryCd": "LK",
+    "primaryRequirement": "VISA_FREE",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "WS",
+    "originCountryCd": "LK",
+    "primaryRequirement": "VISA_FREE",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "SM",
+    "originCountryCd": "LK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "ST",
+    "originCountryCd": "LK",
+    "primaryRequirement": "EVISA",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "SA",
+    "originCountryCd": "LK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "conditions": [
+      {
+        "type": "REQUIRES_VISA",
+        "description": "Visa required for general entry. Tourist visa on arrival available for holders of a valid multiple entry visa from US, UK, or Schengen area, provided that the multiple entry visa has been used at least once, as evidenced by entry and exit stamps of the country of issuance.",
+        "acceptedCountries": ["US", "GB", "SCHENGEN"],
+        "mustBeValid": true
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri_Lankan_citizens",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "confidence": "high",
+    "notesHash": "fb9cdf6e317d8b7897a0128c813296d0"
+  },
+  {
+    "destinationCountryCd": "SN",
+    "originCountryCd": "LK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "RS",
+    "originCountryCd": "LK",
+    "primaryRequirement": "CONDITIONAL_WAIVER",
+    "duration": {
+      "maxStayDays": 90,
+      "description": "Up to 90 days"
+    },
+    "conditions": [
+      {
+        "type": "REQUIRES_VISA",
+        "description": "Visa-free travel for a maximum stay of 90 days for valid visa holders or residents of the European Union or the United States",
+        "acceptedCountries": ["EU", "US"],
+        "mustBeValid": true
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri_Lankan_citizens",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "confidence": "high",
+    "notesHash": "995882dbc542fb52e4f900b0c6b5d901"
+  },
+  {
+    "destinationCountryCd": "SC",
+    "originCountryCd": "LK",
+    "primaryRequirement": "EVISA",
+    "duration": {
+      "maxStayDays": 90,
+      "description": "Up to 3 months"
+    },
+    "conditions": [
+      {
+        "type": "REQUIRES_DOCUMENT",
+        "description": "Application can be submitted up to 30 days before travel. Visitors must upload reservation confirmation(s) for each visitor's location of stay in Seychelles. Yellow fever vaccination certificate is required if coming from endemic countries. Payment of EUR 10 by credit or debit card. Valid for one journey only and expires once exit the country.",
+        "acceptedCountries": [],
+        "mustBeValid": true
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri_Lankan_citizens",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "confidence": "high",
+    "notesHash": "5eca70d028235f9c8e43f3971c84ebfa"
+  },
+  {
+    "destinationCountryCd": "SL",
+    "originCountryCd": "LK",
+    "primaryRequirement": "VISA_ON_ARRIVAL",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "SG",
+    "originCountryCd": "LK",
+    "primaryRequirement": "VISA_FREE",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "SK",
+    "originCountryCd": "LK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "confidence": "high",
+    "notesHash": "8f15c24a5f377b4e4a260d69cf03d9f1"
+  },
+  {
+    "destinationCountryCd": "SI",
+    "originCountryCd": "LK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "confidence": "high",
+    "notesHash": "8f15c24a5f377b4e4a260d69cf03d9f1"
+  },
+  {
+    "destinationCountryCd": "SB",
+    "originCountryCd": "LK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "SO",
+    "originCountryCd": "LK",
+    "primaryRequirement": "EVISA",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "ZA",
+    "originCountryCd": "LK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "SS",
+    "originCountryCd": "LK",
+    "primaryRequirement": "EVISA",
+    "conditions": [
+      {
+        "type": "REQUIRES_DOCUMENT",
+        "description": "Obtainable online. Printed visa authorization must be presented at the time of travel.",
+        "acceptedCountries": [],
+        "mustBeValid": true
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri_Lankan_citizens",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "confidence": "high",
+    "notesHash": "5eec6d91061a29d736e82dc1fe10233e"
+  },
+  {
+    "destinationCountryCd": "ES",
+    "originCountryCd": "LK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri_Lankan_citizens",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "confidence": "high",
+    "notesHash": "8f15c24a5f377b4e4a260d69cf03d9f1"
+  },
+  {
+    "destinationCountryCd": "SD",
+    "originCountryCd": "LK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "SR",
+    "originCountryCd": "LK",
+    "primaryRequirement": "EVISA",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "SE",
+    "originCountryCd": "LK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri_Lankan_citizens",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "confidence": "high",
+    "notesHash": "8f15c24a5f377b4e4a260d69cf03d9f1"
+  },
+  {
+    "destinationCountryCd": "CH",
+    "originCountryCd": "LK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "confidence": "high",
+    "notesHash": "8f15c24a5f377b4e4a260d69cf03d9f1"
+  },
+  {
+    "destinationCountryCd": "SY",
+    "originCountryCd": "LK",
+    "primaryRequirement": "EVISA",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "TJ",
+    "originCountryCd": "LK",
+    "primaryRequirement": "VISA_FREE",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "TZ",
+    "originCountryCd": "LK",
+    "primaryRequirement": "VISA_ON_ARRIVAL",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "TH",
+    "originCountryCd": "LK",
+    "primaryRequirement": "VISA_FREE",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "TL",
+    "originCountryCd": "LK",
+    "primaryRequirement": "VISA_ON_ARRIVAL",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "TG",
+    "originCountryCd": "LK",
+    "primaryRequirement": "EVISA",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "TO",
+    "originCountryCd": "LK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "TT",
+    "originCountryCd": "LK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "TN",
+    "originCountryCd": "LK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "TR",
+    "originCountryCd": "LK",
+    "primaryRequirement": "CONDITIONAL_WAIVER",
+    "duration": {
+      "maxStayDays": 30,
+      "description": "Maximum stay of 30 days"
+    },
+    "conditions": [
+      {
+        "type": "REQUIRES_VISA",
+        "description": "Conditional eVisa allowing up to 30 days for valid visa holders or residents of the European Union or the United States",
+        "acceptedCountries": ["EU", "US"],
+        "mustBeValid": true,
+        "durationIfMet": {
+          "maxStayDays": 30,
+          "description": "Up to 30 days"
+        }
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri_Lankan_citizens",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "confidence": "high",
+    "notesHash": "63ca4a389125077151c02530484ff423"
+  },
+  {
+    "destinationCountryCd": "TM",
+    "originCountryCd": "LK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "TV",
+    "originCountryCd": "LK",
+    "primaryRequirement": "VISA_ON_ARRIVAL",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "UG",
+    "originCountryCd": "LK",
+    "primaryRequirement": "EVISA",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "UA",
+    "originCountryCd": "LK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "AE",
+    "originCountryCd": "LK",
+    "primaryRequirement": "EVISA",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "confidence": "high",
+    "notesHash": "f81497b5d1d10c5b7a1bacfedbd24c3f"
+  },
+  {
+    "destinationCountryCd": "GB",
+    "originCountryCd": "LK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "US",
+    "originCountryCd": "LK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "UY",
+    "originCountryCd": "LK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "UZ",
+    "originCountryCd": "LK",
+    "primaryRequirement": "VISA_ON_ARRIVAL",
+    "duration": {
+      "maxStayDays": 30,
+      "description": "Up to 30 days"
+    },
+    "conditions": [
+      {
+        "type": "REQUIRES_DOCUMENT",
+        "description": "5-day visa-free transit at the international airports if holding a confirmed onward ticket for a flight to a third country",
+        "acceptedCountries": [],
+        "mustBeValid": true
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "confidence": "high",
+    "notesHash": "662da342284060dcaaa63e51b77f4a99"
+  },
+  {
+    "destinationCountryCd": "VU",
+    "originCountryCd": "LK",
+    "primaryRequirement": "VISA_FREE",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "VA",
+    "originCountryCd": "LK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri_Lankan_citizens",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "confidence": "high",
+    "notesHash": "d407ad846222930c0aede1c392e77e7b"
+  },
+  {
+    "destinationCountryCd": "VE",
+    "originCountryCd": "LK",
+    "primaryRequirement": "VISA_FREE",
+    "duration": {
+      "maxStayDays": 90,
+      "description": "Up to 90 days"
+    },
+    "conditions": [],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri_Lankan_citizens",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "confidence": "high",
+    "notesHash": "239c278ac3aed7bfc70e50206af670cd"
+  },
+  {
+    "destinationCountryCd": "VN",
+    "originCountryCd": "LK",
+    "primaryRequirement": "EVISA",
+    "duration": {
+      "maxStayDays": 90,
+      "description": "Up to 90 days"
+    },
+    "conditions": [
+      {
+        "type": "REQUIRES_VISA",
+        "description": "e-Visa valid for up to 90 days with single or multiple entries. Prearranged visa obtained online through travel agencies available at Hanoi, Ho Chi Minh City, or Da Nang airports. Phú Quốc without a visa for up to 30 days.",
+        "acceptedCountries": [],
+        "mustBeValid": true
+      }
+    ],
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri_Lankan_citizens",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "confidence": "high",
+    "notesHash": "11ba60e6afc56a8470fd35d3186ca648"
+  },
+  {
+    "destinationCountryCd": "YE",
+    "originCountryCd": "LK",
+    "primaryRequirement": "VISA_REQUIRED",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "ZM",
+    "originCountryCd": "LK",
+    "primaryRequirement": "EVISA",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "destinationCountryCd": "ZW",
+    "originCountryCd": "LK",
+    "primaryRequirement": "EVISA",
+    "lastVerified": "2026-02-20T01:30:32.870Z",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Sri Lankan_citizens",
+    "notesHash": "d41d8cd98f00b204e9800998ecf8427e"
+  }
+]

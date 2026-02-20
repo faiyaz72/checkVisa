@@ -17,6 +17,7 @@ import * as path from "path";
 import * as fs from "fs/promises";
 import { DbService } from "../db/db.service";
 import { Prisma } from "../../generated/prisma/client";
+import { ScraperRequest } from "./request/ScraperRequest.vo";
 
 @Injectable()
 export class ScraperService {
@@ -27,23 +28,49 @@ export class ScraperService {
     private readonly dbService: DbService,
   ) {}
 
-  async scrape(countryCd: string) {
-    const countryData = countries.find((c) => c.cca2 === countryCd);
+  async scrape(request: ScraperRequest) {
+    const countryData = countries.find((c) => c.cca2 === request.countryCd);
     if (!countryData) {
-      this.logger.error(`Country not found: ${countryCd}`);
+      this.logger.error(`Country not found: ${request.countryCd}`);
       return [];
     }
     this.logger.log(`Scraping data for ${countryData.name.common}`);
     const scrapedData = await this.scrapeWikipediaVisaRequirements(
       countryData.demonyms["eng"]?.m,
     );
-    const llmRequests = this.convertToLlmRequest(scrapedData, countryCd);
-    // TODO: revert to LLM – temporarily load from file to save LLM calls
-    // const parsedData = await this.loadParsedDataFromFile(`${countryCd}-VISA.json`);
-    const parsedData = await this.llmService.parseVisaRequirement(llmRequests);
-    await this.writeToFile(`${countryCd}-VISA.json`, parsedData);
+    const llmRequests = this.convertToLlmRequest(
+      scrapedData,
+      request.countryCd,
+    );
 
-    return await this.saveVisaRequirements(countryCd, parsedData);
+    const parsedData = await this.llmService.parseVisaRequirement(llmRequests);
+    if (request.saveToFile) {
+      await this.writeToFile(`${request.countryCd}-VISA.json`, parsedData);
+    }
+
+    if (request.saveToDb) {
+      return await this.saveVisaRequirements(request.countryCd, parsedData);
+    }
+
+    return parsedData;
+  }
+
+  public async recoverScrapedDataFromFile(
+    countryCd: string,
+  ): Promise<VisaRequirement[]> {
+    const filePath = path.join(__dirname, `${countryCd}-VISA.json`);
+    try {
+      const raw = await fs.readFile(filePath, "utf-8");
+      const data = JSON.parse(raw) as VisaRequirement[];
+      this.logger.log(
+        `Recovered ${data.length} visa requirements from file ${filePath}`,
+      );
+      await this.saveVisaRequirements(countryCd, data);
+      return data;
+    } catch (error) {
+      this.logger.error(`Error reading file ${filePath}: ${error}`);
+      return [];
+    }
   }
 
   private async writeToFile(filename: string, data: VisaRequirement[]) {
