@@ -1,6 +1,6 @@
 # CheckVisa
 
-A visa requirement lookup platform for travelers. In the MVP phase, data is available for Bangladeshi, Indian, and Pakistani passport holders.
+A visa requirement lookup platform for travelers. In the MVP phase, data is available for Bangladeshi, Indian, Sri Lankan and Pakistani passport holders.
 
 **Status:** Early development - backend data pipeline complete, frontend coming soon.
 
