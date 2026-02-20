@@ -25,6 +25,80 @@ The AI parsing is the interesting part. Something like this:
 
 Gets structured into actual queryable data with country codes, conditions, and durations. No regex hell.
 
+## Live dev environment
+
+You can test the API without running anything locally:
+
+- **Base URL:** [https://checkvisa-dev.up.railway.app/api/v1](https://checkvisa-dev.up.railway.app/api/v1)
+- **Swagger UI:** [https://checkvisa-dev.up.railway.app/docs#/](https://checkvisa-dev.up.railway.app/docs#/)
+
+Use the Swagger UI to try endpoints (e.g. `GET /data`, `POST /data` with query params). The scraper routes (`POST /scraper`, `POST /scraper/recover`) require an `x-api-key` header.
+
+## Querying data
+
+To get visa requirements for a specific origin → destination pair, send a POST request to `/api/v1/data/` with body like the following:
+
+```
+{
+    "originCountryCode": "BD",
+    "destinationCountryCode": "CA"
+}
+```
+
+Use [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) country codes (e.g. `BD` Bangladesh, `IN` India, `PK` Pakistan, `MX` Mexico). The response includes the primary requirement, any conditions (e.g. visa waivers if you hold another visa), source URL, and when it was last verified.
+
+**Example response** (Bangladesh → Mexico):
+
+```json
+{
+  "id": "cmlrjljbp0033btk5gr05krke",
+  "originCountryCode": "BD",
+  "destinationCountryCode": "MX",
+  "primaryRequirement": "CONDITIONAL_WAIVER",
+  "duration": null,
+  "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
+  "lastVerified": "2026-02-18T04:23:19.941Z",
+  "notesHash": "d046926e06a29b3174fd7d1284571dc8",
+  "createdAt": "2026-02-18T04:39:03.443Z",
+  "updatedAt": "2026-02-18T04:39:03.443Z",
+  "conditions": [
+    {
+      "id": "cmlrjlkcj005ybtk56n7dkd3x",
+      "visaRequirementId": "cmlrjljbp0033btk5gr05krke",
+      "type": "REQUIRES_RESIDENCY",
+      "description": "Visa not required if holding a permanent residency card from Canada, Chile, Colombia, Japan, United Kingdom, Peru, United States, or any of the Schengen countries",
+      "acceptedCountries": [
+        "CA",
+        "CL",
+        "CO",
+        "JP",
+        "GB",
+        "PE",
+        "US",
+        "SCHENGEN"
+      ],
+      "mustBeValid": true,
+      "durationIfMet": null,
+      "createdAt": "2026-02-18T04:39:04.771Z",
+      "updatedAt": "2026-02-18T04:39:04.771Z"
+    },
+    {
+      "id": "cmlrjlkcj005zbtk5k5peeeva",
+      "visaRequirementId": "cmlrjljbp0033btk5gr05krke",
+      "type": "REQUIRES_VISA",
+      "description": "Visa not required if holding a valid visa from Canada, Japan, United Kingdom, United States, or any of the Schengen countries",
+      "acceptedCountries": ["CA", "JP", "GB", "US", "SCHENGEN"],
+      "mustBeValid": true,
+      "durationIfMet": null,
+      "createdAt": "2026-02-18T04:39:04.771Z",
+      "updatedAt": "2026-02-18T04:39:04.771Z"
+    }
+  ]
+}
+```
+
+Here Mexico is `CONDITIONAL_WAIVER`: no visa needed if you meet one of the listed conditions (e.g. valid US/UK/Schengen visa or residency). The `conditions` array spells out each option with `acceptedCountries` and `mustBeValid`.
+
 ## What's Next
 
 - Build the actual frontend (Vue 3)
@@ -104,68 +178,6 @@ With the server running, open the interactive API docs at:
 **http://localhost:3000/docs**
 
 You can explore endpoints, see request/response schemas, and try requests from the browser. (Use your actual port if you set `PORT` in `.env`.)
-
-## Querying data
-
-To get visa requirements for a specific origin → destination pair, send a POST request with query params:
-
-```
-POST /data?originCountryCode=BD&destinationCountryCode=MX
-```
-
-Use [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) country codes (e.g. `BD` Bangladesh, `IN` India, `PK` Pakistan, `MX` Mexico). The response includes the primary requirement, any conditions (e.g. visa waivers if you hold another visa), source URL, and when it was last verified.
-
-**Example response** (Bangladesh → Mexico):
-
-```json
-{
-  "id": "cmlrjljbp0033btk5gr05krke",
-  "originCountryCode": "BD",
-  "destinationCountryCode": "MX",
-  "primaryRequirement": "CONDITIONAL_WAIVER",
-  "duration": null,
-  "sourceUrl": "https://en.wikipedia.org/wiki/Visa_requirements_for_Bangladeshi_citizens",
-  "lastVerified": "2026-02-18T04:23:19.941Z",
-  "notesHash": "d046926e06a29b3174fd7d1284571dc8",
-  "createdAt": "2026-02-18T04:39:03.443Z",
-  "updatedAt": "2026-02-18T04:39:03.443Z",
-  "conditions": [
-    {
-      "id": "cmlrjlkcj005ybtk56n7dkd3x",
-      "visaRequirementId": "cmlrjljbp0033btk5gr05krke",
-      "type": "REQUIRES_RESIDENCY",
-      "description": "Visa not required if holding a permanent residency card from Canada, Chile, Colombia, Japan, United Kingdom, Peru, United States, or any of the Schengen countries",
-      "acceptedCountries": [
-        "CA",
-        "CL",
-        "CO",
-        "JP",
-        "GB",
-        "PE",
-        "US",
-        "SCHENGEN"
-      ],
-      "mustBeValid": true,
-      "durationIfMet": null,
-      "createdAt": "2026-02-18T04:39:04.771Z",
-      "updatedAt": "2026-02-18T04:39:04.771Z"
-    },
-    {
-      "id": "cmlrjlkcj005zbtk5k5peeeva",
-      "visaRequirementId": "cmlrjljbp0033btk5gr05krke",
-      "type": "REQUIRES_VISA",
-      "description": "Visa not required if holding a valid visa from Canada, Japan, United Kingdom, United States, or any of the Schengen countries",
-      "acceptedCountries": ["CA", "JP", "GB", "US", "SCHENGEN"],
-      "mustBeValid": true,
-      "durationIfMet": null,
-      "createdAt": "2026-02-18T04:39:04.771Z",
-      "updatedAt": "2026-02-18T04:39:04.771Z"
-    }
-  ]
-}
-```
-
-Here Mexico is `CONDITIONAL_WAIVER`: no visa needed if you meet one of the listed conditions (e.g. valid US/UK/Schengen visa or residency). The `conditions` array spells out each option with `acceptedCountries` and `mustBeValid`.
 
 ## Why This Exists
 
