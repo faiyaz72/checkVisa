@@ -126,15 +126,9 @@ export class LlmService {
   private mapPrismaRequirementToApp(
     row: VisaRequirementResponse,
   ): VisaRequirement {
-    const conditions: VisaCondition[] | undefined =
+    const conditions =
       row.conditions?.length > 0
-        ? row.conditions.map((c) => ({
-            type: c.type,
-            description: c.description,
-            acceptedCountries: c.acceptedCountries,
-            mustBeValid: c.mustBeValid,
-            durationIfMet: c.durationIfMet as VisaCondition["durationIfMet"],
-          }))
+        ? (row.conditions as VisaCondition[])
         : undefined;
     return {
       originCountryCd: row.originCountryCode,

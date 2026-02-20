@@ -11,7 +11,10 @@ import {
 import countries from "world-countries";
 import { LlmService } from "./llm.service";
 import { VisaRequirementType } from "./enum/VisaRequirement.enum";
-import { manualCountryCodeMapping } from "./const/ManualCountryData";
+import {
+  ignoredCountryNames,
+  manualCountryCodeMapping,
+} from "./const/ManualCountryData";
 import * as crypto from "crypto";
 import * as path from "path";
 import * as fs from "fs/promises";
@@ -197,26 +200,31 @@ export class ScraperService {
     scrapedData: ScrapedData,
     originCountryCd: string,
   ): LlmRequest[] {
-    return scrapedData.entries.map((entry) => ({
-      destinationCountryCd: this.getCountryCodeByName(entry.country),
-      originCountryCd,
-      visaType: this.categorizeVisaRequirement(entry.visaRequirement),
-      rawRequirement: entry.visaRequirement,
-      durationDays: this.extractDuration(
-        entry.allowedStay ?? entry.notes ?? "",
-      ),
-      allowedStay: entry.allowedStay,
-      notes: entry.notes,
-      notesHash: crypto
-        .createHash("md5")
-        .update(entry.notes?.trim() ?? "")
-        .digest("hex"),
-      lastVerified:
-        typeof scrapedData.lastUpdated === "string"
-          ? scrapedData.lastUpdated
-          : scrapedData.lastUpdated.toISOString(),
-      sourceUrl: `https://en.wikipedia.org/wiki/Visa_requirements_for_${scrapedData.passportCountry}_citizens`,
-    }));
+    return scrapedData.entries
+      .filter((entry) => this.allowedCountryCd(entry.country))
+      .map((entry) => ({
+        destinationCountryCd: this.getCountryCodeByName(entry.country),
+        originCountryCd,
+        visaType: this.categorizeVisaRequirement(entry.visaRequirement),
+        rawRequirement: entry.visaRequirement,
+        durationDays: this.extractDuration(
+          entry.allowedStay ?? entry.notes ?? "",
+        ),
+        allowedStay: entry.allowedStay,
+        notes: entry.notes,
+        notesHash: crypto
+          .createHash("md5")
+          .update(entry.notes?.trim() ?? "")
+          .digest("hex"),
+        lastVerified:
+          typeof scrapedData.lastUpdated === "string"
+            ? scrapedData.lastUpdated
+            : scrapedData.lastUpdated.toISOString(),
+        sourceUrl: `https://en.wikipedia.org/wiki/Visa_requirements_for_${scrapedData.passportCountry}_citizens`,
+      }));
+  }
+  private allowedCountryCd(countryCd: string): boolean {
+    return !ignoredCountryNames.has(countryCd);
   }
 
   private getCountryCodeByName(countryName: string): string {
