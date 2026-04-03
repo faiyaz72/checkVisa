@@ -1,5 +1,8 @@
 <script setup lang="ts">
+import { useI18n } from "vue-i18n";
 import SearchCard from "@/components/SearchCard/SearchCard.vue";
+
+const { t } = useI18n();
 </script>
 
 <template>
@@ -10,8 +13,11 @@ import SearchCard from "@/components/SearchCard/SearchCard.vue";
         <h1
           class="font-display font-extrabold text-5xl md:text-7xl tracking-tighter leading-[0.9]"
         >
-          <span class="text-pp-primary-container">Global Mobility,</span><br />
-          <span class="text-pp-secondary">Simplified.</span>
+          <span class="text-pp-primary-container">{{
+            t("hero.headline1")
+          }}</span
+          ><br />
+          <span class="text-pp-secondary">{{ t("hero.headline2") }}</span>
         </h1>
         <SearchCard />
       </div>
@@ -23,7 +29,7 @@ import SearchCard from "@/components/SearchCard/SearchCard.vue";
         >
           <img
             src="@/assets/hero.png"
-            alt="Travel destination"
+            :alt="t('hero.imageAlt')"
             class="w-full h-full object-cover"
             onerror="
               this.style.background = '#eaeef2';

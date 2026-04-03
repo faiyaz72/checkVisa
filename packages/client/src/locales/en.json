@@ -1,0 +1,37 @@
+{
+  "nav": {
+    "brand": "Passportal",
+    "links": {
+      "howItWorks": "How it Works",
+      "globalNetwork": "Global Network",
+      "about": "About"
+    }
+  },
+  "hero": {
+    "headline1": "Global Mobility,",
+    "headline2": "Simplified.",
+    "imageAlt": "Travel destination"
+  },
+  "searchCard": {
+    "passportCountry": {
+      "label": "Passport Country",
+      "placeholder": "e.g. Bangladesh"
+    },
+    "destination": {
+      "label": "Destination",
+      "placeholder": "Where are you heading?"
+    },
+    "visaToggles": {
+      "label": "Existing Visas & Residency",
+      "countries": {
+        "us": "US",
+        "gb": "UK",
+        "eu": "EU",
+        "ae": "UAE",
+        "ca": "Canada",
+        "au": "Australia"
+      }
+    },
+    "cta": "Get Requirements"
+  }
+}
