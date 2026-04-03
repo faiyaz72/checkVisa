@@ -54,10 +54,15 @@
             :aria-label="t(`searchCard.visaToggles.countries.${visa.code}`)"
             class="flex items-center justify-between px-2 py-2 rounded-lg bg-pp-surface-low cursor-pointer transition-colors hover:bg-pp-surface-container"
           >
-            <span
-              :class="`fi fi-${visa.code} fis`"
-              style="font-size: 1.25rem; border-radius: 4px"
-            />
+            <div class="flex items-center gap-1.5">
+              <span
+                :class="`fi fi-${visa.code} fis`"
+                style="font-size: 1.25rem; border-radius: 4px"
+              />
+              <span class="text-[10px] font-bold text-pp-on-surface-variant">{{
+                visa.code.toUpperCase()
+              }}</span>
+            </div>
             <Switch v-model:checked="visa.enabled" class="scale-75" />
           </label>
         </div>
