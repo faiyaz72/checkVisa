@@ -1,6 +1,8 @@
 <script setup lang="ts">
+import { useI18n } from "vue-i18n";
 import logo from "@/assets/logo.svg";
-import { NavigationMenu } from "@/components/ui/navigation-menu";
+
+const { t } = useI18n();
 </script>
 
 <template>
@@ -11,14 +13,13 @@ import { NavigationMenu } from "@/components/ui/navigation-menu";
       class="flex justify-between items-center h-full px-8 max-w-screen-2xl mx-auto"
     >
       <div class="flex items-center gap-2 group cursor-pointer">
-        <img :src="logo" alt="Passportal logo" class="w-8 h-8" />
+        <img :src="logo" :alt="t('nav.brand')" class="w-8 h-8" />
         <span
           class="font-display text-xl font-bold tracking-tighter text-pp-primary-container"
-          >Passportal</span
         >
+          {{ t("nav.brand") }}
+        </span>
       </div>
-
-      <NavigationMenu> </NavigationMenu>
     </div>
   </nav>
 </template>

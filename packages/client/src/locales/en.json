@@ -1,11 +1,6 @@
 {
   "nav": {
-    "brand": "Passportal",
-    "links": {
-      "howItWorks": "How it Works",
-      "globalNetwork": "Global Network",
-      "about": "About"
-    }
+    "brand": "Passportal"
   },
   "hero": {
     "headline1": "Global Mobility,",
