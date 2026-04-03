@@ -9,17 +9,16 @@ export type Country = {
   flagCode: string;
 };
 
-export function useOriginCountries(): Country[] {
-  return ["BD", "PK", "LK", "IN"].map((code) => ({
+export function buildCountry(code: string): Country {
+  return {
     code,
     name: countries.getName(code, "en") ?? code,
     flagCode: code.toLowerCase(),
-  }));
+  };
 }
 
-export function useWorldCountries(): Country[] {
-  const names = countries.getNames("en", { select: "official" });
-  return Object.entries(names)
+export function getAllWorldCountries(): Country[] {
+  return Object.entries(countries.getNames("en", { select: "official" }))
     .map(([code, name]) => ({ code, name, flagCode: code.toLowerCase() }))
     .sort((a, b) => a.name.localeCompare(b.name));
 }

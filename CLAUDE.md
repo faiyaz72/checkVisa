@@ -120,7 +120,15 @@ Located in `packages/client/src/`. The Vite dev server proxies `/api/` to `http:
 
 **Path alias:** `@/` → `src/`
 
-Use shadcdn components where necessary, avoid having to create components from scratch
+**Scope of changes:** Only modify files directly required by the task. Do not fix, clean up, or refactor unrelated files — even if they have lint errors, unused imports, or other issues.
+
+**Code organisation preferences:**
+
+- Do not use composables (`use*` functions with Vue reactivity). Put component logic (refs, `onMounted`, data fetching) directly inside `<script setup>`.
+- API calls go in `src/services/api.service.ts` as plain async functions. Components import and call these directly.
+- Utility/helper modules (e.g. type definitions, pure data transformations) live in `src/composables/` but must not follow the composable pattern — no `ref`, no `onMounted`, no Vue reactivity inside them.
+
+Use shadcn components where necessary, avoid having to create components from scratch
 
 ## No Tests
 

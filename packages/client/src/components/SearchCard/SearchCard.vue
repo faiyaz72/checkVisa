@@ -75,7 +75,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from "vue";
+import { ref, onMounted } from "vue";
 import { useI18n } from "vue-i18n";
 import { ListFilter, ArrowRight } from "lucide-vue-next";
 import { Card, CardContent } from "@/components/ui/card";
@@ -83,17 +83,24 @@ import { Switch } from "@/components/ui/switch";
 import { Button } from "@/components/ui/button";
 import { CountryCombobox } from "@/components/ui/country-combobox";
 import {
-  useOriginCountries,
-  useWorldCountries,
+  buildCountry,
+  getAllWorldCountries,
+  type Country,
 } from "@/composables/useCountries";
+import { fetchSupportedOriginCodes } from "@/services/api.service";
 
 const { t } = useI18n();
 
 const passportCountry = ref("");
 const destination = ref("");
+const originCountries = ref<Country[]>([]);
+const worldCountries = ref<Country[]>([]);
 
-const originCountries = useOriginCountries();
-const worldCountries = useWorldCountries();
+onMounted(async () => {
+  const codes = await fetchSupportedOriginCodes();
+  originCountries.value = codes.map(buildCountry);
+  worldCountries.value = getAllWorldCountries();
+});
 
 const visaToggles = ref([
   { code: "us", enabled: false },
