@@ -10,11 +10,13 @@
   "searchCard": {
     "passportCountry": {
       "label": "Passport Country",
-      "placeholder": "e.g. Bangladesh"
+      "placeholder": "Select country...",
+      "searchPlaceholder": "Search by name or code"
     },
     "destination": {
       "label": "Destination",
-      "placeholder": "Where are you heading?"
+      "placeholder": "Select destination...",
+      "searchPlaceholder": "Search by name or code"
     },
     "visaToggles": {
       "label": "Existing Visas & Residency",

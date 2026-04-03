@@ -8,19 +8,14 @@
           >
             {{ t("searchCard.passportCountry.label") }}
           </label>
-          <div
-            class="flex items-center gap-3 bg-pp-surface-low rounded-xl px-4 py-3"
-          >
-            <Globe
-              class="w-5 h-5 shrink-0 text-pp-secondary"
-              :stroke-width="2"
-            />
-            <Input
-              v-model="passportCountry"
-              :placeholder="t('searchCard.passportCountry.placeholder')"
-              class="border-0 bg-transparent p-0 h-auto shadow-none focus-visible:ring-0 font-display font-bold text-pp-primary-container placeholder:text-pp-on-surface-variant/40"
-            />
-          </div>
+          <CountryCombobox
+            v-model="passportCountry"
+            :countries="originCountries"
+            :placeholder="t('searchCard.passportCountry.placeholder')"
+            :search-placeholder="
+              t('searchCard.passportCountry.searchPlaceholder')
+            "
+          />
         </div>
 
         <div class="space-y-2">
@@ -29,19 +24,12 @@
           >
             {{ t("searchCard.destination.label") }}
           </label>
-          <div
-            class="flex items-center gap-3 bg-pp-surface-low rounded-xl px-4 py-3"
-          >
-            <PlaneLanding
-              class="w-5 h-5 shrink-0 text-pp-secondary"
-              :stroke-width="2"
-            />
-            <Input
-              v-model="destination"
-              :placeholder="t('searchCard.destination.placeholder')"
-              class="border-0 bg-transparent p-0 h-auto shadow-none focus-visible:ring-0 font-display font-bold text-pp-primary-container placeholder:text-pp-on-surface-variant/40"
-            />
-          </div>
+          <CountryCombobox
+            v-model="destination"
+            :countries="worldCountries"
+            :placeholder="t('searchCard.destination.placeholder')"
+            :search-placeholder="t('searchCard.destination.searchPlaceholder')"
+          />
         </div>
       </div>
 
@@ -89,16 +77,23 @@
 <script setup lang="ts">
 import { ref } from "vue";
 import { useI18n } from "vue-i18n";
-import { Globe, PlaneLanding, ListFilter, ArrowRight } from "lucide-vue-next";
+import { ListFilter, ArrowRight } from "lucide-vue-next";
 import { Card, CardContent } from "@/components/ui/card";
-import { Input } from "@/components/ui/input";
 import { Switch } from "@/components/ui/switch";
 import { Button } from "@/components/ui/button";
+import { CountryCombobox } from "@/components/ui/country-combobox";
+import {
+  useOriginCountries,
+  useWorldCountries,
+} from "@/composables/useCountries";
 
 const { t } = useI18n();
 
 const passportCountry = ref("");
 const destination = ref("");
+
+const originCountries = useOriginCountries();
+const worldCountries = useWorldCountries();
 
 const visaToggles = ref([
   { code: "us", enabled: false },

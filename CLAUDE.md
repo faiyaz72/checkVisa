@@ -1,4 +1,4 @@
-# CLAUDE.md
+# [CLAUDE.md](http://CLAUDE.md)
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
@@ -88,7 +88,7 @@ Schema and migrations live in `packages/server/prisma/`.
 
 ### Frontend (Vue 3 + Vite)
 
-Located in `packages/client/src/`. The Vite dev server proxies `/api/`\* to `http://localhost:3000`.
+Located in `packages/client/src/`. The Vite dev server proxies `/api/` to `http://localhost:3000`.
 
 **Vue SFC convention:** Always put `<template>` before `<script setup>` in all Vue single-file components. Never add comments anywhere — no HTML comments, no JS/TS comments, no CSS comments.
 
@@ -119,6 +119,8 @@ Located in `packages/client/src/`. The Vite dev server proxies `/api/`\* to `htt
 - Fonts: Plus Jakarta Sans (display/headlines), Inter (body)
 
 **Path alias:** `@/` → `src/`
+
+Use shadcdn components where necessary, avoid having to create components from scratch
 
 ## No Tests
 

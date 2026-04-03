@@ -20,13 +20,6 @@
 <script setup lang="ts">
 import { useI18n } from "vue-i18n";
 import logo from "@/assets/logo.svg";
-import {
-  NavigationMenu,
-  NavigationMenuList,
-  NavigationMenuItem,
-  NavigationMenuLink,
-  navigationMenuTriggerStyle,
-} from "@/components/ui/navigation-menu";
 
 const { t } = useI18n();
 </script>
