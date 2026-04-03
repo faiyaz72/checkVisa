@@ -1,5 +1,9 @@
+<script setup lang="ts">
+import HeroSection from "@/components/HeroSection/HeroSection.vue";
+</script>
+
 <template>
   <main>
-    <!-- Landing page content goes here -->
+    <HeroSection />
   </main>
 </template>
