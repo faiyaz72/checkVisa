@@ -126,7 +126,7 @@ Located in `packages/client/src/`. The Vite dev server proxies `/api/` to `http:
 
 - Do not use composables (`use*` functions with Vue reactivity). Put component logic (refs, `onMounted`, data fetching) directly inside `<script setup>`.
 - API calls go in `src/services/api.service.ts` as plain async functions. Components import and call these directly.
-- Utility/helper modules (e.g. type definitions, pure data transformations) live in `src/composables/` but must not follow the composable pattern — no `ref`, no `onMounted`, no Vue reactivity inside them.
+- Shared types live in `src/types/` (e.g. `src/types/country.ts`). Helper functions that belong to a type can live alongside it in that file.
 
 Use shadcn components where necessary, avoid having to create components from scratch
 

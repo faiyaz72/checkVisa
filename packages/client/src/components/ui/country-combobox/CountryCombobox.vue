@@ -75,7 +75,7 @@ import {
   ComboboxItemIndicator,
   ComboboxEmpty,
 } from "@/components/ui/combobox";
-import type { Country } from "@/composables/useCountries";
+import type { Country } from "@/types/country";
 
 const props = defineProps<{
   modelValue: string;

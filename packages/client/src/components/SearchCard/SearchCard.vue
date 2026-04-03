@@ -86,7 +86,7 @@ import {
   buildCountry,
   getAllWorldCountries,
   type Country,
-} from "@/composables/useCountries";
+} from "@/types/country";
 import { fetchSupportedOriginCodes } from "@/services/api.service";
 
 const { t } = useI18n();
