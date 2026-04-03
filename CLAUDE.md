@@ -1,4 +1,4 @@
-# CLAUDE.md
+# [CLAUDE.md](http://CLAUDE.md)
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
@@ -88,7 +88,47 @@ Schema and migrations live in `packages/server/prisma/`.
 
 ### Frontend (Vue 3 + Vite)
 
-Very early stage. The Vite dev server proxies `/api/*` to `http://localhost:3000`, so the client can call the backend without CORS issues in development.
+Located in `packages/client/src/`. The Vite dev server proxies `/api/` to `http://localhost:3000`.
+
+**Vue SFC convention:** Always put `<template>` before `<script setup>` in all Vue single-file components. Never add comments anywhere — no HTML comments, no JS/TS comments, no CSS comments.
+
+**Stack:**
+
+- Vue 3 (Composition API), Vue Router 5, vue-i18n 11 (English only, locale at `src/locales/en.json`)
+- Tailwind CSS v4 (config inline in `src/style.css`), shadcn-vue "new-york" style
+- reka-ui for headless components, lucide-vue-next icons, flag-icons for country flags
+- axios installed but not yet used; `@vueuse/core` for composables
+- No Pinia/Vuex — components use local `ref()` state only
+
+**Directory layout:**
+
+- `src/components/HeroSection/` — landing hero with headline and embedded SearchCard
+- `src/components/NavBar/` — fixed header with glassmorphism (backdrop-blur), logo + nav links
+- `src/components/SearchCard/` — main search form: passport country input, destination input, 6 visa-toggle switches (US/UK/EU/UAE/Canada/Australia), CTA button
+- `src/components/ui/` — shadcn-vue primitives: Button, Card family, Input, Switch, NavigationMenu family
+- `src/views/HomeView.vue` — home page, wraps HeroSection
+- `src/router/index.ts` — single route: `/` → HomeView (web history mode)
+- `src/i18n/index.ts` — i18n setup (legacy: false, composition API mode)
+- `src/lib/utils.ts` — `cn()` helper (clsx + tailwind-merge)
+
+**Brand / design tokens** (defined as CSS vars in `src/style.css`):
+
+- `--color-pp-primary`: #00152a (navy), `--color-pp-primary-container`: #102a43
+- `--color-pp-secondary`: #006b5c (teal), `--color-pp-secondary-container`: #68fadd
+- `--color-pp-surface`: #f6fafe (page bg), `--color-pp-surface-low`: #f0f4f8 (input bg)
+- Fonts: Plus Jakarta Sans (display/headlines), Inter (body)
+
+**Path alias:** `@/` → `src/`
+
+**Scope of changes:** Only modify files directly required by the task. Do not fix, clean up, or refactor unrelated files — even if they have lint errors, unused imports, or other issues.
+
+**Code organisation preferences:**
+
+- Do not use composables (`use*` functions with Vue reactivity). Put component logic (refs, `onMounted`, data fetching) directly inside `<script setup>`.
+- API calls go in `src/services/api.service.ts` as plain async functions. Components import and call these directly.
+- Shared types live in `src/types/` (e.g. `src/types/country.ts`). Helper functions that belong to a type can live alongside it in that file.
+
+Use shadcn components where necessary, avoid having to create components from scratch
 
 ## No Tests
 

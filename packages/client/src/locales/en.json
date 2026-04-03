@@ -1,0 +1,34 @@
+{
+  "nav": {
+    "brand": "Passportal"
+  },
+  "hero": {
+    "headline1": "Global Mobility,",
+    "headline2": "Simplified.",
+    "imageAlt": "Travel destination"
+  },
+  "searchCard": {
+    "passportCountry": {
+      "label": "Passport Country",
+      "placeholder": "Select country...",
+      "searchPlaceholder": "Search by name or code"
+    },
+    "destination": {
+      "label": "Destination",
+      "placeholder": "Select destination...",
+      "searchPlaceholder": "Search by name or code"
+    },
+    "visaToggles": {
+      "label": "Existing Visas & Residency",
+      "countries": {
+        "us": "US",
+        "gb": "UK",
+        "eu": "EU",
+        "ae": "UAE",
+        "ca": "Canada",
+        "au": "Australia"
+      }
+    },
+    "cta": "Get Requirements"
+  }
+}
