@@ -13,26 +13,6 @@
           {{ t("nav.brand") }}
         </span>
       </div>
-
-      <NavigationMenu>
-        <NavigationMenuList>
-          <NavigationMenuItem>
-            <NavigationMenuLink href="#" :class="navigationMenuTriggerStyle()">
-              {{ t("nav.links.howItWorks") }}
-            </NavigationMenuLink>
-          </NavigationMenuItem>
-          <NavigationMenuItem>
-            <NavigationMenuLink href="#" :class="navigationMenuTriggerStyle()">
-              {{ t("nav.links.globalNetwork") }}
-            </NavigationMenuLink>
-          </NavigationMenuItem>
-          <NavigationMenuItem>
-            <NavigationMenuLink href="#" :class="navigationMenuTriggerStyle()">
-              {{ t("nav.links.about") }}
-            </NavigationMenuLink>
-          </NavigationMenuItem>
-        </NavigationMenuList>
-      </NavigationMenu>
     </div>
   </nav>
 </template>
