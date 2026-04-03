@@ -1,10 +1,3 @@
-<script setup lang="ts">
-import { useI18n } from "vue-i18n";
-import SearchCard from "@/components/SearchCard/SearchCard.vue";
-
-const { t } = useI18n();
-</script>
-
 <template>
   <section class="max-w-screen-2xl mx-auto px-8 py-16">
     <div class="grid grid-cols-12 gap-6 items-center">
@@ -41,3 +34,10 @@ const { t } = useI18n();
     </div>
   </section>
 </template>
+
+<script setup lang="ts">
+import { useI18n } from "vue-i18n";
+import SearchCard from "@/components/SearchCard/SearchCard.vue";
+
+const { t } = useI18n();
+</script>

@@ -1,27 +1,3 @@
-<script setup lang="ts">
-import { ref } from "vue";
-import { useI18n } from "vue-i18n";
-import { Globe, PlaneLanding, ListFilter, ArrowRight } from "lucide-vue-next";
-import { Card, CardContent } from "@/components/ui/card";
-import { Input } from "@/components/ui/input";
-import { Switch } from "@/components/ui/switch";
-import { Button } from "@/components/ui/button";
-
-const { t } = useI18n();
-
-const passportCountry = ref("");
-const destination = ref("");
-
-const visaToggles = ref([
-  { code: "us", enabled: false },
-  { code: "gb", enabled: false },
-  { code: "eu", enabled: false },
-  { code: "ae", enabled: false },
-  { code: "ca", enabled: false },
-  { code: "au", enabled: false },
-]);
-</script>
-
 <template>
   <Card class="rounded-4xl border-0 shadow-[0_32px_64px_rgba(16,42,67,0.08)]">
     <CardContent class="p-6 md:p-8 space-y-6">
@@ -90,7 +66,7 @@ const visaToggles = ref([
             v-for="visa in visaToggles"
             :key="visa.code"
             :aria-label="t(`searchCard.visaToggles.countries.${visa.code}`)"
-            class="flex items-center justify-between p-3 rounded-lg bg-pp-surface-low cursor-pointer transition-colors hover:bg-pp-surface-container"
+            class="flex items-center justify-between px-2 py-2 rounded-lg bg-pp-surface-low cursor-pointer transition-colors hover:bg-pp-surface-container"
           >
             <span
               :class="`fi fi-${visa.code} fis`"
@@ -112,3 +88,27 @@ const visaToggles = ref([
     </CardContent>
   </Card>
 </template>
+
+<script setup lang="ts">
+import { ref } from "vue";
+import { useI18n } from "vue-i18n";
+import { Globe, PlaneLanding, ListFilter, ArrowRight } from "lucide-vue-next";
+import { Card, CardContent } from "@/components/ui/card";
+import { Input } from "@/components/ui/input";
+import { Switch } from "@/components/ui/switch";
+import { Button } from "@/components/ui/button";
+
+const { t } = useI18n();
+
+const passportCountry = ref("");
+const destination = ref("");
+
+const visaToggles = ref([
+  { code: "us", enabled: false },
+  { code: "gb", enabled: false },
+  { code: "eu", enabled: false },
+  { code: "ae", enabled: false },
+  { code: "ca", enabled: false },
+  { code: "au", enabled: false },
+]);
+</script>
