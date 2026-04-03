@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <rect width="32" height="32" rx="4" fill="#102a43"/>
+  <!-- DoorOpen icon (lucide), scaled from 24x24 to fit inside 32x32 with 4px padding -->
+  <g transform="translate(4, 4) scale(0.667)" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <path d="M13 4h3a2 2 0 0 1 2 2v14"/>
+    <path d="M2 20h3"/>
+    <path d="M13 20h9"/>
+    <path d="M10 12v.01"/>
+    <path d="M3 20V8a2 2 0 0 1 2-2h8v14"/>
+  </g>
+</svg>
