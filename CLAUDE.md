@@ -90,7 +90,7 @@ Schema and migrations live in `packages/server/prisma/`.
 
 Very early stage. The Vite dev server proxies `/api/*` to `http://localhost:3000`, so the client can call the backend without CORS issues in development.
 
-**Vue SFC convention:** Always put `<template>` before `<script setup>` in all Vue single-file components.
+**Vue SFC convention:** Always put `<template>` before `<script setup>` in all Vue single-file components. Never add comments anywhere — no HTML comments, no JS/TS comments, no CSS comments.
 
 ## No Tests
 

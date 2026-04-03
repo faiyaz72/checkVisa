@@ -1,7 +1,6 @@
 <template>
   <Card class="rounded-4xl border-0 shadow-[0_32px_64px_rgba(16,42,67,0.08)]">
     <CardContent class="p-6 md:p-8 space-y-6">
-      <!-- Inputs -->
       <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
         <div class="space-y-2">
           <label
@@ -46,7 +45,6 @@
         </div>
       </div>
 
-      <!-- Visa Toggles -->
       <div class="space-y-3">
         <div
           class="flex items-center gap-2 pb-2 border-b border-pp-outline-variant/20"
@@ -77,7 +75,6 @@
         </div>
       </div>
 
-      <!-- CTA Button -->
       <Button
         class="w-full h-14 rounded-xl text-base font-bold text-white border-0 shadow-none hover:opacity-90 transition-opacity flex items-center justify-center gap-2"
         style="background: #102a43"
