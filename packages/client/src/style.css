@@ -136,3 +136,13 @@
     @apply bg-background text-foreground;
   }
 }
+
+@layer components {
+  .label-pp-overline {
+    @apply text-[10px] font-bold uppercase tracking-widest text-pp-on-surface-variant;
+  }
+  .btn-pp-primary {
+    @apply h-14 rounded-xl text-base font-bold text-white border-0 shadow-none hover:opacity-90 transition-opacity flex items-center justify-center gap-2 cursor-pointer disabled:opacity-40 disabled:cursor-not-allowed;
+    background: #102a43;
+  }
+}
