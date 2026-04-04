@@ -130,6 +130,10 @@ Located in `packages/client/src/`. The Vite dev server proxies `/api/` to `http:
 
 Use shadcn components where necessary, avoid having to create components from scratch
 
+## TypeScript conventions
+
+- Never use `null` as a return type. Prefer throwing an `Error` for failure cases and letting callers handle it with `try/catch`.
+
 ## No Tests
 
 There is currently no automated test setup in this project.
