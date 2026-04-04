@@ -62,7 +62,11 @@
         </div>
       </div>
 
-      <Button :disabled="!canSearch" class="btn-pp-primary w-full">
+      <Button
+        :disabled="!canSearch"
+        class="btn-pp-primary w-full"
+        @click="handleSearch"
+      >
         {{ t("searchCard.cta") }}
         <ArrowRight class="w-4 h-4" :stroke-width="2.5" />
       </Button>
@@ -84,6 +88,7 @@ import {
   type Country,
 } from "@/types/country";
 import { fetchSupportedOriginCodes } from "@/services/api.service";
+import { getRequirementData } from "@/services/data.api.service";
 
 const { t } = useI18n();
 
@@ -101,6 +106,18 @@ onMounted(async () => {
 const canSearch = computed(
   () => passportCountry.value !== "" && destination.value !== "",
 );
+
+async function handleSearch() {
+  try {
+    const result = await getRequirementData({
+      originCountryCode: passportCountry.value,
+      destinationCountryCode: destination.value,
+    });
+    console.log(result);
+  } catch (error) {
+    console.error(error);
+  }
+}
 
 const visaToggles = ref([
   { code: "us", enabled: false },
