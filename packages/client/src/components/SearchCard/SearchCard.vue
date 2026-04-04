@@ -3,9 +3,7 @@
     <CardContent class="p-6 md:p-8 space-y-6">
       <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
         <div class="space-y-2">
-          <label
-            class="text-[10px] font-bold uppercase tracking-widest text-pp-on-surface-variant px-1"
-          >
+          <label class="label-pp-overline px-1">
             {{ t("searchCard.passportCountry.label") }}
           </label>
           <CountryCombobox
@@ -19,9 +17,7 @@
         </div>
 
         <div class="space-y-2">
-          <label
-            class="text-[10px] font-bold uppercase tracking-widest text-pp-on-surface-variant px-1"
-          >
+          <label class="label-pp-overline px-1">
             {{ t("searchCard.destination.label") }}
           </label>
           <CountryCombobox
@@ -41,9 +37,7 @@
             class="w-4 h-4 text-pp-on-surface-variant"
             :stroke-width="2"
           />
-          <span
-            class="text-[10px] font-bold uppercase tracking-widest text-pp-on-surface-variant"
-          >
+          <span class="label-pp-overline">
             {{ t("searchCard.visaToggles.label") }}
           </span>
         </div>
@@ -59,7 +53,7 @@
                 :class="`fi fi-${visa.code} fis`"
                 style="font-size: 1.25rem; border-radius: 4px"
               />
-              <span class="text-[10px] font-bold text-pp-on-surface-variant">{{
+              <span class="label-pp-overline">{{
                 visa.code.toUpperCase()
               }}</span>
             </div>
@@ -68,10 +62,7 @@
         </div>
       </div>
 
-      <Button
-        class="w-full h-14 rounded-xl text-base font-bold text-white border-0 shadow-none hover:opacity-90 transition-opacity flex items-center justify-center gap-2"
-        style="background: #102a43"
-      >
+      <Button :disabled="!canSearch" class="btn-pp-primary w-full">
         {{ t("searchCard.cta") }}
         <ArrowRight class="w-4 h-4" :stroke-width="2.5" />
       </Button>
@@ -80,7 +71,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref, onMounted } from "vue";
+import { ref, computed, onMounted } from "vue";
 import { useI18n } from "vue-i18n";
 import { ListFilter, ArrowRight } from "lucide-vue-next";
 import { Card, CardContent } from "@/components/ui/card";
@@ -106,6 +97,10 @@ onMounted(async () => {
   originCountries.value = codes.map(buildCountry);
   worldCountries.value = getAllWorldCountries();
 });
+
+const canSearch = computed(
+  () => passportCountry.value !== "" && destination.value !== "",
+);
 
 const visaToggles = ref([
   { code: "us", enabled: false },
