@@ -7,6 +7,9 @@
     "headline2": "Simplified.",
     "imageAlt": "Travel destination"
   },
+  "glanceSection": {
+    "title": "The World at a Glance"
+  },
   "searchCard": {
     "passportCountry": {
       "label": "Passport Country",
