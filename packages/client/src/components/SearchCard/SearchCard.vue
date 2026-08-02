@@ -1,6 +1,6 @@
 <template>
-  <Card class="rounded-4xl border-0 shadow-[0_32px_64px_rgba(16,42,67,0.08)]">
-    <CardContent class="p-6 md:p-8 space-y-6">
+  <Card class="rounded-4xl border-0">
+    <CardContent class="px-6 pt-4 pb-6 md:px-8 md:pb-8 space-y-6">
       <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
         <div class="space-y-2">
           <label class="label-pp-overline px-1">
@@ -28,40 +28,6 @@
           />
         </div>
       </div>
-
-      <div class="space-y-3">
-        <div
-          class="flex items-center gap-2 pb-2 border-b border-pp-outline-variant/20"
-        >
-          <ListFilter
-            class="w-4 h-4 text-pp-on-surface-variant"
-            :stroke-width="2"
-          />
-          <span class="label-pp-overline">
-            {{ t("searchCard.visaToggles.label") }}
-          </span>
-        </div>
-        <div class="grid grid-cols-3 md:grid-cols-6 gap-2">
-          <label
-            v-for="visa in visaToggles"
-            :key="visa.code"
-            :aria-label="t(`searchCard.visaToggles.countries.${visa.code}`)"
-            class="flex items-center justify-between px-2 py-2 rounded-lg bg-pp-surface-low cursor-pointer transition-colors hover:bg-pp-surface-container"
-          >
-            <div class="flex items-center gap-1.5">
-              <span
-                :class="`fi fi-${visa.code} fis`"
-                style="font-size: 1.25rem; border-radius: 4px"
-              />
-              <span class="label-pp-overline">{{
-                visa.code.toUpperCase()
-              }}</span>
-            </div>
-            <Switch v-model:checked="visa.enabled" class="scale-75" />
-          </label>
-        </div>
-      </div>
-
       <Button
         :disabled="!canSearch"
         class="btn-pp-primary w-full"
@@ -75,11 +41,10 @@
 </template>
 
 <script setup lang="ts">
-import { ref, computed, onMounted } from "vue";
+import { ref, computed, onMounted, watch } from "vue";
 import { useI18n } from "vue-i18n";
-import { ListFilter, ArrowRight } from "lucide-vue-next";
+import { ArrowRight } from "lucide-vue-next";
 import { Card, CardContent } from "@/components/ui/card";
-import { Switch } from "@/components/ui/switch";
 import { Button } from "@/components/ui/button";
 import { CountryCombobox } from "@/components/ui/country-combobox";
 import {
@@ -97,6 +62,10 @@ const destination = ref("");
 const originCountries = ref<Country[]>([]);
 const worldCountries = ref<Country[]>([]);
 
+const emit = defineEmits<{
+  originCountryChange: [country: string];
+}>();
+
 onMounted(async () => {
   const codes = await fetchSupportedOriginCodes();
   originCountries.value = codes.map(buildCountry);
@@ -106,6 +75,10 @@ onMounted(async () => {
 const canSearch = computed(
   () => passportCountry.value !== "" && destination.value !== "",
 );
+
+watch(passportCountry, (newVal) => {
+  emit("originCountryChange", newVal);
+});
 
 async function handleSearch() {
   try {
@@ -118,13 +91,4 @@ async function handleSearch() {
     console.error(error);
   }
 }
-
-const visaToggles = ref([
-  { code: "us", enabled: false },
-  { code: "gb", enabled: false },
-  { code: "eu", enabled: false },
-  { code: "ae", enabled: false },
-  { code: "ca", enabled: false },
-  { code: "au", enabled: false },
-]);
 </script>
