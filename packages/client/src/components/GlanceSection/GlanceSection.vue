@@ -8,19 +8,12 @@
       </CardHeader>
       <CardContent>
         <div class="grid grid-cols-12 gap-6">
-          <div
+          <DestinationCard
             v-for="i in 4"
             :key="i"
-            class="col-span-12 md:col-span-3 space-y-3"
-          >
-            <div class="aspect-4/3 rounded-2xl bg-pp-surface-low" />
-            <h3
-              class="font-display text-lg font-semibold text-pp-primary-container"
-            >
-              Destination {{ i }}
-            </h3>
-            <div class="h-5 w-20 rounded-md bg-pp-surface-container" />
-          </div>
+            class="col-span-12 md:col-span-3"
+            :name="`Destination ${i}`"
+          />
         </div>
       </CardContent>
     </Card>
@@ -29,6 +22,7 @@
 
 <script setup lang="ts">
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import DestinationCard from "@/components/DestinationCard/DestinationCard.vue";
 import { useI18n } from "vue-i18n";
 
 const { t } = useI18n();
