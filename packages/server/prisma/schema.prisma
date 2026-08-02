@@ -13,12 +13,23 @@ datasource db {
 // SIMPLIFIED SCHEMA
 // ============================================
 
+model CountryInfo {
+  countryCd    String  @id
+  thumbnailUrl String?
+
+  originRequirements      VisaRequirement[] @relation("OriginCountry")
+  destinationRequirements VisaRequirement[] @relation("DestinationCountry")
+}
+
 model VisaRequirement {
   id String @id @default(cuid())
 
   // Country codes
   originCountryCode      String
   destinationCountryCode String
+
+  originCountry      CountryInfo @relation("OriginCountry", fields: [originCountryCode], references: [countryCd])
+  destinationCountry CountryInfo @relation("DestinationCountry", fields: [destinationCountryCode], references: [countryCd])
 
   // Core visa information
   primaryRequirement String // VISA_FREE, VISA_REQUIRED, etc.
