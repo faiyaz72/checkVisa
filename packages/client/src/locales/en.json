@@ -8,7 +8,11 @@
     "imageAlt": "Travel destination"
   },
   "glanceSection": {
-    "title": "The World at a Glance"
+    "title": "The World at a Glance",
+    "passport": {
+      "placeholder": "Select passport country",
+      "searchPlaceholder": "Search by name or code"
+    }
   },
   "searchCard": {
     "passportCountry": {
