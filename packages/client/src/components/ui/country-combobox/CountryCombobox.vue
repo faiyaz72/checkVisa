@@ -26,10 +26,20 @@
             {{ selectedCountry ? selectedCountry.name : placeholder }}
           </span>
         </div>
-        <ChevronsUpDown
-          class="w-4 h-4 shrink-0 text-pp-on-surface-variant/50"
-          :stroke-width="2"
-        />
+        <div class="flex items-center gap-1.5 shrink-0">
+          <button
+            v-if="clearable && selectedCountry"
+            type="button"
+            class="rounded-md p-0.5 text-pp-on-surface-variant/50 hover:text-pp-on-surface-variant transition-colors cursor-pointer"
+            @click.stop.prevent="emit('update:modelValue', '')"
+          >
+            <X class="w-3.5 h-3.5" :stroke-width="2" />
+          </button>
+          <ChevronsUpDown
+            class="w-4 h-4 text-pp-on-surface-variant/50"
+            :stroke-width="2"
+          />
+        </div>
       </ComboboxTrigger>
     </ComboboxAnchor>
 
@@ -63,7 +73,7 @@
 
 <script setup lang="ts">
 import { computed } from "vue";
-import { ChevronsUpDown, Check } from "lucide-vue-next";
+import { ChevronsUpDown, Check, X } from "lucide-vue-next";
 import {
   Combobox,
   ComboboxAnchor,
@@ -77,12 +87,18 @@ import {
 } from "@/components/ui/combobox";
 import type { Country } from "@/types/country";
 
-const props = defineProps<{
-  modelValue: string;
-  countries: Country[];
-  placeholder: string;
-  searchPlaceholder: string;
-}>();
+const props = withDefaults(
+  defineProps<{
+    modelValue: string;
+    countries: Country[];
+    placeholder: string;
+    searchPlaceholder: string;
+    clearable?: boolean;
+  }>(),
+  {
+    clearable: false,
+  },
+);
 
 const emit = defineEmits<{
   "update:modelValue": [value: string];
