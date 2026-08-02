@@ -23,7 +23,19 @@
 <script setup lang="ts">
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import DestinationCard from "@/components/DestinationCard/DestinationCard.vue";
+import { watch } from "vue";
 import { useI18n } from "vue-i18n";
+
+const props = defineProps<{
+  originCountry?: string;
+}>();
+
+watch(
+  () => props.originCountry,
+  (newVal) => {
+    console.log(newVal);
+  },
+);
 
 const { t } = useI18n();
 </script>

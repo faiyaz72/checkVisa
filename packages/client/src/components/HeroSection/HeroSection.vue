@@ -11,7 +11,7 @@
           ><br />
           <span class="text-pp-secondary">{{ t("hero.headline2") }}</span>
         </h1>
-        <SearchCard />
+        <SearchCard @origin-country-change="handleOriginCountryChange" />
       </div>
 
       <div class="hidden md:block md:col-span-5">
@@ -38,4 +38,12 @@ import { useI18n } from "vue-i18n";
 import SearchCard from "@/components/SearchCard/SearchCard.vue";
 
 const { t } = useI18n();
+
+const emit = defineEmits<{
+  originCountryChange: [country: string];
+}>();
+
+const handleOriginCountryChange = (country: string) => {
+  emit("originCountryChange", country);
+};
 </script>

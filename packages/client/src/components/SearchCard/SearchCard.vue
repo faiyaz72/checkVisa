@@ -41,10 +41,10 @@
 </template>
 
 <script setup lang="ts">
-import { ref, computed, onMounted } from "vue";
+import { ref, computed, onMounted, watch } from "vue";
 import { useI18n } from "vue-i18n";
 import { ArrowRight } from "lucide-vue-next";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { CountryCombobox } from "@/components/ui/country-combobox";
 import {
@@ -62,6 +62,10 @@ const destination = ref("");
 const originCountries = ref<Country[]>([]);
 const worldCountries = ref<Country[]>([]);
 
+const emit = defineEmits<{
+  originCountryChange: [country: string];
+}>();
+
 onMounted(async () => {
   const codes = await fetchSupportedOriginCodes();
   originCountries.value = codes.map(buildCountry);
@@ -71,6 +75,10 @@ onMounted(async () => {
 const canSearch = computed(
   () => passportCountry.value !== "" && destination.value !== "",
 );
+
+watch(passportCountry, (newVal) => {
+  emit("originCountryChange", newVal);
+});
 
 async function handleSearch() {
   try {
