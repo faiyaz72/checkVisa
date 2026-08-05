@@ -3,7 +3,7 @@ import { ApiBody, ApiResponse } from "@nestjs/swagger";
 import { DataService } from "./data.service";
 import { DataRequest, SummaryRequest } from "./request/DataRequest.vo";
 import { PaginatedResponse, PaginatedResponseDto } from "../lib/pagination";
-import { SummaryItemDto } from "./type/SummaryItemDto";
+import { SummaryItem } from "./type/SummaryItem";
 
 @Controller("data")
 export class DataController {
@@ -27,11 +27,11 @@ export class DataController {
   @ApiResponse({
     status: 200,
     description: "Paginated visa summary for the given origin passport country",
-    type: PaginatedResponseDto(SummaryItemDto),
+    type: PaginatedResponseDto(SummaryItem),
   })
   getSummary(
     @Body() request: SummaryRequest,
-  ): Promise<PaginatedResponse<SummaryItemDto>> {
+  ): Promise<PaginatedResponse<SummaryItem>> {
     return this.dataService.getSummary(
       request.originPassportCountryCode,
       request.page,

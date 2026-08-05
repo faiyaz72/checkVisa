@@ -1,6 +1,15 @@
-export type SummaryItem = {
-  id: string;
-  originCountryCode: string;
-  destinationCountryCode: string;
-  primaryRequirement: string;
-};
+import { ApiProperty } from "@nestjs/swagger";
+
+export class SummaryItem {
+  @ApiProperty({ example: "1234567890" })
+  id!: string;
+
+  @ApiProperty({ example: "CA" })
+  originCountryCode!: string;
+
+  @ApiProperty({ example: "CA" })
+  destinationCountryCode!: string;
+
+  @ApiProperty({ example: "VISA_FREE" })
+  primaryRequirement!: string;
+}
