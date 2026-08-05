@@ -20,17 +20,21 @@
         </div>
       </CardHeader>
       <CardContent>
-        <div class="grid grid-cols-12 gap-6">
-          <DestinationCard
-            v-for="item in items"
-            :key="item.id"
-            class="col-span-12 md:col-span-3"
-            :name="buildCountry(item.destinationCountryCode).name"
-            :flag-code="buildCountry(item.destinationCountryCode).flagCode"
-            :primary-requirement="item.primaryRequirement"
-          />
+        <div
+          ref="scrollContainer"
+          class="h-[32rem] overflow-y-scroll overscroll-contain pr-1"
+        >
+          <div class="grid grid-cols-12 gap-6">
+            <DestinationCard
+              v-for="item in items"
+              :key="item.id"
+              class="col-span-12 md:col-span-3"
+              :name="buildCountry(item.destinationCountryCode).name"
+              :flag-code="buildCountry(item.destinationCountryCode).flagCode"
+              :primary-requirement="item.primaryRequirement"
+            />
+          </div>
         </div>
-        <div ref="loadMoreEl" class="h-1" />
       </CardContent>
     </Card>
   </section>
@@ -42,7 +46,7 @@ import DestinationCard from "@/components/DestinationCard/DestinationCard.vue";
 import { buildCountry, Country } from "@/types/country";
 import { onMounted, ref, watch } from "vue";
 import { useI18n } from "vue-i18n";
-import { useIntersectionObserver } from "@vueuse/core";
+import { useInfiniteScroll } from "@vueuse/core";
 import { fetchSupportedOriginCodes } from "@/services/api.service";
 import { getSummary } from "@/services/data.api.service";
 import { CountryCombobox } from "@/components/ui/country-combobox";
@@ -56,7 +60,7 @@ const items = ref<SummaryItem[]>([]);
 const page = ref(0);
 const totalPages = ref(0);
 const loading = ref(false);
-const loadMoreEl = ref<HTMLElement | null>(null);
+const scrollContainer = ref<HTMLElement | null>(null);
 
 const props = defineProps<{
   originCountry?: string;
@@ -81,6 +85,21 @@ async function fetchPage(nextPage: number, replace: boolean) {
   }
 }
 
+const { reset } = useInfiniteScroll(
+  scrollContainer,
+  async () => {
+    await fetchPage(page.value + 1, false);
+  },
+  {
+    distance: 120,
+    canLoadMore: () =>
+      !!selectedOriginCountry.value &&
+      !loading.value &&
+      page.value > 0 &&
+      page.value < totalPages.value,
+  },
+);
+
 onMounted(async () => {
   const codes = await fetchSupportedOriginCodes();
   originCountries.value = codes.map(buildCountry);
@@ -103,20 +122,11 @@ watch(selectedOriginCountry, async (newVal) => {
   items.value = [];
   page.value = 0;
   totalPages.value = 0;
-  await fetchPage(1, true);
-});
-
-useIntersectionObserver(loadMoreEl, ([entry]) => {
-  if (
-    !entry?.isIntersecting ||
-    loading.value ||
-    !selectedOriginCountry.value ||
-    page.value === 0 ||
-    page.value >= totalPages.value
-  ) {
-    return;
+  if (scrollContainer.value) {
+    scrollContainer.value.scrollTop = 0;
   }
-  void fetchPage(page.value + 1, false);
+  await fetchPage(1, true);
+  reset();
 });
 
 const { t } = useI18n();
