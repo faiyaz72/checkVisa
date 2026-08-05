@@ -22,12 +22,15 @@
       <CardContent>
         <div class="grid grid-cols-12 gap-6">
           <DestinationCard
-            v-for="i in 4"
-            :key="i"
+            v-for="item in items"
+            :key="item.id"
             class="col-span-12 md:col-span-3"
-            :name="`Destination ${i}`"
+            :name="buildCountry(item.destinationCountryCode).name"
+            :flag-code="buildCountry(item.destinationCountryCode).flagCode"
+            :primary-requirement="item.primaryRequirement"
           />
         </div>
+        <div ref="loadMoreEl" class="h-1" />
       </CardContent>
     </Card>
   </section>
@@ -39,15 +42,44 @@ import DestinationCard from "@/components/DestinationCard/DestinationCard.vue";
 import { buildCountry, Country } from "@/types/country";
 import { onMounted, ref, watch } from "vue";
 import { useI18n } from "vue-i18n";
+import { useIntersectionObserver } from "@vueuse/core";
 import { fetchSupportedOriginCodes } from "@/services/api.service";
+import { getSummary } from "@/services/data.api.service";
 import { CountryCombobox } from "@/components/ui/country-combobox";
+import type { SummaryItem } from "@/types/summary";
+
+const PAGE_SIZE = 12;
 
 const originCountries = ref<Country[]>([]);
 const selectedOriginCountry = ref<string>("");
+const items = ref<SummaryItem[]>([]);
+const page = ref(0);
+const totalPages = ref(0);
+const loading = ref(false);
+const loadMoreEl = ref<HTMLElement | null>(null);
 
 const props = defineProps<{
   originCountry?: string;
 }>();
+
+async function fetchPage(nextPage: number, replace: boolean) {
+  if (!selectedOriginCountry.value || loading.value) return;
+  if (!replace && nextPage > totalPages.value) return;
+
+  loading.value = true;
+  try {
+    const response = await getSummary({
+      originPassportCountryCode: selectedOriginCountry.value,
+      page: nextPage,
+      pageSize: PAGE_SIZE,
+    });
+    items.value = replace ? response.data : [...items.value, ...response.data];
+    page.value = response.page;
+    totalPages.value = response.totalPages;
+  } finally {
+    loading.value = false;
+  }
+}
 
 onMounted(async () => {
   const codes = await fetchSupportedOriginCodes();
@@ -61,8 +93,30 @@ watch(
   },
 );
 
-watch(selectedOriginCountry, (newVal) => {
-  console.log(newVal);
+watch(selectedOriginCountry, async (newVal) => {
+  if (!newVal) {
+    items.value = [];
+    page.value = 0;
+    totalPages.value = 0;
+    return;
+  }
+  items.value = [];
+  page.value = 0;
+  totalPages.value = 0;
+  await fetchPage(1, true);
+});
+
+useIntersectionObserver(loadMoreEl, ([entry]) => {
+  if (
+    !entry?.isIntersecting ||
+    loading.value ||
+    !selectedOriginCountry.value ||
+    page.value === 0 ||
+    page.value >= totalPages.value
+  ) {
+    return;
+  }
+  void fetchPage(page.value + 1, false);
 });
 
 const { t } = useI18n();
