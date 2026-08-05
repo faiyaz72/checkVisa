@@ -14,8 +14,7 @@ datasource db {
 // ============================================
 
 model CountryInfo {
-  countryCd    String  @id
-  thumbnailUrl String?
+  countryCd String @id
 
   originRequirements      VisaRequirement[] @relation("OriginCountry")
   destinationRequirements VisaRequirement[] @relation("DestinationCountry")
