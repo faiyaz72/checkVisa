@@ -1,8 +1,9 @@
 import { Body, Controller, Post } from "@nestjs/common";
+import { ApiBody, ApiResponse } from "@nestjs/swagger";
 import { DataService } from "./data.service";
-import { ApiResponse } from "@nestjs/swagger";
-import { DataRequest } from "./request/DataRequest.vo";
-import { ApiBody } from "@nestjs/swagger";
+import { DataRequest, SummaryRequest } from "./request/DataRequest.vo";
+import { PaginatedResponse, PaginatedResponseDto } from "../lib/pagination";
+import { SummaryItemDto } from "./type/SummaryItemDto";
 
 @Controller("data")
 export class DataController {
@@ -18,6 +19,23 @@ export class DataController {
     return this.dataService.getData(
       request.originCountryCode,
       request.destinationCountryCode,
+    );
+  }
+
+  @Post("summary")
+  @ApiBody({ type: SummaryRequest })
+  @ApiResponse({
+    status: 200,
+    description: "Paginated visa summary for the given origin passport country",
+    type: PaginatedResponseDto(SummaryItemDto),
+  })
+  getSummary(
+    @Body() request: SummaryRequest,
+  ): Promise<PaginatedResponse<SummaryItemDto>> {
+    return this.dataService.getSummary(
+      request.originPassportCountryCode,
+      request.page,
+      request.pageSize,
     );
   }
 }
