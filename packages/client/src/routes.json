@@ -1,5 +1,6 @@
 {
   "data": {
-    "getRequirement": "/api/v1/data"
+    "getRequirement": "/api/v1/data",
+    "getSummary": "/api/v1/data/summary"
   }
 }
