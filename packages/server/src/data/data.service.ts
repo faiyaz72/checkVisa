@@ -44,16 +44,24 @@ export class DataService {
       },
     };
 
-    const [data, total] = await Promise.all([
+    const [data, totalRecords] = await Promise.all([
       this.dbService.client.visaRequirement.findMany({
         where,
         skip: (page - 1) * pageSize,
         take: pageSize,
         orderBy: { destinationCountryCode: "asc" },
+        select: {
+          id: true,
+          originCountryCode: true,
+          destinationCountryCode: true,
+          primaryRequirement: true,
+        },
       }),
       this.dbService.client.visaRequirement.count({ where }),
     ]);
 
-    return { data, page, pageSize, total };
+    const totalPages = Math.ceil(totalRecords / pageSize);
+
+    return { data, page, pageSize, totalRecords, totalPages };
   }
 }

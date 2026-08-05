@@ -35,7 +35,8 @@ export class PaginatedResponse<T> {
   data!: T[];
   page!: number;
   pageSize!: number;
-  total!: number;
+  totalRecords!: number;
+  totalPages!: number;
 }
 
 export function PaginatedResponseDto<TModel extends NestType<unknown>>(
@@ -52,7 +53,10 @@ export function PaginatedResponseDto<TModel extends NestType<unknown>>(
     pageSize!: number;
 
     @ApiProperty({ example: 0 })
-    total!: number;
+    totalRecords!: number;
+
+    @ApiProperty({ example: 0 })
+    totalPages!: number;
   }
 
   Object.defineProperty(PaginatedResponseHost, "name", {
