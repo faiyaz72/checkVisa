@@ -37,5 +37,16 @@
       }
     },
     "cta": "Get Requirements"
+  },
+  "visaRequirement": {
+    "VISA_FREE": "Visa free",
+    "VISA_ON_ARRIVAL": "Visa on arrival",
+    "ETA": "ETA",
+    "EVISA": "eVisa",
+    "VISA_REQUIRED": "Visa required",
+    "CONDITIONAL_WAIVER": "Conditional entry",
+    "ADMISSION_REFUSED": "Restricted entry",
+    "SPECIAL_TERRITORY": "Special territory",
+    "UNKNOWN": "Check requirements"
   }
 }
